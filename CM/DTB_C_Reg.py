@@ -3,6 +3,8 @@ import CM.DTB_C_Start
 import DTB_User
 import BOT.DTB_Bot
 import CM.DTB_C_Pass
+import DTB_Utils
+
 
 def Start(_ch, _ms):
     _ch.step = "Contact"
@@ -27,8 +29,7 @@ def ContactHandler(_ch, _ms):
             _ch.send_message(
                         "SetUserToChat.Final",
                         "",
-                        [["Button.MainMenu"],["Button.GetNewToken"]],
-                        0
+                        [["Button.MainMenu"],["Button.GetNewToken"]]
                     )
             
         else:
@@ -54,7 +55,7 @@ def RecoveryBotInput(_ch, _ms):
             
 def RecoveryBotHandler(_ch, _ms):
     _ch.recovery = _ms["text"]
-    _ch.token    = _ch.get_token(6)
+    _ch.token    = DTB_Utils.get_token()
     BOT.DTB_Bot.recovery_bot.send_message(
                         _ms["text"],
                         "RecoverySendToken",

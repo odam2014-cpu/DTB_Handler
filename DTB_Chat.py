@@ -2,11 +2,14 @@ import datetime
 import random
 
 import DTB_DB
+import DTB_Token
 import DTB_User
 
 import CM.DTB_C_Start
 import CM.DTB_C_Reg
 import CM.DTB_C_Pass
+import CM.DTB_C_Auth
+import CM.DTB_C_Token
 
 list_chat = {}
 
@@ -26,11 +29,18 @@ class c_chat:
         self.phone      = ""
         self.recovery   = ""
         self.token      = ""
+        self.current_token = None
 
         # заполняем из БД
         for ms in DTB_DB.DB.get_mess(self.id):
             self.list_mess[ms[0]] = ms[1]
 
+    def create_token(self):
+        if self.current_token != None:
+            self.current_token.close()
+        
+        self.current_token = DTB_Token.c_token(self)
+            
     def set_user(   self,
                     _us
                 ):
@@ -183,12 +193,6 @@ class c_chat:
         # возвращаем уровень до изменения        
         return pl
     
-    def get_token(self, _ln):
-        tk = ""
-        while len(tk) < _ln:
-            tk = tk + str(random.randint(0, 9))
-        return tk
-
     def set_password(self):
         us = DTB_User.set_user(self.phone, self.recovery, self.pasw)
         if self.user == None:
@@ -211,6 +215,10 @@ class c_chat:
             self.delete_message(_mess["mess"])
         
         match comm:
+            case "GetNewToken":
+                CM.DTB_C_Token.NewTokenHandler(self, _mess)
+            case "Authorization":
+                CM.DTB_C_Auth.AuthHandler(self, _mess)       
             case "Contact":
                 CM.DTB_C_Reg.ContactHandler(self, _mess)
             case "Registration":
@@ -228,6 +236,8 @@ class c_chat:
                 else:
                     match self.step:
 
+                        case "Authorization":
+                            CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
                         case "Password.First":
                             CM.DTB_C_Pass.PasswordFirstHandler(self, _mess)
                         case "Password.Second":

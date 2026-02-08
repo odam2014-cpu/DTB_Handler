@@ -7,12 +7,15 @@ list_bot = {}
 
 class c_Bot: 
     def gate(self, _nm, _cID, _mID, _comm, _text, _ph=""):
+        txt = ""
+        if _text != None:
+            txt = _text.strip()
         _ms= {  "name"  : _nm,
                 "bot"   : self,
                 "chat"  : _cID,
                 "mess"  : _mID,
                 "comm"  : _comm,
-                "text"  : _text,
+                "text"  : txt,
                 "phone" : _ph           
             }
         DTB_Chat.gate(_ms)

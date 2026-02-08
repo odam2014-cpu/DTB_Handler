@@ -1,0 +1,155 @@
+2026-02-08 12:33:49
+Бот TLG_Main подключен
+
+2026-02-08 12:33:49
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 12:33:49
+DTB запущен
+
+2026-02-08 14:29:10
+Бот TLG_Main подключен
+
+2026-02-08 14:29:10
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 14:29:10
+DTB запущен
+
+2026-02-08 14:48:12
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 14:48:12
+DTB запущен
+
+2026-02-08 15:52:17
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
+2026-02-08 16:53:18
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
+2026-02-08 17:54:19
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
+2026-02-08 18:54:19
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
+2026-02-08 19:54:20
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
+2026-02-08 20:19:40
+Бот TLG_Main подключен
+
+2026-02-08 20:19:40
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 20:19:40
+DTB запущен
+
+2026-02-08 20:21:51
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-08 20:24:49
+Бот TLG_Main подключен
+
+2026-02-08 20:24:49
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 20:24:49
+DTB запущен
+
+2026-02-08 20:25:26
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-08 20:30:17
+Бот TLG_Main подключен
+
+2026-02-08 20:30:17
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 20:30:17
+DTB запущен
+
+2026-02-08 20:34:22
+Бот TLG_Main подключен
+
+2026-02-08 20:34:22
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 20:34:22
+DTB запущен
+
+2026-02-08 20:34:47
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-08 20:35:06
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-08 21:10:43
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 21:10:43
+DTB запущен
+
+2026-02-08 21:11:59
+Бот TLG_Main подключен
+
+2026-02-08 21:11:59
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 21:11:59
+DTB запущен
+
+2026-02-08 21:17:38
+Бот TLG_Main подключен
+
+2026-02-08 21:17:38
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 21:17:38
+DTB запущен
+
+2026-02-08 21:25:50
+Бот TLG_Main подключен
+
+2026-02-08 21:25:50
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 21:25:51
+DTB запущен
+
+2026-02-08 23:16:36
+Бот TLG_Main подключен
+
+2026-02-08 23:16:36
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 23:16:36
+DTB запущен
+
+2026-02-08 23:19:42
+Бот TLG_Main подключен
+
+2026-02-08 23:19:42
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-08 23:19:42
+DTB запущен
+
+2026-02-08 23:21:36
+module 'BOT' has no attribute 'DTB_DB'
+Ошибка on_clearmess_timer/ Start.Main : 991033097
+
+2026-02-08 23:21:36
+name 'DTB_Bot' is not defined
+Ошибка on_clearmess_timer
+
