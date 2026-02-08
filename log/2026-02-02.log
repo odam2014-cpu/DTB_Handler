@@ -1,0 +1,126 @@
+2026-02-02 00:07:02
+ - DTB запущен
+
+2026-02-02 00:07:02
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 00:09:55
+ - DTB запущен
+
+2026-02-02 00:09:55
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 00:15:15
+ - DTB запущен
+
+2026-02-02 00:15:15
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 15:57:00
+ - DTB запущен
+
+2026-02-02 15:57:00
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:41:28
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:42:05
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:44:25
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:44:25
+ - DTB запущен
+
+2026-02-02 20:46:05
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:46:06
+ - DTB запущен
+
+2026-02-02 20:46:17
+EXEC SELECT CH.ID, CH.NAME FROM CHAT AS CH WHERE NOT EXISTS(SELECT MS.ID FROM MESS AS MS WHERE MS.CHAT_ID = CH.ID) - no such table: MESS
+
+2026-02-02 20:47:45
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:47:45
+ - DTB запущен
+
+2026-02-02 20:47:59
+EXEC SELECT CH.ID, CH.NAME FROM CHAT AS CH WHERE NOT EXISTS(SELECT MS.ID FROM MESSAGE AS MS WHERE MS.CHAT_ID = CH.ID) - no such column: MS.ID
+
+2026-02-02 20:49:41
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:49:41
+ - DTB запущен
+
+2026-02-02 20:50:15
+Ошибка on_clearmess_timer/ Start.Main : 991033097 - 'TLG_Main'
+
+2026-02-02 20:53:04
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 20:53:04
+ - DTB запущен
+
+2026-02-02 21:03:52
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 21:03:52
+ - DTB запущен
+
+2026-02-02 21:06:34
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 21:06:44
+ - DTB запущен
+
+2026-02-02 21:15:05
+DEL_MES - A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+2026-02-02 21:34:36
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 21:34:41
+ - DTB запущен
+
+2026-02-02 21:36:36
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 21:36:36
+ - DTB запущен
+
+2026-02-02 21:39:19
+DEL_MES - A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+2026-02-02 21:51:51
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 21:51:51
+ - DTB запущен
+
+2026-02-02 22:02:05
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 22:02:05
+ - DTB запущен
+
+2026-02-02 22:07:11
+DEL_MES - A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+
+2026-02-02 22:09:13
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 22:09:13
+ - DTB запущен
+
+2026-02-02 22:35:00
+ - Бот 8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ подключен
+
+2026-02-02 22:35:00
+ - DTB запущен
+
