@@ -15,4 +15,9 @@ def AuthHandler(_ch, _ms):
             )
 
 def AuthorizationProcessHandler(_ch, _ms):
-    if)
+    if _ch.step == "Authorization":
+        _ch.step = "Authorization"
+        _ch.send_message(
+                "AuthorizationProcess`",
+                "",
+                ["Button.CancelRegistration"]
