@@ -1,0 +1,4 @@
+{
+    "UserGet" : "SELECT * FROM USER",
+    "UserCreate" : "INSERT INTO USER (ID, PHONE, PASSWORD) VALUES ({})"
+}

@@ -1,0 +1,22 @@
+    {
+        "Name": "CFG_Main",
+        "BotList":  [
+                        {
+                            "Type" : "Telegram",
+                            "Name" : "TLG_Main",
+                            "Token": "8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ"
+                        },
+                        {
+                            "Type" : "Recovery",
+                            "Name" : "DTB_RECOVERY_BOT",
+                            "Token": "8030496606:AAHf8MYDx-rCEjMD0DgkphdnTejP35XoqWw"
+                        }
+                    ],
+        "DataBaseName"          : "DTB_DB.db",
+        "TokenLenght"           : "6",
+        "TokenLifeTime"         : "30",
+        "ChatLifeTime"          : "180",
+        "ChatLifeTimeInterval"  : "60",
+        "ClearLifeTime"         : "3600",
+        "ClearLifeTimeInterval" : "61"
+    }    

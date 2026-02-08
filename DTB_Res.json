@@ -1,0 +1,415 @@
+[
+    {
+        "Name":"Button.Authorization",
+        "Text":"Авторизоваться",
+        "Command":"Authorization"
+    },
+    {
+        "Name":"Button.Start",
+        "Text":"Начать",
+        "Command":"Start"
+    },
+    {
+        "Name":"Start.Main",
+        "Text":"Бот-генератор токенов доступа v.1.2."
+    },
+{
+        "Name":"None.Text",
+        "Text":"⁉️ Непонятная команда: <b>%%%</b>"
+    },
+    {
+        "Name":"None.Type",
+        "Text":"🚫 К сожалению, Бот Вас не понимает"
+    },
+    {
+        "Name":"Message.Timeout",
+        "Text":"Превышено разрешенное время бездействия <b>Бота</b>.",
+        "Image":"image\\disconnect.png"
+    },
+    {
+        "Name":"Button.Registration",
+        "Text":"Регистрация",
+        "Command":"Registration"
+    },  
+    {
+        "Name":"RegistrationPhone",
+        "Text":"Для регистрации необходимо передать боту Ваш контакт. В дальнейшем Вы сможете авторизоваться с помощью номера телефона. Бот не будет пользоваться Вашим номером телефона кроме как для авторизации запросов внешних респондентов"
+    },  
+    {
+        "Name":"Button.SendContact",
+        "Text":"Отправить контакт",
+        "Command":"SendContact"
+    },
+    {
+        "Name":"Button.CancelRegistration",
+        "Text":"Отменить регистрацию",
+        "Command":"CancelRegistration"
+    },
+    {
+        "Name":"Button.MainMenu",
+        "Text":"Главное меню",
+        "Command":"MainMenu"
+    },
+    {
+        "Name":"Button.GetNewToken",
+        "Text":"Новый токен",
+        "Command":"GetNewToken"
+    },
+    {
+        "Name":"Button.CancelCurrentOperation",
+        "Text":"Прервать операцию",
+        "Command":"CancelCurrentOperation"
+    },
+    {
+        "Name":"OperationCancel",
+        "Text":"Операция отменена. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"MainMessage",
+        "Text":"Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"Button.RecoveryBot",
+        "Text":"Указать другой ID чата восстановления",
+        "Command":"RecoveryBot"
+    },
+    {
+        "Name":"Password.First",
+        "Text":"Введите новый пароль доступа (минимальная длина - 4 символа)."
+    },
+
+
+
+    {
+        "Name":"Button.PasswordRecoverSkipYes",
+        "Text":"Пропустить - Да",
+        "Command":"PasswordRecoverSkipYes"
+    },
+   {
+        "Name":"Button.PasswordRecoverSkipNo",
+        "Text":"Пропустить - Нет",
+        "Command":"PasswordRecoverSkipNo"
+    },
+    {
+        "Name":"Button.PasswordRecoverSkip",
+        "Text":"Пропустить шаг",
+        "Command":"PasswordRecoverSkip"
+    },
+    {
+        "Name":"Button.RecoverPassword",
+        "Text":"Восcтановить доступ",
+        "Command":"PasswordRecover"
+    },
+    {
+        "Name":"Button.ClearContact",
+        "Text":"Удалить телефон",
+        "Text_EN": "Delete phone",
+        "Command":"ContactClear"
+    },    
+    {
+        "Name":"Button.Main.GetID",
+        "Text":"Ваш ID",
+        "Command":"Main.GetID"
+    },
+    {
+        "Name":"Button.Main.Return",
+        "Text":"Вернуться",
+        "Command":"Main.Return"
+    },
+    {
+        "Name":"Button.Main.SetPhone",
+        "Text":"Доп.ID",
+        "Command":"Main.SetPhone"
+    },
+    {
+        "Name":"Button.Main.Password",
+        "Text":"Защита",
+        "Command":"Main.Password"
+    },
+    {
+        "Name":"Button.Main.Help",
+        "Text":"Помоги мне",
+        "Command":"Main.Help"
+    },    
+    {
+        "Name":"Button.ChoicePasswordReplace",
+        "Text":"Изменить пароль",
+        "Command":"PasswordChange"
+    },
+    {
+        "Name":"Button.ChoicePasswordClear",
+        "Text":"Отменить защиту",
+        "Command":"PasswordClear"
+    },
+    
+    {
+        "Name":"Password.Choice",
+        "Text":"Выберите команду для изменения защиты Бота."
+    },
+    {
+        "Name":"Password.Recover.Set",
+        "Text":"Укажите ИД чата, куда будет приходить токен для восстановления доступа."
+    },
+    {
+        "Name":"Password.Set",
+        "Text":"Устнавка пароля для доступа к Боту."
+    },
+    {
+        "Name":"Password.Recover.Skip.Ok",
+        "Text":"Пропуск шага настройки восстановления доступа. Обратите внимание, что в случаи устновки защиты на Бот и потери пароля Вы уже не сможете восстановить доступ."
+    },
+    {
+        "Name":"Password.Clear.Final",
+        "Text":"Дополнительня защита доступа к Боту снята успешно."
+    },
+    {
+        "Name":"Password.Replace",
+        "Text":"Изменение пароля доступа к Боту."
+    },
+    {
+        "Name":"Operation.Cancel",
+        "Text":"Операция отменена. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"Menu.Use.Key",
+        "Text":"Перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"Token.Get",
+        "Text":"Ваш новый токен :"
+    },
+
+    {
+        "Name":"Password.Set.Final",
+        "Text":"Пароль для доступа к Боту установлен успешно."
+    },
+    {
+        "Name":"Password.Set.Second.Error",
+        "Text":"Введенные Вами пароли не совпадают."
+    },
+    {
+        "Name":"Password.Set.Second",
+        "Text":"Повторите введенный Вами пароль."
+    },
+    {
+        "Name":"Password.Recover.Set.Rec.Token.Error",
+        "Text":"Указанный Вами токен не совпадает с отправленным в чат для восстановления доступа."
+    },
+    {
+        "Name":"Password.Recover.Set.Ok",
+        "Text":"Чат для восстановления доступа к текущему Боту устновлен успешно."
+    },
+    {
+        "Name":"Password.Recover.Token.Error",
+        "Text":"Невозможно найти бот по указанному Вами идентификатору."
+    },
+    {
+        "Name":"Password.Recover.Ok",
+        "Text":"Доступ восстановлен. Для установки пароля на чат необходимо пройти процедуру установки доп.защиты повторно."
+    },
+    {
+        "Name":"Password.Recover.Error",
+        "Text":"Невозможно восстановить доступ. Чат для восстановления не найден."
+    },
+    {
+        "Name":"Password.Recover.Token",
+        "Text":"Введите токен восстановления доступа."
+    },
+    
+    {
+        "Name":"Password.Recover.Set.Rec.Error",
+        "Text":"Введите токен, который был отправлен в указанный Вами чат."
+    },
+    {
+        "Name":"Password.Recover.Set.Rec.Token",
+        "Text":"Введите токен, который был отправлен в указанный Вами чат."
+    },
+    {
+        "Name":"Send.Recover.Token",
+        "Text":"Токен восстановления доступа <s>%%%</s> для пользователя <b>%%%</b>."
+    },
+    {
+        "Name":"Token.IsUsed",
+        "Text":"Токен <s>%%%</s> использован для <b>%%%</b>."
+    },
+    {
+        "Name":"Token.IsDisabled",
+        "Text":"Истек срок действия токена <s>%%%</s>."
+    },
+    {
+        "Name":"Main.Menu",
+        "Text":"Выберите команду"
+    },
+    {
+        "Name":"Password.Check.Final",
+        "Text":"Доступ <b>Разрешен</b>. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"Password.Check.Error",
+        "Text":"Доступ <b>запрещен</b>. Пароль введен неверено."
+    },
+    {
+        "Name":"Password.Check",
+        "Text":"Доступ к <b>Боту</b> защищен Вами дополнительным паролем. Пожалуйста, введите пароль.",
+        "Image":"image\\connect.png"
+    },
+    {
+        "Name":"Contact.Warring",
+        "Text":"Передав боту контакт Вы сможете авторизоваться с помощью номера телефона. Бот не будет пользоваться Вашим номером телефона кроме как для авторизации запросов внешних респондентов"
+    },
+    {
+        "Name":"Help.Main",
+        "Text":"Здесь будет информация о помощи"
+    },
+    {
+        "Name":"YourID.Main",
+        "Text":"Ваш ID :"
+    },
+    {
+        "Name":"Contact.Result.Good",
+        "Text":"Спасибо за предоставленный контакт. Теперь Вы сможете авторизоваться под своим номером телефона"
+    },
+    {
+        "Name":"Contact.Result.Bad",
+        "Text":"К сожалению, Бот не смог получить Ваш контакт. Давайте поробуем еще раз."
+    },
+    {
+        "Name":"adm_change_cfg",
+        "Text":"change_cfg",
+        "Command":"change_cfg"
+    },
+    {
+        "Name":"adm_monitoring",
+        "Text":"monitoring",
+        "Command":"monitoring"
+    },
+    {
+        "Name":"adm_logfile",
+        "Text":"logfile",
+        "Command":"logfile"
+    },
+    {
+        "Name":"adm_update_res",
+        "Text":"update_res",
+        "Command":"update_res"
+    },
+    {
+        "Name":"adm_exit",
+        "Text":"exit",
+        "Command":"exit"
+    },
+    {
+        "Name":"adm_log_exit",
+        "Text":"LOG_exit",
+        "Command":"LOG_exit"
+    },    {
+        "Name":"adm_cfg_exit",
+        "Text":"CFG_exit",
+        "Command":"CFG_exit"
+    },
+    {
+        "Name":"Admin.Monitoring",
+        "Text":"Активных чатов: %%%\nАктивных сообщений: %%%\nВсего чатов: %%%\nВсего сообщений: %%%"
+    },
+    {
+        "Name":"Password.Recover",
+        "Text":"Введите токен востановления доступа, который был отправлен в чат <b>%%%</b>"
+    },
+    {
+        "Name":"Admin.Begin",
+        "Text":"Включен режим Администратора"
+    },
+    {
+        "Name":"Admin.Cfg.Begin",
+        "Text":"Выберите конфигурацию для активации"
+    },
+    {
+        "Name":"Admin.Log.Begin",
+        "Text":"Выберите файл лога"
+    },
+    {
+        "Name":"Update.Res.Ok",
+        "Text":"Ресурсы обновлены"
+    },
+    {
+        "Name":"Admin.Bye",
+        "Text":"Режим Администратора выключен"
+    },
+    {
+        "Name":"Admin.Error",
+        "Text":"Неверная команда администратора"
+    },
+    {
+        "Name":"Config.Change.Ok",
+        "Text":"Конфигурация изменена успешно"
+    },
+    {
+        "Name":"Config.Change.Error",
+        "Text":"Ошибка изменения конфигурации"
+    },
+    {
+        "Name":"Phone.Clear.Final",
+        "Text":"Номер телфона успешно удален"
+    },
+    {
+        "Name":"Contact.Already",
+        "Text":"Телефон уже установлен в качестве дополнительного ИД"
+    },
+    {
+        "Name":"Echo.Test",
+        "Text":"Эхо тест: %%%"
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    },
+    {
+        "Name":"",
+        "Text":""
+    }  
+]
+
