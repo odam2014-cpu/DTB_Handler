@@ -1,0 +1,37 @@
+2026-02-10 11:37:43
+Бот TLG_Main подключен
+
+2026-02-10 11:37:43
+Бот DTB_RECOVERY_BOT подключен
+
+2026-02-10 11:37:43
+DTB запущен
+
+2026-02-10 11:42:16
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-10 11:42:46
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-10 11:44:32
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-10 15:47:08
+HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ/sendMessage?chat_id=991033097&text=%D0%91%D0%BE%D1%82-%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80+%D1%82%D0%BE%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2+%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0+v.1.2.&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu041d%5Cu0430%5Cu0447%5Cu0430%5Cu0442%5Cu044c%22%2C+%22callback_data%22%3A+%22Start%22%7D%5D%5D%7D&parse_mode=HTML (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000248053E79D0>, 'Connection to api.telegram.org timed out. (connect timeout=15)'))
+Ошибка on_clearmess_timer/ Start.Main : 991033097
+
+2026-02-10 15:47:21
+HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ/deleteMessage?chat_id=991033097&message_id=7593 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024805488190>, 'Connection to api.telegram.org timed out. (connect timeout=15)'))
+DEL_MES
+
+2026-02-10 22:14:43
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-02-10 22:15:06
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+

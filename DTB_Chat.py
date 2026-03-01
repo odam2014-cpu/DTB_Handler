@@ -10,15 +10,19 @@ import CM.DTB_C_Reg
 import CM.DTB_C_Pass
 import CM.DTB_C_Auth
 import CM.DTB_C_Token
+import CM.DTB_C_MainMenu
 
 list_chat = {}
 
 class c_chat:
-    def __init__(self, _mess):
-        self.name       = _mess["name"]
-        self.bot        = _mess["bot"]
-        self.id         = _mess["chat"]
+    def __init__(self, _bot, _nm, _ch, _op):
+        self.name       = _nm
+        self.bot        = _bot
+        self.id         = _ch
+        self.gid        = _nm + str(_ch)
         self.comm       = ""
+        self.isAuth     = _op["Authentication"]
+        self.isUnif     = _op["UnifiedAccount"]
         self.user       = DTB_User.get_user(DTB_DB.DB.get_chat(self.name, self.id))
         self.last_time  = datetime.datetime.now()
         self.list_mess  = {}
@@ -32,7 +36,7 @@ class c_chat:
         self.current_token = None
 
         # заполняем из БД
-        for ms in DTB_DB.DB.get_mess(self.id):
+        for ms in DTB_DB.DB.get_mess(self.gid):
             self.list_mess[ms[0]] = ms[1]
 
     def create_token(self):
@@ -41,11 +45,13 @@ class c_chat:
         
         self.current_token = DTB_Token.c_token(self)
             
+        self.user.set_token(self.current_token)
+            
     def set_user(   self,
                     _us
                 ):
         self.user = _us
-        DTB_DB.DB.set_chat_user(self.id, _us.id)
+        DTB_DB.DB.set_chat_user(self.gid, _us.id)
 
     def clear_button(   self  
                     ):
@@ -68,8 +74,7 @@ class c_chat:
             self.list_mess[_id] = _lv
 
         # добавляем в БД
-        DTB_DB.DB.add_mess( self.id,
-                            self.name,
+        DTB_DB.DB.add_mess( self.gid,
                             _id,
                             _lv
                     )
@@ -96,7 +101,7 @@ class c_chat:
             self.list_mess.pop(_ms)
         
             # удаляем сообщение из БД
-            DTB_DB.DB.del_mess( self.id,    # ид чата  
+            DTB_DB.DB.del_mess( self.gid,    # ид чата  
                                 _ms
                             )
       
@@ -140,7 +145,7 @@ class c_chat:
 
 # удаление сообщений
     def clear_mess( self,
-                    _lv = None,     # уровень ообщений
+                    _lv = None,     # уровень cообщений
                     _isrev = False  # реверсировать
             ):
         # вход.уровень не утановлен
@@ -209,67 +214,82 @@ class c_chat:
         comm = _mess["comm"]
         text = _mess["text"]
         self.last_time = datetime.datetime.now()
-        
-        if comm in ["TEXT", "OTHER", "Contact"]:
-        #    self.add_mess(_mess["mess"], 1000)
+              
+        if _mess["mess"] != None:
             self.delete_message(_mess["mess"])
         
-        match comm:
-            case "GetNewToken":
-                CM.DTB_C_Token.NewTokenHandler(self, _mess)
-            case "Authorization":
-                CM.DTB_C_Auth.AuthHandler(self, _mess)       
-            case "Contact":
-                CM.DTB_C_Reg.ContactHandler(self, _mess)
-            case "Registration":
-                CM.DTB_C_Reg.Start(self, _mess)
-            case "CancelCurrentOperation":
-                CM.DTB_C_Start.Cancel(self, _mess)
-            case "Start":
-                CM.DTB_C_Start.Start(self, _mess)
-            case "RecoveryBot":
-                CM.DTB_C_Reg.RecoveryBotInput(self, _mess)            
-            
-            case "TEXT":
-                if text == "/start":
+        if self.auth == False:
+            CM.DTB_C_Start.Start(self, _mess)
+            self.auth = True
+        else:    
+            match comm:
+                case "MenuDeleteUser":
+                    CM.DTB_C_MainMenu.MainDelUserHandler(self, _mess)
+                case "MenuDeleteChat":
+                    CM.DTB_C_MainMenu.MainDelChatHandler(self, _mess)
+                case "MenuDelUserYes":
+                    CM.DTB_C_MainMenu.MenuDelUserYesHandler(self, _mess)
+                case "MenuDelChatYes":
+                    CM.DTB_C_MainMenu.MenuDelChatYesHandler(self, _mess)
+                case "MenuDelChatNo":
                     CM.DTB_C_Start.Start(self, _mess)
-                else:
-                    match self.step:
-
-                        case "Authorization":
-                            CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
-                        case "Password.First":
-                            CM.DTB_C_Pass.PasswordFirstHandler(self, _mess)
-                        case "Password.Second":
-                            CM.DTB_C_Pass .PasswordSecondHandler(self, _mess)
-                        case "Recovery.Bot":
-                            CM.DTB_C_Reg.RecoveryBotHandler(self, _mess)
-                        case "Recovery.Token":
-                            CM.DTB_C_Reg.RecoveryBotTokenHandler(self, _mess)
-                        case "Contact":
-                            CM.DTB_C_Reg.ContactHandler(self, _mess)
-                        case _:
-                            self.send_message(
-                                "None.Text",
-                                text,         
-                                _lvl = 1000
-                            )
-
-            case _:
-                self.send_message(
-                    "None.Type",
-                    _lvl = 1000
-                )       
+                case "MenuDelUserNo":
+                    CM.DTB_C_Start.Start(self, _mess)
+                case "MenuAbout":
+                    CM.DTB_C_MainMenu.MainAboutHandler(self, _mess)
+                case "MenuAuth":
+                    CM.DTB_C_MainMenu.MenuAuthHandler(self, _mess)
+                case "MenuExit":
+                    CM.DTB_C_Start.Start(self, _mess)
+                case "MainMenu":
+                    CM.DTB_C_MainMenu.MainMenuHandler(self, _mess)
+                case "RecoveryAuthorization":
+                    CM.DTB_C_Reg.RecoveryStartHandler(self, _mess)
+                case "GetNewToken":
+                    CM.DTB_C_Token.NewTokenHandler(self, _mess)
+                case "Authorization":
+                    CM.DTB_C_Auth.AuthHandler(self, _mess)       
+                case "Contact":
+                    CM.DTB_C_Reg.ContactHandler(self, _mess)
+                case "Registration":
+                    CM.DTB_C_Reg.Start(self, _mess)
+                case "CancelCurrentOperation":
+                    CM.DTB_C_Start.Cancel(self, _mess)
+                case "Start":
+                    CM.DTB_C_Start.Start(self, _mess)
+                case "RecoveryBot":
+                    CM.DTB_C_Reg.RecoveryBotInput(self, _mess)            
                 
-        self.delete_message(sw)        
-        
+                case "TEXT":
+                    if text == "/start":
+                        CM.DTB_C_Start.Start(self, _mess)
+                    else:
+                        match self.step:
 
-def gate(_mess):
-    id = _mess["chat"]
-    try:
-        ch = list_chat[id]
-    except:
-        ch = c_chat(_mess)
-        list_chat[id] = ch
-    
-    ch.gate(_mess)
+                            case "Authorization":
+                                CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
+                            case "Password.First":
+                                CM.DTB_C_Pass.PasswordFirstHandler(self, _mess)
+                            case "Password.Second":
+                                CM.DTB_C_Pass .PasswordSecondHandler(self, _mess)
+                            case "Recovery.Bot":
+                                CM.DTB_C_Reg.RecoveryBotHandler(self, _mess)
+                            case "Recovery.Token":
+                                CM.DTB_C_Reg.RecoveryBotTokenHandler(self, _mess)
+                            case "Contact":
+                                CM.DTB_C_Reg.ContactHandler(self, _mess)
+                            case _:
+                                self.send_message(
+                                    "None.Text",
+                                    text,         
+                                    _lvl = 1000
+                                )
+
+                case _:
+                    self.send_message(
+                        "None.Type",
+                        _lvl = 1000
+                    )       
+                    
+        self.delete_message(sw)        
+

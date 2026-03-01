@@ -1,3 +1,5 @@
+import CM.DTB_C_Auth
+
 def Cancel(_ch, _ms):
     _ch.step = ""
     if _ch.auth:
@@ -25,11 +27,11 @@ def Start(_ch, _ms):
                     [["Button.MainMenu"],["Button.GetNewToken"]]                        
                 )
         else:
-            if _ch.comm == "Start":
-                _ch.comm = "Authorization"
+            if _ms["comm"] == "Start" or _ms["comm"] == "Authorization":
                 _ms["comm"] = "Authorization"
+                CM.DTB_C_Auth.AuthHandler(_ch, _ms)
             # сюда вызов гейта авторизации 
-            else:     
+            else:    
                 _ch.send_message(
                     "RequiredAuthorization",
                     "",

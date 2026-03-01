@@ -6,19 +6,31 @@ recovery_bot = None
 list_bot = {}
 
 class c_Bot: 
+    def __init__(self, _param):
+        self.name   = _param["Name"]
+        self.token  = _param["Token"]
+        self.options= _param["Options"]
+        
     def gate(self, _nm, _cID, _mID, _comm, _text, _ph=""):
         txt = ""
         if _text != None:
             txt = _text.strip()
         _ms= {  "name"  : _nm,
-                "bot"   : self,
                 "chat"  : _cID,
                 "mess"  : _mID,
                 "comm"  : _comm,
                 "text"  : txt,
                 "phone" : _ph           
             }
-        DTB_Chat.gate(_ms)
+
+        id = _nm + str(_cID)
+        try:
+            ch = DTB_Chat.list_chat[id]
+        except:
+            ch = DTB_Chat.c_chat(self, _nm, _cID, self.options)
+            DTB_Chat.list_chat[id] = ch
+    
+        ch.gate(_ms)
         
     def build_message(  self,
                         _key,                   # ключ сообщения

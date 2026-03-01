@@ -12,6 +12,7 @@ def on_clearmess_timer():
     for ms1 in DTB_DB.DB.get_chat_ping():
         id = ms1[0]
         nm = ms1[1]
+        gid = ms1[2]
         try:
             bot = BOT.DTB_Bot.list_bot[nm]
             ms= bot.send_message(
@@ -20,17 +21,17 @@ def on_clearmess_timer():
                     "",                   # вставки в сообщение
                     ["Button.Start"]      # кнопки
                 )
-            BOT.DTB_DB.DB.add_mess(id, nm, ms, 0)
+            DTB_DB.DB.add_mess(gid, ms, 0)
         except Exception as e:
-            DTB_Log.log(e, f"Ошибка on_clearmess_timer/ Start.Main : {id}") 
-            DTB_DB.DB.del_chat(id)
+            DTB_Log.log(e, f"Ошибка on_clearmess_timer/ Start.Main : {gid}") 
+            DTB_DB.DB.del_chat(gid)
             
     for ms2 in list_ms:
         nm = ms2[0]
         id = ms2[1]
         md = ms2[2]
         try:
-            bot = DTB_Bot.list_bot[nm]
+            bot = BOT.DTB_Bot.list_bot[nm]
             
             bot.delete_message(
                             id,   # ид чата  
@@ -57,32 +58,29 @@ def on_clear_timer():
         
         # проверям, что интервал привышает установленный в конфигурации
         if dt.total_seconds() > DTB_Cfg.cfg.gi("ChatLifeTime"):
-            # устанавливаем уровень сообщения 0
-            ch.level = 0
-        
+            # все очищаем
+            sw = ch.send_wait()
+            ch.clear_mess(-100, True)
             # отправляем сообщение, что соединение разорвано
-            if ch.user == 0:   
+            if ch.user == None:   
                     ch.send_message(    "Message.Timeout",
                                         "",
-                                        ["Button.Registration"],
-                                        -100
+                                        ["Button.Registration"]
                                     )
             else:        
                     ch.send_message(    "Message.Timeout",
-                                    "",
-                                    ["Button.Authorization"],
-                                    -100
-                                )
+                                        "",
+                                        ["Button.Authorization"]
+                                    )
+            ch.delete_message(sw)
             lc.append(id)
             
     for id in lc:
-        # удаляем чат из списков
-        DTB_Chat.list_chat.pop(id)      
-        lc.append(id)
-        
-    for id in lc:
         # удаляем чат из списков        
-        DTB_Chat.list_chat.pop(id)    
+        try:
+            DTB_Chat.list_chat.pop(id)
+        except:
+            r=0    
 
     # создаем и запускаем таймер
     clear_timer = threading.Timer(DTB_Cfg.cfg.gi("ChatLifeTimeInterval"), on_clear_timer)

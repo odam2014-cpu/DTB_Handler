@@ -6,15 +6,12 @@ def AuthHandler(_ch, _ms):
     Если пользователь уже авторизован — уведомляет об этом.
     Иначе переводит в режим ввода пароля.
     """
-    if _ch.auth:
-        _ch.send_message("AlreadyAuthorized", "", None, -2)
-    else:
-        _ch.step = "Authorization"
-        _ch.send_message(
-            "AuthorizationProcess",
-            "",
-            ["Button.CancelRegistration"]
-        )
+    _ch.step = "Authorization"
+    _ch.send_message(
+        "AuthorizationProcess",
+        "",
+        ["Button.RecoveryAuthorization"]
+    )
 
 
 def AuthorizationProcessHandler(_ch, _ms):
@@ -32,7 +29,6 @@ def AuthorizationProcessHandler(_ch, _ms):
     # Проверка пароля через функцию (лучше инкапсулировать логику проверки)
     if  _ch.user.check_password(input_password):
         _ch.step = ""
-        _ch.auth = True
         _ch.send_message(
             "MainMenu",
             "",

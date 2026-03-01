@@ -89,7 +89,63 @@
         "Name":"Token.Get",
         "Text":"Ваш новый токен :"
     },
+    {
+        "Name":"Button.RecoveryAuthorization",
+        "Text":"Восстановление доступа",
+        "Command":"RecoveryAuthorization"
+    },
 
+    {
+        "Name":"Button.Menu.About",
+        "Text":"О сервисе",
+        "Command":"MenuAbout"
+    },
+
+    {
+        "Name":"Button.Menu.Auth",
+        "Text":"Изменить доступ",
+        "Command":"MenuAuth"
+    },
+
+    {
+        "Name":"Button.Menu.DeleteChat",
+        "Text":"Удалить чат из сервиса",
+        "Command":"MenuDeleteChat"
+    },
+    {
+        "Name":"Button.Menu.DeleteUser",
+        "Text":"Отказаться от использования сервиса",
+        "Command":"MenuDeleteUser"
+    },
+    {
+        "Name":"MainMenu",
+        "Text":"Выберите команду меню Бота или получите <b>Новый токен</b>."
+    },
+    {
+        "Name":"Button.Menu.Exit",
+        "Text":"Выход из меню",
+        "Command":"MenuExit"
+    },
+    {
+        "Name":"Button.Menu.DelChat.Yes",
+        "Text":"ДА - удалить текущий чат",
+        "Command":"MenuDelChatYes"
+    },
+    {
+        "Name":"Button.Menu.DelChat.No",
+        "Text":"НЕТ - отказаться от удаления",
+        "Command":"MenuDelChatNo"
+    },
+    {
+        "Name":"Button.Menu.DelUser.Yes",
+        "Text":"ДА - отказаться от сервиса",
+        "Command":"MenuDelUserYes"
+    },
+    {
+        "Name":"Button.Menu.DelUser.No",
+        "Text":"НЕТ - остаться в сервисе",
+        "Command":"MenuDelUserNo"
+    },
 
 
     {
@@ -237,12 +293,8 @@
         "Text":"Токен восстановления доступа <s>%%%</s> для пользователя <b>%%%</b>."
     },
     {
-        "Name":"Main.Menu",
-        "Text":"Выберите команду"
-    },
-    {
         "Name":"Password.Check.Final",
-        "Text":"Доступ <b>Разрешен</b>. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+        "Text":"Доступ <b>Разрешен</b>. Для продолжения перейдите в <b>Главное меню</b> "
     },
     {
         "Name":"Password.Check.Error",

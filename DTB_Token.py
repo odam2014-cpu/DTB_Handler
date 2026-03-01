@@ -12,7 +12,7 @@ class c_token:
         # выдаем сообщение
         self.ch.send_message("Token.Get", "", None, -100)
         # выдаем новый токен
-        self.ch.send_message("",  f"<tg-spoiler><b>{self.timer}</b></tg-spoiler>", [["Button.MainMenu"],["Button.GetNewToken"]], -99)
+        self.ch.send_message("",  f"<tg-spoiler><b>{self.token}</b></tg-spoiler>", [["Button.MainMenu"],["Button.GetNewToken"]], -99)
         
         self.lock = threading.Lock()    # создаем блокировку
         self.timer = threading.Timer(   # оздаем таймер жизни токена
@@ -26,6 +26,12 @@ class c_token:
         if self.enable:
             self.timer.cancel()
             self.enable = False
+            self.ch.send_message(   "Token.IsDeactive",          # ключ сообщения
+                                    self.token,                  # доп.текст - бывший токен
+                                    [["Button.MainMenu"],["Button.GetNewToken"]],
+                                    -100
+                            )
+
         self.lock.release()
         
     def check(self, _tk = None):

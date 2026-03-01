@@ -5,11 +5,11 @@ import DTB_Log
 import DTB_Res
 
 class c_BotTelegram(BOT.DTB_Bot.c_Bot):
-    def __init__(self, _name, _token):
-        super().__init__()  
-        self.name = _name      
-        self.Bot  = telebot.TeleBot(_token)    # регистрим бота
-        DTB_Log.log(f"Бот {_name} подключен")
+    def __init__(self, _param):
+        super().__init__(_param)  
+        
+        self.Bot  = telebot.TeleBot(self.token)    # регистрим бота
+        DTB_Log.log(f"Бот {self.name} подключен")
 
 # переопределение обработчика сообщений всех типов
         @self.Bot.message_handler(content_types=["text", "audio", "document", "photo", "sticker", "video", "video_note", "voice", "location", "contact",
@@ -32,7 +32,7 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
         @self.Bot.callback_query_handler()
         def handler_call(_cb):
             # вызов шлюза
-            self.gate(self.name, _cb.message.chat.id, _cb.message.id, _cb.data, "")
+            self.gate(self.name, _cb.message.chat.id, None, _cb.data, "")
     
     def clear_button(   self,
                         _id,

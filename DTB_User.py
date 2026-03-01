@@ -4,6 +4,7 @@ import DTB_Utils
 list_user = {}
 class c_User:
     def __init__(self, _id):
+        self.current_token = None
         lm = DTB_DB.DB.get_user(_id)
         self.id         = _id
         if len(lm) > 0:
@@ -28,6 +29,12 @@ class c_User:
         else:
             return False        
             
+    def set_token(self, _token):
+        if self.current_token != None:
+            self.current_token.close()
+        
+        self.current_token = _token
+        
 def get_user(_id):
     us = None
     try:
@@ -45,5 +52,4 @@ def set_user(_id, _recovery, _password):
         us = c_User(_id)
     us.set_user(_recovery, _password)
     return us
-
 

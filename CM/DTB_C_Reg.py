@@ -3,6 +3,7 @@ import CM.DTB_C_Start
 import DTB_User
 import BOT.DTB_Bot
 import CM.DTB_C_Pass
+import CM.DTB_C_Auth
 import DTB_Utils
 
 
@@ -26,11 +27,7 @@ def ContactHandler(_ch, _ms):
         if us != None:
             _ch.step = ""
             _ch.set_user(us)
-            _ch.send_message(
-                        "SetUserToChat.Final",
-                        "",
-                        [["Button.MainMenu"],["Button.GetNewToken"]]
-                    )
+            CM.DTB_C_Auth.AuthHandler(_ch, _ms)
             
         else:
             RecoveryBotInput(_ch, _ms)            
@@ -52,17 +49,32 @@ def RecoveryBotInput(_ch, _ms):
                         ["Button.CancelCurrentOperation"],
                         -1
                     )
-            
+
+def RecoveryStartHandler(_ch, _ms):
+    _ms["text"] = _ch.user.recovery
+    
+    _ch.send_message(
+                "RecoveryHeader"
+                )
+
+    _ch.send_message(
+                "RecoveryHeaderSendToken",
+                "",
+                None,
+                1
+            )
+    RecoveryBotHandler(_ch, _ms)
+
 def RecoveryBotHandler(_ch, _ms):
     _ch.recovery = _ms["text"]
     _ch.token    = DTB_Utils.get_token()
     BOT.DTB_Bot.recovery_bot.send_message(
-                        _ms["text"],
+                        _ch.recovery,
                         "RecoverySendToken",
                         _ch.phone
                     )
     BOT.DTB_Bot.recovery_bot.send_message(
-                        _ms["text"],
+                        _ch.recovery,
                         "",
                         _ch.token 
                     )
@@ -74,6 +86,7 @@ def RecoveryBotHandler(_ch, _ms):
                         [["Button.RecoveryBot"], ["Button.CancelCurrentOperation"]],
                         -1
                 )
+                      
     
 def RecoveryBotTokenHandler(_ch, _ms):
     if _ch.token == _ms["text"]:
