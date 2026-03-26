@@ -1,0 +1,40 @@
+2026-03-15 09:56:36
+HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+TLG_DEL_MES
+
+2026-03-15 09:57:53
+HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+Ошибка on_clearmess_timer/ Start.Main : TLG_Main991033097
+
+2026-03-15 09:58:09
+HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+TLG_DEL_MES
+
+2026-03-15 11:16:46
+HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+Ошибка on_clearmess_timer/ Start.Main : TLG_Main7220161970
+
+2026-03-15 13:24:47
+HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+TLG_DEL_MES
+
+2026-03-15 18:46:36
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+TLG_DEL_MES
+
+2026-03-15 18:46:37
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+TLG_DEL_MES
+
+2026-03-15 18:46:37
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+TLG_DEL_MES
+
+2026-03-15 18:46:46
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+TLG_DEL_MES
+
+2026-03-15 18:47:07
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message to delete not found
+TLG_DEL_MES
+

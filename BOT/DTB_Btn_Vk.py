@@ -14,23 +14,31 @@ def create( _bt     # список ключей конпок
         for bt in _lb:
             # добавляем inline кнопку в список кнопок 
             markup.add_callback_button(DTB_Res.get_text(bt, ""), color=VkKeyboardColor.PRIMARY, payload={"data": DTB_Res.get_comm(bt)})
-        
-        markup.add_line()
     
     markup = None
-    
+    first  = True
     # список кнопок есть
     if _bt != None:
         # создаем inline клавиатуру
-        markup  = VkKeyboard(inline=True)
+        markup  = VkKeyboard(inline=False)
 
-        for b1 in _bt:
-            # если элемент списка - список ключей
-            if type(b1) is list:
-                # добавляем строку клавиатуры, получаем флаг кнопки токена
-                add(b1)    
-            else:
-                # если элемент не список, получаем флаг кнопки токена
-                add([b1])    
+        if _bt == ["CONTACT"]:
+            markup.add_callback_button(DTB_Res.get_text("Button.SendContact", ""), color=VkKeyboardColor.PRIMARY, payload={"data": DTB_Res.get_comm("Button.SendContact")})
+            markup.add_line()
+            markup.add_callback_button(DTB_Res.get_text("Button.CancelRegistration", ""), color=VkKeyboardColor.PRIMARY, payload={"data": DTB_Res.get_comm("Button.CancelRegistration")})
+        else:
+            for b1 in _bt:
+                if first:
+                    first = False
+                else:
+                    markup.add_line()
+        
+                # если элемент списка - список ключей
+                if type(b1) is list:
+                    # добавляем строку клавиатуры, получаем флаг кнопки токена
+                    add(b1)    
+                else:
+                    # если элемент не список, получаем флаг кнопки токена
+                    add([b1])    
 
         return markup

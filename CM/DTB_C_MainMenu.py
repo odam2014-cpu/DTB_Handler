@@ -13,7 +13,7 @@ def MenuDelChatYesHandler(_ch, _ms):
 def MainAboutHandler(_ch, _ms):
     _ch.send_message(   
                         "MenuAbout",
-                        "",
+                        _ch.user.id,
                         [["Button.MainMenu"], ["Button.GetNewToken"]]   
                     )
 

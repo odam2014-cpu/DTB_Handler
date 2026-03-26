@@ -5,7 +5,7 @@ import os
 LOG_DIR = 'log'
 os.makedirs(LOG_DIR, exist_ok=True)  # Упрощаем создание папки: exist_ok избавляет от проверки
 
-def log(e, m=""):
+def log(e, m="", f=""):
     """
     Записывает сообщение об ошибке/событии в лог-файл с датой и временем.
     :param e: Основное сообщение (например, ошибка)
@@ -13,7 +13,7 @@ def log(e, m=""):
     """
     # Формируем имя файла лога по дате
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
-    log_file = os.path.join(LOG_DIR, f"{date_str}.log")
+    log_file = os.path.join(LOG_DIR, f"{date_str}{f}.log")
     
     # Формируем временную метку
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

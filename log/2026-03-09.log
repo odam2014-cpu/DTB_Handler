@@ -1,0 +1,524 @@
+2026-03-09 13:55:04
+Бот MAX_Main подключен
+
+2026-03-09 13:55:04
+Бот TLG_Main подключен
+
+2026-03-09 13:55:04
+Бот TLG_Second подключен
+
+2026-03-09 13:55:04
+Бот VK_Main подключен
+
+2026-03-09 13:55:04
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 13:55:04
+DTB запущен
+
+2026-03-09 13:55:36
+[100] One of the parameters specified was missing or invalid: message_id not integer
+DEL_MES
+
+2026-03-09 13:55:36
+[100] One of the parameters specified was missing or invalid: message_id not integer
+DEL_MES
+
+2026-03-09 13:55:37
+[100] One of the parameters specified was missing or invalid: message_id not integer
+DEL_MES
+
+2026-03-09 13:58:01
+Бот MAX_Main подключен
+
+2026-03-09 13:58:01
+Бот TLG_Main подключен
+
+2026-03-09 13:58:01
+Бот VK_Main подключен
+
+2026-03-09 13:58:01
+Бот TLG_Second подключен
+
+2026-03-09 13:58:01
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 13:58:01
+DTB запущен
+
+2026-03-09 14:03:36
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /messages?message_id=mid.000000000de64379019cd2406dee2f17 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))
+DEL_MES
+
+2026-03-09 14:11:52
+Бот MAX_Main подключен
+
+2026-03-09 14:11:52
+Бот TLG_Main подключен
+
+2026-03-09 14:11:52
+Бот VK_Main подключен
+
+2026-03-09 14:11:52
+Бот TLG_Second подключен
+
+2026-03-09 14:11:52
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 14:11:52
+DTB запущен
+
+2026-03-09 14:18:28
+Бот MAX_Main подключен
+
+2026-03-09 14:18:28
+Бот TLG_Main подключен
+
+2026-03-09 14:18:28
+Бот TLG_Second подключен
+
+2026-03-09 14:18:28
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 14:18:28
+Бот VK_Main подключен
+
+2026-03-09 14:18:37
+DTB запущен
+
+2026-03-09 14:20:21
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-03-09 14:20:36
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-03-09 14:26:06
+Бот MAX_Main подключен
+
+2026-03-09 14:26:06
+Бот TLG_Main подключен
+
+2026-03-09 14:26:06
+Бот VK_Main подключен
+
+2026-03-09 14:26:06
+Бот TLG_Second подключен
+
+2026-03-09 14:26:06
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 14:26:06
+DTB запущен
+
+2026-03-09 14:33:55
+Бот MAX_Main подключен
+
+2026-03-09 14:33:55
+Бот TLG_Main подключен
+
+2026-03-09 14:33:55
+Бот TLG_Second подключен
+
+2026-03-09 14:33:55
+Бот VK_Main подключен
+
+2026-03-09 14:33:55
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 14:33:55
+DTB запущен
+
+2026-03-09 14:45:03
+Бот MAX_Main подключен
+
+2026-03-09 14:45:03
+Бот VK_Main подключен
+
+2026-03-09 14:45:03
+Бот TLG_Main подключен
+
+2026-03-09 14:45:03
+Бот TLG_Second подключен
+
+2026-03-09 14:45:03
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 14:45:03
+DTB запущен
+
+2026-03-09 16:48:07
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+Ошибка on_clearmess_timer/ Start.Main : VK_Main1052448277
+
+2026-03-09 16:48:08
+[100] One of the parameters specified was missing or invalid: message_id not integer
+DEL_MES
+
+2026-03-09 16:58:50
+Бот MAX_Main подключен
+
+2026-03-09 16:58:50
+Бот TLG_Main подключен
+
+2026-03-09 16:58:50
+Бот VK_Main подключен
+
+2026-03-09 16:58:50
+Бот TLG_Second подключен
+
+2026-03-09 16:58:50
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 16:58:50
+DTB запущен
+
+2026-03-09 17:02:13
+[100] One of the parameters specified was missing or invalid: message_id not integer
+VK_DEL_MES
+
+2026-03-09 17:03:54
+[100] One of the parameters specified was missing or invalid: message_id not integer
+VK_DEL_MES
+
+2026-03-09 17:09:08
+Бот MAX_Main подключен
+
+2026-03-09 17:09:08
+Бот TLG_Second подключен
+
+2026-03-09 17:09:08
+Бот VK_Main подключен
+
+2026-03-09 17:09:08
+Бот TLG_Main подключен
+
+2026-03-09 17:09:08
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 17:09:08
+DTB запущен
+
+2026-03-09 17:11:07
+Бот MAX_Main подключен
+
+2026-03-09 17:11:07
+Бот TLG_Main подключен
+
+2026-03-09 17:11:07
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 17:11:07
+Бот TLG_Second подключен
+
+2026-03-09 17:11:07
+Бот VK_Main подключен
+
+2026-03-09 17:11:07
+DTB запущен
+
+2026-03-09 17:16:40
+[100] One of the parameters specified was missing or invalid: message_ids or cmids is undefined
+VK_DEL_MES
+
+2026-03-09 17:18:27
+Бот MAX_Main подключен
+
+2026-03-09 17:18:28
+Бот TLG_Main подключен
+
+2026-03-09 17:18:28
+Бот TLG_Second подключен
+
+2026-03-09 17:18:28
+Бот VK_Main подключен
+
+2026-03-09 17:18:28
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 17:18:28
+DTB запущен
+
+2026-03-09 17:20:31
+Бот MAX_Main подключен
+
+2026-03-09 17:20:31
+Бот TLG_Main подключен
+
+2026-03-09 17:20:31
+Бот TLG_Second подключен
+
+2026-03-09 17:20:31
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 17:20:31
+Бот VK_Main подключен
+
+2026-03-09 17:20:31
+DTB запущен
+
+2026-03-09 17:24:38
+Бот MAX_Main подключен
+
+2026-03-09 17:24:38
+Бот TLG_Main подключен
+
+2026-03-09 17:24:38
+Бот VK_Main подключен
+
+2026-03-09 17:24:38
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 17:24:38
+Бот TLG_Second подключен
+
+2026-03-09 17:24:38
+DTB запущен
+
+2026-03-09 17:28:42
+[100] One of the parameters specified was missing or invalid: message_ids or cmids is undefined
+VK_DEL_MES
+
+2026-03-09 18:17:26
+[100] One of the parameters specified was missing or invalid: message_ids or cmids is undefined
+VK_DEL_MES
+
+2026-03-09 18:21:08
+Бот MAX_Main подключен
+
+2026-03-09 18:21:08
+Бот TLG_Main подключен
+
+2026-03-09 18:21:08
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 18:21:08
+Бот VK_Main подключен
+
+2026-03-09 18:21:08
+Бот TLG_Second подключен
+
+2026-03-09 18:21:08
+DTB запущен
+
+2026-03-09 18:30:14
+Бот MAX_Main подключен
+
+2026-03-09 18:30:14
+Бот TLG_Main подключен
+
+
+2026-03-09 18:30:14
+Бот VK_Main подключен
+
+2026-03-09 18:30:14
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 18:30:14
+DTB запущен
+
+2026-03-09 19:08:09
+Бот MAX_Main подключен
+
+2026-03-09 19:08:09
+Бот TLG_Main подключен
+
+2026-03-09 19:08:09
+Бот VK_Main подключен
+
+
+
+2026-03-09 19:08:09
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:08:09
+DTB запущен
+
+2026-03-09 19:10:29
+Бот MAX_Main подключен
+
+2026-03-09 19:10:29
+Бот TLG_Main подключен
+
+2026-03-09 19:10:29
+Бот TLG_Second подключен
+
+2026-03-09 19:10:29
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:10:29
+Бот VK_Main подключен
+
+2026-03-09 19:10:29
+DTB запущен
+
+2026-03-09 19:12:28
+Бот MAX_Main подключен
+
+2026-03-09 19:12:28
+Бот TLG_Main подключен
+
+2026-03-09 19:12:28
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:12:28
+Бот VK_Main подключен
+
+2026-03-09 19:12:28
+Бот TLG_Second подключен
+
+2026-03-09 19:12:28
+DTB запущен
+
+2026-03-09 19:18:11
+[100] One of the parameters specified was missing or invalid: message_ids or cmids is undefined
+VK_DEL_MES
+
+2026-03-09 19:34:56
+Бот MAX_Main подключен
+
+2026-03-09 19:34:56
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:34:56
+Бот VK_Main подключен
+
+
+
+2026-03-09 19:34:56
+DTB запущен
+
+2026-03-09 19:38:08
+Бот MAX_Main подключен
+
+2026-03-09 19:38:08
+Бот TLG_Second подключен
+
+2026-03-09 19:38:08
+Бот TLG_Main подключен
+
+2026-03-09 19:38:08
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:38:08
+Бот VK_Main подключен
+
+2026-03-09 19:38:08
+DTB запущен
+
+2026-03-09 19:39:29
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-03-09 19:43:39
+[100] One of the parameters specified was missing or invalid: message_ids or cmids is undefined
+VK_DEL_MES
+
+2026-03-09 19:47:00
+Бот MAX_Main подключен
+
+2026-03-09 19:47:00
+Бот TLG_Main подключен
+
+2026-03-09 19:47:00
+Бот VK_Main подключен
+
+
+
+2026-03-09 19:47:00
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:47:00
+DTB запущен
+
+2026-03-09 19:47:46
+Бот MAX_Main подключен
+
+2026-03-09 19:47:46
+Бот TLG_Main подключен
+
+2026-03-09 19:47:46
+Бот TLG_Second подключен
+
+2026-03-09 19:47:46
+Бот VK_Main подключен
+
+2026-03-09 19:47:46
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:47:46
+DTB запущен
+
+2026-03-09 19:48:42
+Бот MAX_Main подключен
+
+2026-03-09 19:48:42
+Бот TLG_Main подключен
+
+2026-03-09 19:48:42
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:48:42
+Бот VK_Main подключен
+
+2026-03-09 19:48:42
+Бот TLG_Second подключен
+
+2026-03-09 19:48:42
+DTB запущен
+
+2026-03-09 19:52:28
+Бот MAX_Main подключен
+
+2026-03-09 19:52:28
+Бот TLG_Main подключен
+
+2026-03-09 19:52:28
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 19:52:28
+Бот VK_Main подключен
+
+2026-03-09 19:52:28
+Бот TLG_Second подключен
+
+2026-03-09 19:52:28
+DTB запущен
+
+2026-03-09 20:00:22
+Бот MAX_Main подключен
+
+2026-03-09 20:00:22
+Бот TLG_Main подключен
+
+2026-03-09 20:00:22
+Бот VK_Main подключен
+
+2026-03-09 20:00:22
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 20:00:22
+Бот TLG_Second подключен
+
+2026-03-09 20:00:22
+DTB запущен
+
+2026-03-09 20:07:46
+Бот MAX_Main подключен
+
+2026-03-09 20:07:46
+Бот TLG_Main подключен
+
+2026-03-09 20:07:46
+Бот TLG_Second подключен
+
+2026-03-09 20:07:46
+Бот VK_Main подключен
+
+2026-03-09 20:07:46
+Бот DTB_RECOVERY_BOT подключен
+
+2026-03-09 20:07:46
+DTB запущен
+

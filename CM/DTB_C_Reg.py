@@ -5,6 +5,7 @@ import BOT.DTB_Bot
 import CM.DTB_C_Pass
 import CM.DTB_C_Auth
 import DTB_Utils
+import time
 
 
 def Start(_ch, _ms):
@@ -18,19 +19,31 @@ def Start(_ch, _ms):
                 "RegistrationPhone",
                 "",
                 ["CONTACT"],
-                1
+                5
             )
+    
 def ContactHandler(_ch, _ms):
+    
     if _ms["phone"] != "":
         _ch.phone = _ms["phone"]
-        us = DTB_User.get_user(_ch.phone)
-        if us != None:
-            _ch.step = ""
-            _ch.set_user(us)
-            CM.DTB_C_Auth.AuthHandler(_ch, _ms)
-            
+        if _ch.phone == "NONE":
+            _ch.send_message(
+                    "CreateSimpleUser",
+                    "",
+                    [
+                        ["Button.CreateSimpleUserYes"],
+                        ["Button.CreateSimpleUserNo"]
+                    ],
+                    5
+                )
         else:
-            RecoveryBotInput(_ch, _ms)            
+            us = DTB_User.get_user(_ch.phone)
+            _ch.step = ""
+            if us != None:
+                _ch.set_user(us)
+                CM.DTB_C_Auth.AuthHandler(_ch, _ms)
+            else:
+                RecoveryBotInput(_ch, _ms)            
     else:
         if _ms["text"] == DTB_Res.get_text("Button.CancelRegistration"):
             CM.DTB_C_Start.Start(_ch, _ms)
@@ -47,7 +60,7 @@ def RecoveryBotInput(_ch, _ms):
                         "Recovery.Bot",
                         "",
                         ["Button.CancelCurrentOperation"],
-                        -1
+                        5
                     )
 
 def RecoveryStartHandler(_ch, _ms):
@@ -84,7 +97,7 @@ def RecoveryBotHandler(_ch, _ms):
     _ch.send_message(   "RecoveryToken",
                         "",
                         [["Button.RecoveryBot"], ["Button.CancelCurrentOperation"]],
-                        -1
+                        5
                 )
                       
     
@@ -98,3 +111,9 @@ def RecoveryBotTokenHandler(_ch, _ms):
                     -2
             )
             
+def CreateSimpleUserHandler(_ch, _ms):
+        _ms["phone"] = str(int(time.time())) 
+        ContactHandler(_ch, _ms)
+            
+            
+        

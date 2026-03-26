@@ -1,14 +1,21 @@
+import DTB_Kbrd
+
 def PasswordFirstInput(_ch, _ms):
     _ch.step = "Password.First"
     _ch.send_message(   "PasswordFirst",
                         "",
                         ["Button.CancelCurrentOperation"],
-                        -1
+                        5
                 )
+    if _ch.Opt_Auth == "INLINE":
+            DTB_Kbrd.KeyboardInit(_ch, _ms)
 
 def PasswordFirstHandler(_ch, _ms):
     ps = _ms["text"]
     if len(ps) < 4:
+        if _ch.Opt_Auth == "INLINE":
+            DTB_Kbrd.KeyboardInit(_ch, _ms)
+
         _ch.send_message(   "PasswordFirstError",
                             "",
                             None,
@@ -20,12 +27,17 @@ def PasswordFirstHandler(_ch, _ms):
         _ch.send_message(   "PasswordSecond",
                             "",
                             ["Button.CancelCurrentOperation"],
-                            -1
+                            5
                     )
+        if _ch.Opt_Auth == "INLINE":
+                DTB_Kbrd.KeyboardInit(_ch, _ms)
     
 def PasswordSecondHandler(_ch, _ms):
     ps = _ms["text"]
     if _ch.pasw != ps:
+        if _ch.Opt_Auth == "INLINE":
+            DTB_Kbrd.KeyboardInit(_ch, _ms)
+
         _ch.send_message(   "PasswordSecondtError",
                             "",
                             None,

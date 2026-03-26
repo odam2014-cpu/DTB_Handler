@@ -59,7 +59,7 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
                                         _ms    # ид сообщения
                                 )
         except Exception as e:  
-            DTB_Log.log(e, "DEL_MES")
+            DTB_Log.log(e, "TLG_DEL_MES")
 
     def send_message(   self,
                         _id,                    # ид чата
@@ -92,4 +92,12 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
                             )
            
         return mID.id
+    
+    def send_wait(self, _id):
+            
+        return self.send_message(
+                                _id,
+                                "",
+                                "💤"   # эмоджи
+                            )
 

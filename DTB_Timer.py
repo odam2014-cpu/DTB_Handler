@@ -59,22 +59,25 @@ def on_clear_timer():
         # проверям, что интервал привышает установленный в конфигурации
         if dt.total_seconds() > DTB_Cfg.cfg.gi("ChatLifeTime"):
             # все очищаем
-            sw = ch.send_wait()
-            ch.clear_mess(-100, True)
-            # отправляем сообщение, что соединение разорвано
-            if ch.user == None:   
-                    ch.send_message(    "Message.Timeout",
-                                        "",
-                                        ["Button.Registration"]
-                                    )
-            else:        
-                    ch.send_message(    "Message.Timeout",
-                                        "",
-                                        ["Button.Authorization"]
-                                    )
-            ch.delete_message(sw)
-            lc.append(id)
-            
+            try:
+                sw = ch.send_wait()
+                ch.clear_mess(-100, True)
+                # отправляем сообщение, что соединение разорвано
+                if ch.user == None:   
+                        ch.send_message(    "Message.Timeout",
+                                            "",
+                                            ["Button.Registration"]
+                                        )
+                else:        
+                        ch.send_message(    "Message.Timeout",
+                                            "",
+                                            ["Button.Authorization"]
+                                        )
+                ch.delete_message(sw)
+                lc.append(id)
+            except:
+                r=0  
+                             
     for id in lc:
         # удаляем чат из списков        
         try:

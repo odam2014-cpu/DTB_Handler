@@ -147,6 +147,84 @@
         "Command":"MenuDelUserNo"
     },
 
+    {
+        "Name":"KeyboardInline",
+        "Text":"Введите код доступа: <b>%%%</b>"
+    },
+
+    {
+        "Name":"Button.KBRD.0",
+        "Text":"0",
+        "Command":"KBRD.0"
+    },
+    {
+        "Name":"Button.KBRD.1",
+        "Text":"1",
+        "Command":"KBRD.1"
+    },
+    {
+        "Name":"Button.KBRD.2",
+        "Text":"2",
+        "Command":"KBRD.2"
+    },
+    {
+        "Name":"Button.KBRD.3",
+        "Text":"3",
+        "Command":"KBRD.3"
+    },
+    {
+        "Name":"Button.KBRD.4",
+        "Text":"4",
+        "Command":"KBRD.4"
+    },
+    {
+        "Name":"Button.KBRD.5",
+        "Text":"5",
+        "Command":"KBRD.5"
+    },
+    {
+        "Name":"Button.KBRD.6",
+        "Text":"6",
+        "Command":"KBRD.6"
+    },
+    {
+        "Name":"Button.KBRD.7",
+        "Text":"7",
+        "Command":"KBRD.7"
+    },
+    {
+        "Name":"Button.KBRD.8",
+        "Text":"8",
+        "Command":"KBRD.8"
+    },
+    {
+        "Name":"Button.KBRD.9",
+        "Text":"9",
+        "Command":"KBRD.9"
+    },
+    {
+        "Name":"Button.KBRD.Cancel",
+        "Text":"Сброс",
+        "Command":"KBRD.Cancel"
+    },
+    {
+        "Name":"CreateSimpleUser",
+        "Text":"Не удалось получить Ваш контакт. Создать локального пользователя чата?"
+    },
+    {
+        "Name":"Button.CreateSimpleUserYes",
+        "Text":"ДА - создать",
+        "Command":"CreateSimpleUserYes"
+    },
+    {
+        "Name":"Button.CreateSimpleUserNo",
+        "Text":"НЕТ - не нужно",
+        "Command":"CreateSimpleUserNo"
+    },
+    {
+        "Name":"MenuAbout",
+        "Text":"Бот-генерации токенов доступа v.1.2. Идентификатор внешнего доступа: <b><code>%%%</code></b> "
+    },
 
     {
         "Name":"Button.PasswordRecoverSkipYes",

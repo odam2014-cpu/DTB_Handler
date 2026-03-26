@@ -4,7 +4,7 @@ import vobject
 import BOT.DTB_Bot
 import DTB_Log
 import DTB_Res
-
+import BOT.DTB_Btn_Max
 
 class c_BotApiMax(BOT.DTB_Bot.c_Bot):
     def __init__(self, _token):
@@ -21,14 +21,26 @@ class c_BotApiMax(BOT.DTB_Bot.c_Bot):
         
     def GetUpdates(self):
         req = requests.get(url = self.GET_url, params=self.GET_params, headers=self.header)
-        return json.loads(req.text)
+        upd = json.loads(req.text)  
+        self.GET_params["marker"] = upd["marker"]
+        return upd
         
     def DeleteMessage(self, _id, _ms):
         params = {
             "message_id": _ms
         }
         req = requests.delete(url = self.MES_url, params=params, headers=self.header)
-
+        return json.loads(req.text)
+        
+        
+    def SendBody(self, _id, _body):
+        params = {
+                    "user_id"               : _id,
+                    "disable_link_preview"  : "False"
+                }
+        req = requests.post(url = self.MES_url, params=params, headers=self.header, json=_body)
+        return req
+    
     def SendMessage(self, _id, _txt, _parse_mode="html", _reply_markup=None):        
         params = {
                     "user_id"               : _id,
@@ -42,7 +54,8 @@ class c_BotApiMax(BOT.DTB_Bot.c_Bot):
         if _reply_markup != None:
              body["attachments"] = _reply_markup
 
-        req = requests.post(url = self.MES_url, params=params, headers=self.header, json=body)
+        req = self.SendBody(_id, body)
+
         return json.loads(req.text)
         
     def EditMessage(self, _ms, _id=None, _txt=None, _parse_mode="html", _reply_markup=None):
@@ -76,7 +89,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                         _ms    
                    ):
         try:  
-            self.Bot.EditMessage (_ms)   
+            self.Bot.EditMessage (_ms=_ms, _reply_markup=[])   
         except Exception as e:  
             DTB_Log.log(e, "DEL_MES_BTN") 
 
@@ -108,7 +121,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                                         vcf = up["message"]["body"]["attachments"][0]["payload"]["vcf_info"]
                                         vobj = vobject.readOne(stream=vcf, allowQP=True)
                                         pho = vobj.tel.value
-                                
+                                DTB_Log.log(up, "txt", "_max")
                                 self.gate(  self.name, 
                                             up["message"]["sender"]["user_id"], 
                                             up["message"]["body"]["mid"], 
@@ -117,6 +130,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                                             pho)
 
                             case "message_callback":
+                                DTB_Log.log(up, "clb", "_max")
                                 self.gate(  self.name, 
                                             up["callback"]["user"]["user_id"], 
                                             None, 
@@ -131,8 +145,31 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                     ):
         try:
             self.Bot.DeleteMessage(_id, _ms)
+            DTB_Log.log(_ms, "del", "_max")
+
         except Exception as e:  
-            DTB_Log.log(e, "DEL_MES")
+            DTB_Log.log(e, "MAX_DEL_MES")
+
+    def edit_message(   self,
+                        _ms,
+                        _id,                    # ид чата
+                        _key,                   # ключ сообщения
+                        _ins,                   # вставки в сообщение
+                        _btn   = None           # кнопки
+    ):
+        txt = self.build_message(_key, _ins)
+        btn = BOT.DTB_Btn_Max.create(_btn)
+        img = DTB_Res.get_image(_key)
+            
+        req = self.Bot.EditMessage(
+                        _id,             # ид чата
+                        _ms,             # ид сообщения
+                        txt,             # текст сообщения
+                        "html",          # признак, что формат HTML
+                        btn              # клавиатура
+                    )
+        DTB_Log.log(_ms, "edt", "_max")
+        return _ms
 
     def send_message(   self,
                         _id,                    # ид чата
@@ -150,6 +187,41 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                         "html",          # признак, что формат HTML
                         btn              # клавиатура
                     )
+        try:
+            mid = req["message"]["body"]["mid"]
+            DTB_Log.log(mid, "snd", "_max")
+        except Exception as e:
+            mid = None       
+            DTB_Log.log(e, "snd-err", "_max")
+        return mid
         
-        return req["Message"]["mid"]
         
+    def send_wait(self, _id):
+        params = {
+                    "user_id"               : _id,
+                    "disable_link_preview"  : "False"
+                    }
+
+        body = {
+                "text"          : "",
+                "attachments"   :   [
+                                        {
+                                            "type"  : "sticker",
+                                            "payload" : {
+                                                "code" : "10d2970bb"
+                                            }
+                                        }
+                                    ]
+        }
+
+        req = self.Bot.SendBody(_id, body)
+        try:
+            mid = json.loads(req.text)["message"]["body"]["mid"]
+            DTB_Log.log(mid, "snd", "_max")
+        except Exception as e:          
+            DTB_Log.log(e, "snd-err", "_max")
+            mid = None
+        return mid
+
+       
+#🔥⚡️🎉

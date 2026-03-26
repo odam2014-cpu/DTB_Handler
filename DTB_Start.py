@@ -5,6 +5,8 @@ import BOT.DTB_Bot_Tlg_Chat
 import BOT.DTB_Bot_Tlg_Recovery
 import BOT.DTB_Bot_Vk
 import BOT.DTB_Bot_Max_Chat
+import BOT.DTB_Bot_Max_Recovery
+
 
 # стартуем
 def start(_bt):
@@ -18,12 +20,15 @@ def start(_bt):
             BOT.DTB_Bot.list_bot[_bt["Name"]] = bot
             bot.start()
         case "VK":
-            #bot = BOT.DTB_Bot_Vk.c_BotVk(_bt)
-            #BOT.DTB_Bot.list_bot[_bt["Name"]] = bot
-            #bot.start()
-            t=0
+            bot = BOT.DTB_Bot_Vk.c_BotVk(_bt)
+            BOT.DTB_Bot.list_bot[_bt["Name"]] = bot
+            bot.start()
         case "TLG_Recovery":
             bot = BOT.DTB_Bot_Tlg_Recovery.c_BotTelegramRecovery(_bt)
+            #BOT.DTB_Bot.recovery_bot = bot
+            #bot.start()
+        case "MAX_Recovery":
+            bot = BOT.DTB_Bot_Max_Recovery.c_BotMaxRecovery(_bt)
             BOT.DTB_Bot.recovery_bot = bot
             bot.start()
         

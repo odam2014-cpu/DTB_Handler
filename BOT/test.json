@@ -1,8 +1,122 @@
-{'version': [<VERSION{}3.0>
-    ], 'prodid': [<PRODID{}ez-vcard 0.10.3>
-    ], 'tel': [<TEL{'TYPE': ['cell'
-            ]
-        }79175560062>
-    ], 'fn': [<FN{}Дмитрий Марков>
+{
+    "one_time": false,
+    "inline": true,
+    "buttons": [
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.7\\"}",
+                    "label": "7"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.8\\"}",
+                    "label": "8"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.9\\"}",
+                    "label": "9"
+                }
+            }
+        ],
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.4\\"}",
+                    "label": "4"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.5\\"}",
+                    "label": "5"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.6\\"}",
+                    "label": "6"
+                }
+            }
+        ],
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.3\\"}",
+                    "label": "3"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.2\\"}",
+                    "label": "2"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.1\\"}",
+                    "label": "1"
+                }
+            }
+        ],
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.0\\"}",
+                    "label": "0"
+                }
+            },
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"KBRD.Cancel\\"}",
+                    "label": "Сброс"
+                }
+            }
+        ],
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"RecoveryAuthorization\\"}",
+                    "label": "Восстановление доступа"
+                }
+            }
+        ],
+        [
+            {
+                "color": "primary",
+                "action": {
+                    "type": "callback",
+                    "payload": "{\\"data\\":\\"CancelCurrentOperation\\"}",
+                    "label": "Прервать операцию"
+                }
+            }
+        ]
     ]
 }
