@@ -1,0 +1,256 @@
+2026-08-31 22:57:47
+Бот TLG_Main подключен
+
+2026-08-31 22:57:47
+Бот TLG_Second подключен
+
+2026-08-31 22:57:47
+Бот DTB_RECOVERY подключен
+
+2026-08-31 22:57:47
+DTB запущен
+
+2026-08-31 23:01:56
+DTB запущен
+
+2026-08-31 23:01:56
+Бот TLG_Second подключен
+
+2026-08-31 23:02:09
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:02:09
+Бот TLG_Main подключен
+
+2026-08-31 23:02:57
+'MAX_Main'
+Ошибка on_clearmess_timer/ Start.Main : MAX_Main23645861
+
+2026-08-31 23:02:57
+'VK_Main'
+Ошибка on_clearmess_timer/ Start.Main : VK_Main1052448277
+
+2026-08-31 23:02:57
+'MAX_Second'
+Ошибка on_clearmess_timer/ Start.Main : MAX_Second23645861
+
+2026-08-31 23:02:57
+'VK_Main'
+Ошибка on_clearmess_timer
+
+2026-08-31 23:02:57
+'MAX_Main'
+Ошибка on_clearmess_timer
+
+2026-08-31 23:02:57
+'MAX_Second'
+Ошибка on_clearmess_timer
+
+2026-08-31 23:12:44
+Бот TLG_Second подключен
+
+2026-08-31 23:12:46
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:12:46
+Бот TLG_Main подключен
+
+2026-08-31 23:12:46
+DTB запущен
+
+2026-08-31 23:14:17
+Бот TLG_Main подключен
+
+2026-08-31 23:14:17
+Бот TLG_Second подключен
+
+2026-08-31 23:14:17
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:14:17
+DTB запущен
+
+2026-08-31 23:15:10
+Бот TLG_Second подключен
+
+2026-08-31 23:15:10
+Бот TLG_Main подключен
+
+2026-08-31 23:15:10
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:15:10
+DTB запущен
+
+2026-08-31 23:15:26
+Бот TLG_Main подключен
+
+2026-08-31 23:15:26
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:15:26
+Бот TLG_Second подключен
+
+2026-08-31 23:15:26
+DTB запущен
+
+2026-08-31 23:16:07
+Бот TLG_Main подключен
+
+2026-08-31 23:16:07
+Бот TLG_Second подключен
+
+2026-08-31 23:16:07
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:16:07
+DTB запущен
+
+2026-08-31 23:19:47
+Бот TLG_Main подключен
+
+2026-08-31 23:19:47
+Бот TLG_Second подключен
+
+2026-08-31 23:19:47
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:19:47
+DTB запущен
+
+2026-08-31 23:20:48
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:20:48
+Бот TLG_Main подключен
+
+2026-08-31 23:20:48
+Бот TLG_Second подключен
+
+2026-08-31 23:20:48
+DTB запущен
+
+2026-08-31 23:23:50
+Бот TLG_Main подключен
+
+2026-08-31 23:23:50
+Бот TLG_Second подключен
+
+2026-08-31 23:23:50
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:23:50
+DTB запущен
+
+2026-08-31 23:25:57
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:26:29
+SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ/deleteMessage?chat_id=991033097&message_id=9048 (Caused by NewConnectionError('<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000002D29BC40190>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+TLG_DEL_MES
+
+2026-08-31 23:26:32
+SOCKSHTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ/deleteMessage?chat_id=991033097&message_id=9047 (Caused by NewConnectionError('<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000002D29BC40910>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+TLG_DEL_MES
+
+2026-08-31 23:26:53
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:27:20
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:27:42
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:28:05
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:28:11
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:30:37
+Бот TLG_Second подключен
+
+2026-08-31 23:30:37
+Бот TLG_Main подключен
+
+2026-08-31 23:30:37
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:30:37
+DTB запущен
+
+2026-08-31 23:30:57
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:31:47
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:31:56
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:32:04
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:32:08
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:32:16
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:32:24
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:33:57
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:34:10
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:35:35
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:35:41
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-08-31 23:36:54
+Бот TLG_Main подключен
+
+2026-08-31 23:36:54
+Бот TLG_Second подключен
+
+2026-08-31 23:36:54
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:36:54
+DTB запущен
+
+2026-08-31 23:41:59
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:42:04
+DTB запущен
+
+2026-08-31 23:43:38
+Бот DTB_RECOVERY подключен
+
+2026-08-31 23:43:38
+DTB запущен
+

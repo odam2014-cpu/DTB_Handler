@@ -1,0 +1,40 @@
+2026-09-05 00:12:14
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 02:26:22
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 04:49:00
+HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
+LNGP
+
+2026-09-05 07:03:38
+HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
+LNGP
+
+2026-09-05 09:01:08
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 10:11:55
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 12:18:21
+HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
+LNGP
+
+2026-09-05 14:14:48
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 15:54:28
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-05 18:22:26
+HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
+LNGP
+

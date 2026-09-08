@@ -1,14 +1,19 @@
 import BOT.DTB_Bot
 import BOT.DTB_Btn_Tlg
-import telebot
 import DTB_Log
 import DTB_Res
+from telebot import apihelper, TeleBot
 
 class c_BotTelegram(BOT.DTB_Bot.c_Bot):
     def __init__(self, _param):
         super().__init__(_param)  
         
-        self.Bot  = telebot.TeleBot(self.token)    # регистрим бота
+        
+        
+        apihelper.proxy = {'https':'socks5h://bumz9h:dokHSW@161.115.226.216:9423'}
+        #apihelper.proxy = {'https':'socks5h://sJ6wMR:Fs8Evk@45.153.20.235:11307'}
+        
+        self.Bot  = TeleBot(self.token)    # регистрим бота
         DTB_Log.log(f"Бот {self.name} подключен")
 
 # переопределение обработчика сообщений всех типов
@@ -45,7 +50,6 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
                                             )   
         except Exception as e:  
             DTB_Log.log(e, "DEL_MES_BTN") 
-
 
     def start(self):
         self.Bot.infinity_polling() 
@@ -101,3 +105,22 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
                                 "💤"   # эмоджи
                             )
 
+    def edit_message(   self,
+                        _id,                    # ид чата
+                        _ms,                    # id сообщения
+                        _key,                   # ключ сообщения
+                        _ins,                   # вставки в сообщение
+                        _btn   = None           # кнопки
+    ):
+        txt = self.build_message(_key, _ins)
+        btn = BOT.DTB_Btn_Tlg.create(_btn)
+            
+        self.Bot.edit_message_text(     text = txt,             # новый текс
+                                        chat_id = _id,          # ид чата 
+                                        message_id = _ms,       # ид сообщения
+                                        parse_mode='HTML',      # признак, что формат HTML
+                                        reply_markup = btn      # кнопок нет
+                                    )   
+        DTB_Log.log(_ms, "edt", "_max")
+
+        return _ms

@@ -1,0 +1,191 @@
+@startuml DTB_Handler - Component Diagram
+skinparam componentStyle rectangle
+skinparam backgroundColor #FAFAFA
+skinparam shadowing false
+skinparam defaultFontSize 13
+skinparam defaultFontName Arial
+skinparam rectangle {
+  BackgroundColor white
+  BorderColor #333333
+}
+
+' --- Цветовые стили ---
+skinparam package {
+  BackgroundColor White
+  BorderColor #555555
+  FontColor #333333
+}
+
+' === Точка входа ===
+package "Точка входа" #FFE0E0 {
+  [DTB_Main.py\nГлавный модуль] as main
+  [DTB_Start.py\nЗапуск ботов] as start
+  [DTB_Timer.py\nФоновые таймеры] as timer
+}
+
+' === Конфигурация ===
+package "Конфигурация" #E0FFE0 {
+  [DTB_Cfg.py] as cfg
+  [DTB_Cfg.json\nКонфиг] as cfgjson
+  [DTB_Res.py] as res
+  [DTB_Res.json\nРесурсы] as resjson
+}
+
+' === Данные ===
+package "Данные" #E0E0FF {
+  [DTB_DB.py\nSQLite] as db
+  [DTB_User.py] as user
+  [DTB_Token.py] as token
+  [DTB_DB.db] as dbfile
+}
+
+' === Чат и логика ===
+package "Чат и логика" #FFF0E0 {
+  [DTB_Chat.py\nСессия чата] as chat
+  [DTB_Log.py] as log
+  [DTB_Utils.py] as utils
+  [DTB_Kbrd.py\nPIN-клавиатура] as kbrd
+}
+
+' === Командные модули ===
+package "Command Modules" #F0E0FF {
+  [DTB_C_Start.py] as cm_start
+  [DTB_C_Reg.py] as cm_reg
+  [DTB_C_Auth.py] as cm_auth
+  [DTB_C_Pass.py] as cm_pass
+  [DTB_C_Token.py] as cm_token
+  [DTB_C_MainMenu.py] as cm_menu
+}
+
+' === Базовый бот ===
+package "Базовый бот" #E0FFFF {
+  [BOT/DTB_Bot.py] as base_bot
+}
+
+' === Платформы ===
+package "Платформы" #FFE0F0 {
+  [BOT/DTB_Bot_Tlg.py] as tlg
+  [BOT/DTB_Bot_Tlg_Chat.py] as tlg_chat
+  [BOT/DTB_Bot_Tlg_Recovery.py] as tlg_rec
+  [BOT/DTB_Bot_Max.py] as max
+  [BOT/DTB_Bot_Max_Chat.py] as max_chat
+  [BOT/DTB_Bot_Max_Recovery.py] as max_rec
+  [BOT/DTB_Bot_Vk.py] as vk
+  [BOT/DTB_Recovery.py] as rec_mod
+}
+
+' === Клавиатуры ===
+package "Клавиатуры" #FFFFE0 {
+  [BOT/DTB_Btn_Tlg.py] as btn_tlg
+  [BOT/DTB_Btn_Max.py] as btn_max
+  [BOT/DTB_Btn_Vk.py] as btn_vk
+}
+
+' === Зависимости ===
+main -down-> start
+main -down-> timer
+main -down-> cfg
+main -down-> db
+
+start -down-> tlg_chat
+start -down-> max_chat
+start -down-> vk
+
+timer -down-> db
+timer -down-> chat
+timer -down-> base_bot
+
+cfgjson -left-> cfg : загружает
+resjson -left-> res : загружает
+
+tlg_chat -down-> tlg
+tlg -down-> base_bot
+tlg -right-> btn_tlg
+tlg -down-> log
+tlg -down-> res
+
+tlg_rec -down-> tlg
+tlg_rec -down-> rec_mod
+
+max_chat -down-> max
+max -down-> base_bot
+max -right-> btn_max
+max -down-> log
+max -down-> res
+
+vk -down-> base_bot
+vk -right-> btn_vk
+vk -down-> log
+vk -down-> res
+
+base_bot -down-> res
+base_bot -down-> chat
+
+chat -down-> db
+chat -down-> user
+chat -right-> cm_start
+chat -right-> cm_reg
+chat -right-> cm_auth
+chat -right-> cm_pass
+chat -right-> cm_menu
+chat -right-> cm_token
+chat -down-> utils
+chat -down-> log
+
+cm_start -down-> cm_auth
+cm_reg -down-> cm_start
+cm_reg -down-> cm_pass
+cm_reg -down-> cm_auth
+cm_reg -down-> user
+cm_reg -down-> base_bot
+cm_reg -down-> utils
+cm_reg -down-> cm_menu
+
+cm_auth -down-> kbrd
+cm_pass -down-> kbrd
+
+user -down-> db
+user -down-> utils
+
+token -down-> utils
+token -down-> cfg
+token -down-> chat
+
+kbrd -down-> chat
+
+rec_mod -down-> base_bot
+
+note right of main
+  <b>Точка входа</b>
+  Загрузка конфига,
+  запуск ботов и таймеров
+end note
+
+note right of tlg
+  <b>Telegram</b>
+  telebot, SOCKS5 proxy
+end note
+
+note right of max
+  <b>MAX Platform</b>
+  platform-api.max.ru
+end note
+
+note right of vk
+  <b>VK</b>
+  vk_api
+end note
+
+note bottom of db
+  <b>SQLite</b>
+  Таблицы: CHAT, USER, MESSAGE
+  Потокобезопасный (Lock)
+end note
+
+note bottom of chat
+  <b>Центральный роутер</b>
+  gate() — 20+ команд
+  Управление сессией
+end note
+
+@enduml

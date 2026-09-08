@@ -1,0 +1,332 @@
+2026-09-03 07:36:51
+mid.000000000de6437901a0658e2dd16ede
+snd
+
+2026-09-03 07:36:53
+mid.000000000dc3234e01a0658e364d582c
+snd
+
+2026-09-03 07:36:54
+mid.000000000de6437901a0638391db778f
+del
+
+2026-09-03 07:36:54
+mid.000000000dc3234e01a06385f25563b0
+del
+
+2026-09-03 08:54:30
+mid.000000000de6437901a065d543e977d8
+snd
+
+2026-09-03 08:54:32
+mid.000000000dc3234e01a065d54d8a78fd
+snd
+
+2026-09-03 08:54:33
+mid.000000000de6437901a0658e2dd16ede
+del
+
+2026-09-03 08:54:34
+mid.000000000dc3234e01a0658e364d582c
+del
+
+2026-09-03 15:53:03
+mid.000000000de6437901a0675473fd7ac0
+snd
+
+2026-09-03 15:53:06
+mid.000000000dc3234e01a0675482b879ff
+snd
+
+2026-09-03 15:53:07
+mid.000000000de6437901a065d543e977d8
+del
+
+2026-09-03 15:53:08
+mid.000000000dc3234e01a065d54d8a78fd
+del
+
+2026-09-03 20:58:41
+mid.000000000de6437901a0686c494038c2
+snd
+
+2026-09-03 20:58:44
+mid.000000000dc3234e01a0686c52234a63
+snd
+
+2026-09-03 20:58:44
+mid.000000000de6437901a0675473fd7ac0
+del
+
+2026-09-03 20:58:45
+mid.000000000dc3234e01a0675482b879ff
+del
+
+2026-09-03 20:59:20
+271
+edt
+
+2026-09-03 20:59:21
+271
+edt
+
+2026-09-03 20:59:21
+271
+edt
+
+2026-09-03 20:59:23
+271
+edt
+
+2026-09-03 21:12:46
+282
+edt
+
+2026-09-03 21:12:47
+282
+edt
+
+2026-09-03 21:12:47
+282
+edt
+
+2026-09-03 21:12:48
+282
+edt
+
+2026-09-03 21:13:21
+286
+edt
+
+2026-09-03 21:13:21
+286
+edt
+
+2026-09-03 21:13:22
+286
+edt
+
+2026-09-03 21:13:22
+286
+edt
+
+2026-09-03 21:15:32
+{'callback': {'timestamp': 1788459330753, 'callback_id': 'f9LHodD0cOJWJG9ymQmirIHyg8oaK8Q5nRv49F8rk-ixdy26AjAdJFkuG370hJDBmghDw7_n-Gxhay0jNWMZs1C410-96GzoVWAebsfey0ryW1Kbk8bQ', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459327000, 'name': 'Дмитрий Марков'}, 'payload': 'Start'}, 'timestamp': 1788459330753, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788458322240, 'body': {'mid': 'mid.000000000de6437901a0686c494038c2', 'seq': 117208404606335170, 'text': 'Бот-генератор токенов доступа v.1.2.', 'attachments': [{'payload': {'buttons': [[{'payload': 'Start', 'text': 'Начать', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459331333, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:15:33
+mid.000000000de6437901a0687bb79c0959
+snd
+
+2026-09-03 21:15:33
+mid.000000000de6437901a0686c494038c2
+del
+
+2026-09-03 21:15:34
+mid.000000000de6437901a0687bbb257004
+snd
+
+2026-09-03 21:15:35
+mid.000000000de6437901a0687bbf0632fb
+snd
+
+2026-09-03 21:15:35
+mid.000000000de6437901a0687bb79c0959
+del
+
+2026-09-03 21:15:42
+{'callback': {'timestamp': 1788459342181, 'callback_id': 'f9LHodD0cOIiZwwyK5v5_i8l1cZqAn5BQfcBGPe7_EpAYAuQICkNtAPtN8VTVR15KdaaZyr1pDCFvn33yFnHHiQejJ2u1OQKEygtVWXmut2sBtqwzJZE', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459338000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.5'}, 'timestamp': 1788459342181, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459335430, 'body': {'mid': 'mid.000000000de6437901a0687bbf0632fb', 'seq': 117208471006753531, 'text': 'Введите код доступа:  _ _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459342737, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:15:43
+23645861
+edt
+
+2026-09-03 21:15:46
+{'callback': {'timestamp': 1788459346115, 'callback_id': 'f9LHodD0cOJ3XljoyC8rqeZDD3fqBN4rYRSGoGmlzTOl4WITOT1h2iAaWSFKxoc6fEmTo6pcW-Mmh1ERy_0CxI_nVLlFq86tM77N7V1r6uUYpmcScJpl', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459344000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.2'}, 'timestamp': 1788459346115, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459335430, 'body': {'mid': 'mid.000000000de6437901a0687bbf0632fb', 'seq': 117208471006753531, 'text': 'Введите код доступа:  * _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459346619, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:15:46
+23645861
+edt
+
+2026-09-03 21:15:49
+{'callback': {'timestamp': 1788459347407, 'callback_id': 'f9LHodD0cOJOCV_bbqnIKZk4AALshuUrf84o7GLN2FAX1Krq68rEbcmk3vp8S0m8csILKeI_y8p50Yy6KJEWleBIo2ROV5qDdKbGlSOT4Pq6Vs4KnhAr', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459346000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.5'}, 'timestamp': 1788459347407, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459335430, 'body': {'mid': 'mid.000000000de6437901a0687bbf0632fb', 'seq': 117208471006753531, 'text': 'Введите код доступа:  * * _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459348547, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:15:49
+23645861
+edt
+
+2026-09-03 21:15:51
+{'callback': {'timestamp': 1788459350745, 'callback_id': 'f9LHodD0cOLypmgluE6Y_2gFIdlJySxKAyBNvL0PeqUbbrLAC0RVklucfzjP6lbUmx9hdUn3zdU2vIpEZD8MCQadbGpx2xUIcxLNdzmqm94Z0AJyecYz', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459346000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.8'}, 'timestamp': 1788459350745, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459335430, 'body': {'mid': 'mid.000000000de6437901a0687bbf0632fb', 'seq': 117208471006753531, 'text': 'Введите код доступа:  * * * _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459351294, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:15:52
+23645861
+edt
+
+2026-09-03 21:15:52
+mid.000000000de6437901a0687c02fb0959
+snd
+
+2026-09-03 21:15:52
+mid.000000000de6437901a0687bbf0632fb
+del
+
+2026-09-03 21:15:53
+mid.000000000de6437901a0687c080b2b99
+snd
+
+2026-09-03 21:15:54
+mid.000000000de6437901a0687c09ca1aca
+snd
+
+2026-09-03 21:15:54
+mid.000000000de6437901a0687c02fb0959
+del
+
+2026-09-03 21:16:08
+{'callback': {'timestamp': 1788459368167, 'callback_id': 'f9LHodD0cOLRJC10it8_6O9aqJ2nhIWKh_Bomj5HX2FWSexqtDyJO7OXDkJSQdHL5EOY_aJSZprNi17n0-_ui__QCmIhFbD02iSmk8WelbrKpuqv-gAO', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459364000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.0'}, 'timestamp': 1788459368167, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459354123, 'body': {'mid': 'mid.000000000de6437901a0687c080b2b99', 'seq': 117208472231816089, 'text': 'Введите код доступа:  _ _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459368718, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:16:09
+23645861
+edt
+
+2026-09-03 21:16:10
+{'callback': {'timestamp': 1788459368675, 'callback_id': 'f9LHodD0cOLIQknu3MjoyKSwq1H67dukLG6tiR6SNs8JaNX0m_5R8sCG1BwMufWkWaF6SChRfyONoYRGiKDcDmCVWmOuv1s0ZTo9KBBa3prsxd2sSOrf', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459364000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.0'}, 'timestamp': 1788459368675, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459354123, 'body': {'mid': 'mid.000000000de6437901a0687c080b2b99', 'seq': 117208472231816089, 'text': 'Введите код доступа:  * _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459370071, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:16:11
+23645861
+edt
+
+2026-09-03 21:16:11
+{'callback': {'timestamp': 1788459369085, 'callback_id': 'f9LHodD0cOLlINwTmypBzJ9zUajxpWGW3JLBTvq4VGX39VlgFI7JFuUsQn8__4Az_aVXIFQnJ2cid8AzzWpJ1aJMfCLLKceAwuUdrvriH5dd6fevMdh1', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459364000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.0'}, 'timestamp': 1788459369085, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459354123, 'body': {'mid': 'mid.000000000de6437901a0687c080b2b99', 'seq': 117208472231816089, 'text': 'Введите код доступа:  * _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459370072, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:16:11
+23645861
+edt
+
+2026-09-03 21:16:11
+{'callback': {'timestamp': 1788459369434, 'callback_id': 'f9LHodD0cOJacJtqe6wCJTxDK5hFxqtVwwKEawiZTqa1Untz29OOx0i2aZ1xWX--a17kvd0AzWF7VfOguLImgJLg2qWRlR0pyLEeTAXRSmdyUn17z68I', 'user': {'user_id': 23645861, 'first_name': 'Дмитрий', 'last_name': 'Марков', 'is_bot': False, 'last_activity_time': 1788459364000, 'name': 'Дмитрий Марков'}, 'payload': 'KBRD.0'}, 'timestamp': 1788459369434, 'message': {'recipient': {'chat_type': 'dialog', 'chat_id': 233194361, 'user_id': 23645861}, 'timestamp': 1788459354123, 'body': {'mid': 'mid.000000000de6437901a0687c080b2b99', 'seq': 117208472231816089, 'text': 'Введите код доступа:  * _ _ _', 'attachments': [{'payload': {'buttons': [[{'payload': 'KBRD.7', 'text': '7', 'type': 'callback'}, {'payload': 'KBRD.8', 'text': '8', 'type': 'callback'}, {'payload': 'KBRD.9', 'text': '9', 'type': 'callback'}], [{'payload': 'KBRD.4', 'text': '4', 'type': 'callback'}, {'payload': 'KBRD.5', 'text': '5', 'type': 'callback'}, {'payload': 'KBRD.6', 'text': '6', 'type': 'callback'}], [{'payload': 'KBRD.3', 'text': '3', 'type': 'callback'}, {'payload': 'KBRD.2', 'text': '2', 'type': 'callback'}, {'payload': 'KBRD.1', 'text': '1', 'type': 'callback'}], [{'payload': 'KBRD.0', 'text': '0', 'type': 'callback'}, {'payload': 'KBRD.Cancel', 'text': 'Сброс', 'type': 'callback'}], [{'payload': 'RecoveryAuthorization', 'text': 'Восстановление доступа', 'type': 'callback'}], [{'payload': 'CancelCurrentOperation', 'text': 'Прервать операцию', 'type': 'callback'}]]}, 'type': 'inline_keyboard'}], 'markup': [{'from': 21, 'length': 8, 'type': 'strong'}]}, 'sender': {'user_id': 210669020, 'first_name': 'DASHA_TOKEN_BOT', 'username': 'id575104156000_bot', 'is_bot': True, 'last_activity_time': 1788459370074, 'name': 'DASHA_TOKEN_BOT'}}, 'user_locale': 'ru', 'update_type': 'message_callback'}
+clb
+
+2026-09-03 21:16:11
+23645861
+edt
+
+2026-09-03 21:16:12
+mid.000000000de6437901a0687c509a0959
+snd
+
+2026-09-03 21:16:12
+mid.000000000de6437901a0687c080b2b99
+del
+
+2026-09-03 21:16:13
+mid.000000000de6437901a0687c09ca1aca
+del
+
+2026-09-03 21:16:13
+mid.000000000de6437901a0687bbb257004
+del
+
+2026-09-03 21:16:14
+mid.000000000de6437901a0687c56d406de
+snd
+
+2026-09-03 21:16:14
+mid.000000000de6437901a0687c509a0959
+del
+
+2026-09-03 21:19:15
+mid.000000000de6437901a0687f1c680959
+snd
+
+2026-09-03 21:19:16
+mid.000000000de6437901a0687c56d406de
+del
+
+2026-09-03 21:19:16
+mid.000000000de6437901a0687f20d94b54
+snd
+
+2026-09-03 21:19:17
+mid.000000000de6437901a0687f1c680959
+del
+
+2026-09-03 21:23:03
+300
+edt
+
+2026-09-03 21:23:07
+300
+edt
+
+2026-09-03 21:23:08
+300
+edt
+
+2026-09-03 21:23:11
+300
+edt
+
+2026-09-03 21:23:33
+302
+edt
+
+2026-09-03 21:23:35
+302
+edt
+
+2026-09-03 21:23:35
+302
+edt
+
+2026-09-03 21:23:46
+302
+edt
+
+2026-09-03 21:58:45
+mid.000000000dc3234e01a068a347562dbe
+snd
+
+2026-09-03 21:58:46
+mid.000000000dc3234e01a0686c52234a63
+del
+
+2026-09-03 22:20:11
+mid.000000000de6437901a068b6e43b1e21
+snd
+
+2026-09-03 22:20:12
+mid.000000000de6437901a0687f20d94b54
+del
+
+2026-09-03 22:58:54
+mid.000000000dc3234e01a068da576e5237
+snd
+
+2026-09-03 22:58:55
+mid.000000000dc3234e01a068a347562dbe
+del
+
+2026-09-03 23:20:20
+mid.000000000de6437901a068edf5eb718f
+snd
+
+2026-09-03 23:20:21
+mid.000000000de6437901a068b6e43b1e21
+del
+
+2026-09-03 23:59:03
+mid.000000000dc3234e01a06911686b3a3c
+snd
+
+2026-09-03 23:59:03
+mid.000000000dc3234e01a068da576e5237
+del
+

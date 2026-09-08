@@ -1,6 +1,0 @@
-{
-    "gigacode.cloudIdentify": true,
-    "gigacode.inlineCompletionColor": "red",
-    "gigacode.lookupPriority": true,
-    "gigacode.common.wholeLineReplacement": true
-}

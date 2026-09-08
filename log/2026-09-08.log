@@ -1,0 +1,37 @@
+2026-09-08 22:03:02
+Бот MAX_Main подключен
+
+2026-09-08 22:03:02
+Бот MAX_Second подключен
+
+2026-09-08 22:03:02
+Бот TLG_Second подключен
+
+2026-09-08 22:03:02
+Бот TLG_Main подключен
+
+2026-09-08 22:03:02
+Бот VK_Main подключен
+
+2026-09-08 22:03:02
+Бот DTB_RECOVERY подключен
+
+2026-09-08 22:03:02
+DTB запущен
+
+2026-09-08 22:04:03
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
+2026-09-08 22:04:06
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
+2026-09-08 22:05:04
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-08 22:05:40
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+

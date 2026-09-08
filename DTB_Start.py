@@ -25,8 +25,8 @@ def start(_bt):
             bot.start()
         case "TLG_Recovery":
             bot = BOT.DTB_Bot_Tlg_Recovery.c_BotTelegramRecovery(_bt)
-            #BOT.DTB_Bot.recovery_bot = bot
-            #bot.start()
+            BOT.DTB_Bot.recovery_bot = bot
+            bot.start()
         case "MAX_Recovery":
             bot = BOT.DTB_Bot_Max_Recovery.c_BotMaxRecovery(_bt)
             BOT.DTB_Bot.recovery_bot = bot

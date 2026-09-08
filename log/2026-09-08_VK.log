@@ -1,0 +1,168 @@
+2026-09-08 21:00:29
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D122C0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0585B100>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8180>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D11350>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D12C40>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8FC0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:29
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E89D0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:30
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D10510>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:30
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D129E0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:30
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8D60>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:30
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E9480>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:30
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EB360>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:31
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8E90>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:31
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EBE10>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:31
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8640>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:31
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EBCE0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:32
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EA650>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:32
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD07F71CD0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:32
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E89D0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:32
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D136F0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:32
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EB5C0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:33
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD07F729E0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EAB10>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D12190>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E95B0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A724640>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E95B0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD07F72780>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D129E0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D11BA0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D136F0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:34
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A7256E0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:35
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A725A70>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:35
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD08D11350>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:35
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EBBB0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:35
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EAC40>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:35
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD059809D0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:36
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E83E0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:36
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A7250F0>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:36
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6EB360>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+
+2026-09-08 21:00:36
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzg4NjI1MzQ5NzIyNTg3NDI4fQ._kAxbI26idnqEsk325E4vHZVjX2hLQHXkHRXnRyhyDEpwODnA4JfW8TsHvHj7EOdNO2m91kGQIHDRXgqX2_zDg&ts=1073&wait=25 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DD0A6E8B00>: Failed to resolve 'lp.vk.com' ([Errno 11001] getaddrinfo failed)"))
+LNGP
+

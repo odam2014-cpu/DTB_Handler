@@ -1,0 +1,228 @@
+@startuml DTB_Handler - Class Diagram
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam backgroundColor #FAFAFA
+skinparam defaultFontSize 12
+skinparam defaultFontName Arial
+skinparam class {
+  BackgroundColor white
+  BorderColor #333333
+  AttributeBackgroundColor #F0F0F0
+  AttributeFontColor #333333
+  MethodBackgroundColor #E8E8E8
+  MethodFontColor #333333
+}
+
+' === Базовый бот ===
+abstract class c_Bot <<(B, #4CAF50)>> {
+  - string name
+  - string token
+  - dict options
+  + gate(name, chat, mess, comm, text, phone)
+  + build_message(key, ins)
+}
+
+' === Telegram ===
+class c_BotTelegram <<(T, #2196F3)>> {
+  - TeleBot Bot
+  + handler_message(_ms)
+  + handler_call(_cb)
+  + clear_button(_id, _ms)
+  + start()
+  + delete_message(_id, _ms)
+  + send_message(_id, _key, _ins, _btn)
+  + edit_message(_id, _ms, _key, _ins, _btn)
+}
+
+class c_BotTelegramChat <<(C, #2196F3)>> {
+}
+
+class c_BotTelegramRecovery <<(R, #2196F3)>> {
+}
+
+' === MAX ===
+class c_BotApiMax <<(A, #FF9800)>> {
+  - string header
+  - string base_url
+  - string GET_url
+  - string MES_url
+  + GetUpdates()
+  + DeleteMessage(_id, _ms)
+  + SendBody(_id, _body)
+  + SendMessage(_id, _txt, _parse_mode, _reply_markup)
+  + EditMessage(_ms, _id, _txt, _parse_mode, _reply_markup)
+}
+
+class c_BotMax <<(M, #FF9800)>> {
+  - c_BotApiMax Bot
+  + clear_button(_id, _ms)
+  + start()
+  + delete_message(_id, _ms)
+  + edit_message(_ms, _id, _key, _ins, _btn)
+  + send_message(_id, _key, _ins, _btn)
+  + send_wait(_id)
+}
+
+class c_BotMaxChat <<(C, #FF9800)>> {
+}
+
+class c_BotMaxRecovery <<(R, #FF9800)>> {
+}
+
+' === VK ===
+class c_BotVk <<(V, #E91E63)>> {
+}
+
+' === Core ===
+class c_chat <<(S, #9C27B0)>> {
+  - string name
+  - bot
+  - int id
+  - string gid
+  - string comm
+  - bool Opt_Auth
+  - bool Opt_Unif
+  - c_User user
+  - datetime last_time
+  - dict list_mess
+  - int level
+  - string step
+  - bool auth
+  - string kbrd
+  - string inpt
+  - string pasw
+  - string phone
+  - string recovery
+  - string token
+  - bool restart
+  - c_token current_token
+  + create_token()
+  + set_user(_us)
+  + clear_button()
+  + add_mess(_id, _lv)
+  + send_wait()
+  + delete_message(_ms)
+  + edit_message(_id, _key, _ins, _btn, _lvl)
+  + send_message(_key, _ins, _btn, _lvl)
+  + clear_mess(_lv, _isrev)
+  + set_level(_lv)
+  + set_password()
+  + gate(_mess)
+}
+
+class c_User <<(U, #795548)>> {
+  - string id
+  - string password
+  - string recovery
+  - c_token current_token
+  + set_user(_recovery, _password)
+  + check_password(_input)
+  + set_token(_token)
+}
+
+class c_token <<(T, #607D8B)>> {
+  - c_chat ch
+  - string token
+  - bool enable
+  - threading.Lock lock
+  - threading.Timer timer
+  + close()
+  + check(_tk)
+  + on_timer()
+}
+
+class c_DB <<(D, #F44336)>> {
+  - sqlite3 conn
+  + exec(_sql_text)
+  + get_chat(_nm, _ch)
+  + get_mess(_ch)
+  + add_mess(_ch, _ms, _lv)
+  + del_mess(_ch, _ms)
+  + delete_old_mess()
+  + get_chat_ping()
+  + set_chat_user(_ch, _uid)
+  + del_chat(_ch)
+  + get_user(_id)
+  + upd_user(_id, _rec, _pass)
+  + add_user(_id)
+  + del_user(_id)
+}
+
+class DTB_Cfg <<(C, #009688)>> {
+  - dict config
+  + gs(_key)
+  + gi(_key)
+}
+
+class DTB_Res <<(R, #3F51B5)>> {
+  - dict dict_mess_text
+  - dict dict_command
+  + reload()
+  + load()
+  + get_text(_key, _txt)
+  + get_comm(_key)
+  + get_image(_key)
+}
+
+' === Наследование ===
+c_BotTelegram --|> c_Bot : extends
+c_BotTelegramChat --|> c_BotTelegram : extends
+c_BotTelegramRecovery --|> c_BotTelegram : extends
+c_BotMax --|> c_Bot : extends
+c_BotMaxChat --|> c_BotMax : extends
+c_BotMaxRecovery --|> c_BotMax : extends
+c_BotVk --|> c_Bot : extends
+
+' === Композиция ===
+c_chat "*" *-- "1" c_User : has
+c_chat "*" *-- "0..1" c_token : has
+c_BotMax "*" *-- "1" c_BotApiMax : has
+
+' === Зависимости ===
+c_chat ..> c_DB : queries
+c_User ..> c_DB : queries
+c_token ..> c_chat : references
+c_DB ..> DTB_Cfg : reads config
+c_chat ..> DTB_Res : get texts
+c_chat ..> c_token : create
+
+note right of c_Bot
+  Базовый класс бота
+  Определяет интерфейс:
+  - gate()
+  - build_message()
+end note
+
+note right of c_BotTelegram
+  Telegram Bot API
+  Использует:
+  - pyTelegramBotAPI
+  - SOCKS5 proxy
+end note
+
+note right of c_BotMax
+  MAX Platform API
+  Использует:
+  - requests
+  - REST API
+end note
+
+note right of c_chat
+  Сессия чата
+  Центральный компонент
+  Управляет:
+  - уровнями сообщений
+  - шагами диалога
+  - токенами
+end note
+
+note right of c_DB
+  SQLite ORM
+  Потокобезопасный
+  Таблицы:
+  - CHAT
+  - USER
+  - MESSAGE
+end note
+
+@enduml

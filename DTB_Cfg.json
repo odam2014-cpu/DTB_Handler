@@ -20,7 +20,7 @@
                                         }
                         },
                         {
-                            "Type" : "_TLG",
+                            "Type" : "TLG",
                             "Name" : "TLG_Main",
                             "Token": "8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ",
                             "Options": {
@@ -29,22 +29,22 @@
                                         }
                         },
                         {
-                            "Type" : "_TLG",
+                            "Type" : "TLG",
                             "Name" : "TLG_Second",
                             "Token": "8788527927:AAFlJDz31YaTPKPs0JDQdeovIeiSoYYSX44",
                             "Options": {
-                                        "Authentication"   : "TEXT",
+                                        "Authentication"   : "INLINE",
                                         "UnifiedAccount"   : "YES"
                                         }
                         },
                         {
-                            "Type" : "_TLG_Recovery",
+                            "Type" : "TLG_Recovery",
                             "Name" : "DTB_RECOVERY",
                             "Token": "8030496606:AAHf8MYDx-rCEjMD0DgkphdnTejP35XoqWw",
                             "Options": ""
                         },
                         {
-                            "Type" : "MAX_Recovery",
+                            "Type" : "_MAX_Recovery",
                             "Name" : "DTB_RECOVERY",
                             "Token": "f9LHodD0cOL2LiES0-XdPgvkwfuke8_xwyv0hxu6KncCiPRRLv719sFUy4E3AK3ZAoLsKqzD4o45d_Nu870g",
                             "Options": ""
