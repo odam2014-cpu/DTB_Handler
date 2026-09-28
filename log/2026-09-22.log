@@ -1,0 +1,193 @@
+2026-09-22 19:54:27
+Бот MAX_Main подключен
+
+2026-09-22 19:54:27
+Бот MAX_Second подключен
+
+2026-09-22 19:54:27
+Бот TLG_Main подключен
+
+2026-09-22 19:54:27
+Бот TLG_Second подключен
+
+2026-09-22 19:54:27
+Бот DTB_RECOVERY подключен
+
+2026-09-22 19:54:27
+Бот VK_Main подключен
+
+2026-09-22 19:54:27
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-22 19:59:59
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:03:26
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:05:41
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:06:45
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:08:18
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:10:13
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-22 20:32:41
+('Connection aborted.', ConnectionAbortedError(10053, 'Программа на вашем хост-компьютере разорвала установленное подключение', None, 10053, None))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB9D10>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB610>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB9D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBC50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBED0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C190>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C410>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C690>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C910>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA7ED0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBED0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBC50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB9D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB610>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB9D10>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8F50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C550>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C2D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C050>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43CA50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43CCD0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43CF50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D1D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D450>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D6D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D950>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8550>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8F50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB9D10>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB610>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB9D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBC50>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBED0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA7ED0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D950>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+
+2026-09-22 20:32:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D6D0>: Failed to establish a new connection: [WinError 10051] Сделана попытка выполнить операцию на сокете при отключенной сети'))
+MAX_UPD_GET
+

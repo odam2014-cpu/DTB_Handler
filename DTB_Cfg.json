@@ -59,11 +59,12 @@
                                         }
                         }
                     ],
+        "MaxApiBaseUrl"         : "https://platform-api.max.ru/",   
         "DataBaseName"          : "DTB_DB.db",
         "TokenLenght"           : "6",
         "TokenLifeTime"         : "30",
         "ChatLifeTime"          : "180",
         "ChatLifeTimeInterval"  : "11",
-        "ClearLifeTime"         : "3600",
+        "ClearLifeTime"         : "36000",
         "ClearLifeTimeInterval" : "61"
     }    

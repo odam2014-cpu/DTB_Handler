@@ -1,0 +1,128 @@
+2026-09-23 08:17:51
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D450>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43CE10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43CCD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C410>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C2D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43DD10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43E0D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E43E490>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA7ED0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBBB10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:52
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CCBB9D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:17:53
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8910>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-23 08:18:01
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8F50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:08
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43DF90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:16
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43E210>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:22
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C410>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:29
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D090>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43C410>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:18:41
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E43D090>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:19:07
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E43F890>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 08:20:10
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E4D4A50>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 08:20:40
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E4D6AD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:20:46
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E580050>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:20:53
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E580B90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:20:59
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E581E50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:21:05
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E582C10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+MAX_UPD_GET
+
+2026-09-23 08:22:08
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E583890>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 08:23:11
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E849D10>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 08:24:14
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E84BB10>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 08:25:17
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=70416 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E90DD10>, 'Connection to platform-api.max.ru timed out. (connect timeout=None)'))
+MAX_UPD_GET
+
+2026-09-23 10:08:56
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-23 10:09:08
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+

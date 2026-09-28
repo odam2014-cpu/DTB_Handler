@@ -6,7 +6,7 @@ import BOT.DTB_Bot_Tlg_Recovery
 import BOT.DTB_Bot_Vk
 import BOT.DTB_Bot_Max_Chat
 import BOT.DTB_Bot_Max_Recovery
-
+import DTB_Api
 
 # стартуем
 def start(_bt):
@@ -39,6 +39,7 @@ for bt in DTB_Cfg.cfg.config["BotList"]:
                 args=(bt,))      # args передаются как кортеж
     # стартуем
     thread_server.start()
-   
+
+DTB_Api.run()   
 
 

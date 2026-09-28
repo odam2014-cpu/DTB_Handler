@@ -34,7 +34,7 @@ class c_token:
 
         self.lock.release()
         
-    def check(self, _tk = None):
+    def check(self, _tk = None, _rs = None):
         ret = False
         self.lock.acquire()                         # блокируем доступ к токену
         if self.enable:
@@ -42,6 +42,14 @@ class c_token:
                 if self.token == _tk:
                     self.enable = False
                     self.timer.cancel()             # останавливаем таймер
+                    self.ch.send_message(   "Token.IsUsed",     # ключ сообщения
+                                            [   self.token,     # используемый токен        
+                                                _rs             # респондент
+                                            ],                  
+                                            [["Button.MainMenu"],["Button.GetNewToken"]],
+                                            -100
+                                    )
+
                     ret = True
             else:
                 ret = True

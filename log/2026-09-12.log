@@ -1,0 +1,16 @@
+2026-09-12 12:56:04
+('Connection aborted.', ConnectionAbortedError(10053, 'Программа на вашем хост-компьютере разорвала установленное подключение', None, 10053, None))
+MAX_UPD_GET
+
+2026-09-12 12:56:04
+('Connection aborted.', ConnectionAbortedError(10053, 'Программа на вашем хост-компьютере разорвала установленное подключение', None, 10053, None))
+MAX_UPD_GET
+
+2026-09-12 14:50:01
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+MAX_UPD_GET
+
+2026-09-12 14:50:01
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+MAX_UPD_GET
+

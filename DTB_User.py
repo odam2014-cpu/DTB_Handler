@@ -53,3 +53,21 @@ def set_user(_id, _recovery, _password):
     us.set_user(_recovery, _password)
     return us
 
+# проверяем токен      
+def token_check( 
+            _us,    # ид чата или телефон 
+            _tk,    # токен
+            _rs     # респондент
+        ):
+
+    us = None
+    try:
+        us = list_user[_us]
+    except:
+        # выходим с отрицательным результатом
+        return False
+
+    # проверяем, что токен установлен
+    if us.current_token is None:
+        return False
+    return us.current_token.check(_tk, _rs)

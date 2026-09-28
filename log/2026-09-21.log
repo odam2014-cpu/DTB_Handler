@@ -1,0 +1,360 @@
+2026-09-21 21:29:47
+Бот MAX_Main подключен
+
+2026-09-21 21:29:47
+Бот MAX_Second подключен
+
+2026-09-21 21:29:47
+Бот TLG_Main подключен
+
+2026-09-21 21:29:47
+Бот TLG_Second подключен
+
+2026-09-21 21:29:47
+Бот DTB_RECOVERY подключен
+
+2026-09-21 21:30:43
+Бот MAX_Main подключен
+
+2026-09-21 21:30:43
+Бот MAX_Second подключен
+
+2026-09-21 21:30:43
+Бот TLG_Main подключен
+
+2026-09-21 21:30:43
+Бот TLG_Second подключен
+
+2026-09-21 21:30:43
+Бот DTB_RECOVERY подключен
+
+2026-09-21 21:30:43
+Бот VK_Main подключен
+
+2026-09-21 21:30:43
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 21:32:29
+Бот MAX_Main подключен
+
+2026-09-21 21:32:29
+Бот MAX_Second подключен
+
+2026-09-21 21:32:29
+Бот TLG_Main подключен
+
+2026-09-21 21:32:29
+Бот TLG_Second подключен
+
+2026-09-21 21:32:29
+Бот DTB_RECOVERY подключен
+
+2026-09-21 21:32:29
+Бот VK_Main подключен
+
+2026-09-21 21:32:29
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 21:56:47
+Бот MAX_Main подключен
+
+2026-09-21 21:56:47
+Бот MAX_Second подключен
+
+2026-09-21 21:56:47
+Бот TLG_Main подключен
+
+2026-09-21 21:56:47
+Бот TLG_Second подключен
+
+2026-09-21 21:56:47
+Бот VK_Main подключен
+
+2026-09-21 21:56:47
+Бот DTB_RECOVERY подключен
+
+2026-09-21 21:56:47
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 22:03:41
+Бот MAX_Main подключен
+
+2026-09-21 22:03:41
+Бот MAX_Second подключен
+
+2026-09-21 22:03:41
+Бот TLG_Main подключен
+
+2026-09-21 22:03:41
+Бот TLG_Second подключен
+
+2026-09-21 22:03:41
+Бот DTB_RECOVERY подключен
+
+2026-09-21 22:03:41
+Бот VK_Main подключен
+
+2026-09-21 22:03:41
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 22:18:33
+Бот MAX_Main подключен
+
+2026-09-21 22:18:33
+Бот MAX_Second подключен
+
+2026-09-21 22:18:33
+Бот TLG_Second подключен
+
+2026-09-21 22:18:33
+Бот TLG_Main подключен
+
+2026-09-21 22:18:33
+Бот DTB_RECOVERY подключен
+
+2026-09-21 22:18:33
+Бот VK_Main подключен
+
+2026-09-21 22:18:33
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 22:37:38
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
+2026-09-21 22:38:21
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:43:45
+Бот MAX_Main подключен
+
+2026-09-21 22:43:45
+Бот MAX_Second подключен
+
+2026-09-21 22:43:45
+Бот TLG_Main подключен
+
+2026-09-21 22:43:45
+Бот TLG_Second подключен
+
+2026-09-21 22:43:45
+Бот DTB_RECOVERY подключен
+
+2026-09-21 22:43:45
+Бот VK_Main подключен
+
+2026-09-21 22:43:45
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 22:50:17
+Бот MAX_Main подключен
+
+2026-09-21 22:50:17
+Бот MAX_Second подключен
+
+2026-09-21 22:50:17
+Бот DTB_RECOVERY подключен
+
+2026-09-21 22:50:17
+Бот TLG_Second подключен
+
+2026-09-21 22:50:17
+Бот TLG_Main подключен
+
+2026-09-21 22:50:17
+Бот VK_Main подключен
+
+2026-09-21 22:50:17
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 22:50:48
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:51:33
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:51:33
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:03
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:03
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:45
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:45
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:56
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:52:56
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:53:02
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:53:03
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 22:53:21
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:04:02
+Бот MAX_Main подключен
+
+2026-09-21 23:04:02
+Бот MAX_Second подключен
+
+2026-09-21 23:04:02
+Бот TLG_Main подключен
+
+2026-09-21 23:04:02
+Бот TLG_Second подключен
+
+2026-09-21 23:04:02
+Бот DTB_RECOVERY подключен
+
+2026-09-21 23:04:02
+Бот VK_Main подключен
+
+2026-09-21 23:04:02
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 23:04:34
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:05:01
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:05:01
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:06:25
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:06:25
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:06:50
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:06:51
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:07:09
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:07:10
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:07:15
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:07:15
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:13:34
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:13:41
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:14:29
+Бот MAX_Main подключен
+
+2026-09-21 23:14:29
+Бот MAX_Second подключен
+
+2026-09-21 23:14:29
+Бот TLG_Main подключен
+
+2026-09-21 23:14:29
+Бот TLG_Second подключен
+
+2026-09-21 23:14:29
+Бот DTB_RECOVERY подключен
+
+2026-09-21 23:14:29
+Бот VK_Main подключен
+
+2026-09-21 23:14:29
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-21 23:14:59
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:28
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:28
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:34
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:34
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:55
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:15:55
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:16:01
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:16:01
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:16:47
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+
+2026-09-21 23:18:39
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
+2026-09-21 23:18:50
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+DEL_MES_BTN
+

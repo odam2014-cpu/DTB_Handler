@@ -1,0 +1,44 @@
+2026-09-23 08:18:25
+HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
+LNGP
+
+2026-09-23 08:18:37
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1CCB8F50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+LNGP
+
+2026-09-23 08:19:52
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E43EAD0>, 'Connection to lp.vk.com timed out. (connect timeout=35)'))
+LNGP
+
+2026-09-23 08:20:43
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E4D5D10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+LNGP
+
+2026-09-23 08:20:55
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E5807D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+LNGP
+
+2026-09-23 08:21:27
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E582210>, 'Connection to lp.vk.com timed out. (connect timeout=35)'))
+LNGP
+
+2026-09-23 08:22:49
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000024C1E848550>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+LNGP
+
+2026-09-23 08:24:56
+HTTPSConnectionPool(host='lp.vk.com', port=443): Max retries exceeded with url: /whp/236113553?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIzNjExMzU1MyIsInVudGlsIjoxNzkwMDk5NjY4OTUzNDQ2ODI3fQ.3e8xTwZnEdoaMdVUnOSToiCzGbDvPLL3cTe0dlUJJCex-thigFEe6fm0l_2td6jvi50wiYU4s9mabdxljJ66Bg&ts=1280&wait=25 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000024C1E84B4D0>, 'Connection to lp.vk.com timed out. (connect timeout=35)'))
+LNGP
+
+2026-09-23 16:23:41
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-23 18:16:43
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+
+2026-09-23 21:34:28
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+

@@ -4,12 +4,13 @@ import vobject
 import BOT.DTB_Bot
 import DTB_Log
 import DTB_Res
+import DTB_Cfg
 import BOT.DTB_Btn_Max
 
-class c_BotApiMax(BOT.DTB_Bot.c_Bot):
+class c_BotApiMax:
     def __init__(self, _token):
         self.header      = {'Authorization': _token}
-        self.base_url    = "https://platform-api.max.ru/"
+        self.base_url    = DTB_Cfg.cfg.gs("MaxApiBaseUrl") 
         
         self.GET_url = self.base_url + "updates"
         self.GET_params = {
@@ -96,13 +97,13 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
 
     def start(self):
         while True:
-            upd = None
             try:
-                upd = self.Bot.GetUpdates()
-            except Exception as e:  
-                t=0
-            if upd != None:
+                upd = None
                 try:
+                    upd = self.Bot.GetUpdates()
+                except Exception as e:
+                    DTB_Log.log(e, "MAX_UPD_GET")
+                if upd != None:
                     for up in upd["updates"]:
                         match up["update_type"]:
                             case "bot_started":
@@ -136,8 +137,8 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                                             None, 
                                             up["callback"]["payload"], 
                                             "")
-                except:
-                    t=0     
+            except Exception as e:
+                DTB_Log.log(e, "MAX_UPD_RUN")
 
     def delete_message(  self,
                         _id,   # ид чата  
@@ -224,4 +225,3 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
         return mid
 
        
-#🔥⚡️🎉

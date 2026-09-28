@@ -1,0 +1,414 @@
+2026-09-25 18:20:31
+('Connection aborted.', ConnectionAbortedError(10053, 'Программа на вашем хост-компьютере разорвала установленное подключение', None, 10053, None))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+('Connection aborted.', ConnectionAbortedError(10053, 'Программа на вашем хост-компьютере разорвала установленное подключение', None, 10053, None))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0910>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2350>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2210>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2D50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2850>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1E9BC050>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:31
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA74D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2D50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1950>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2210>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3610>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0B90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3D90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C550>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C910>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005CCD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005D090>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005D450>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005D810>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3D90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3B10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3750>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0690>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0910>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1D10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1BD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2710>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2850>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA74D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:32
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EF21D10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:33
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005CB90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:33
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C690>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005DE50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA74D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2D50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3250>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE25D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2210>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3610>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0B90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3C50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005DD10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C690>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005CB90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:34
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005D090>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005DF90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1F90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2C10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0B90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE0910>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1D10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1BD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3390>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E210>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C550>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005DA90>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E710>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005F250>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005F4D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:35
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2AD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:36
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1BD0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:36
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1D10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE1E50>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE3B10>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E710>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E990>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E350>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:38
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005C550>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:39
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1EFE2710>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:40
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C1CAA79D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:40
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E350>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:40
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=71158 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005E990>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:20:40
+HTTPSConnectionPool(host='platform-api.max.ru', port=443): Max retries exceeded with url: /updates?timeout=10&types=bot_started%2Cmessage_created%2Cmessage_callback&marker=12971 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024C2005F4D0>: Failed to resolve 'platform-api.max.ru' ([Errno 11001] getaddrinfo failed)"))
+MAX_UPD_GET
+
+2026-09-25 18:48:08
+Бот MAX_Main подключен
+
+2026-09-25 18:48:08
+Бот MAX_Second подключен
+
+2026-09-25 18:48:08
+Бот TLG_Main подключен
+
+
+2026-09-25 18:48:08
+Бот DTB_RECOVERY подключен
+
+2026-09-25 18:48:08
+Бот VK_Main подключен
+
+2026-09-25 18:48:08
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-25 19:24:03
+Бот MAX_Main подключен
+
+2026-09-25 19:24:03
+Бот MAX_Second подключен
+
+2026-09-25 19:24:03
+Бот TLG_Main подключен
+
+2026-09-25 19:24:03
+Бот TLG_Second подключен
+
+2026-09-25 19:24:03
+Бот DTB_RECOVERY подключен
+
+2026-09-25 19:24:03
+Бот VK_Main подключен
+
+2026-09-25 19:24:03
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-25 19:24:40
+Бот MAX_Main подключен
+
+2026-09-25 19:24:40
+Бот MAX_Second подключен
+
+2026-09-25 19:24:40
+Бот TLG_Main подключен
+
+2026-09-25 19:24:40
+Бот TLG_Second подключен
+
+2026-09-25 19:24:40
+Бот VK_Main подключен
+
+2026-09-25 19:24:40
+Бот DTB_RECOVERY подключен
+
+2026-09-25 19:24:40
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-25 19:25:12
+Бот MAX_Main подключен
+
+2026-09-25 19:25:12
+Бот MAX_Second подключен
+
+2026-09-25 19:25:12
+Бот TLG_Main подключен
+
+2026-09-25 19:25:12
+Бот VK_Main подключен
+
+2026-09-25 19:25:12
+Бот DTB_RECOVERY подключен
+
+2026-09-25 19:25:12
+Бот TLG_Second подключен
+
+2026-09-25 19:25:12
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-25 19:29:16
+Бот MAX_Main подключен
+
+2026-09-25 19:29:16
+Бот MAX_Second подключен
+
+2026-09-25 19:29:16
+Бот TLG_Second подключен
+
+2026-09-25 19:29:16
+Бот TLG_Main подключен
+
+2026-09-25 19:29:16
+Бот DTB_RECOVERY подключен
+
+2026-09-25 19:29:16
+Бот VK_Main подключен
+
+2026-09-25 19:29:27
+DTB запущен
+
+2026-09-25 19:29:16
+Http-сервер 127.0.0.1:9000 создан
+
+2026-09-25 19:30:30
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
+2026-09-25 19:30:30
+A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message can't be deleted for everyone
+TLG_DEL_MES
+
