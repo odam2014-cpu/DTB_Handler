@@ -50,6 +50,7 @@ def set_user(_id, _recovery, _password):
     us = get_user(_id)
     if us == None:
         us = c_User(_id)
+        list_user[_id] = us
     us.set_user(_recovery, _password)
     return us
 

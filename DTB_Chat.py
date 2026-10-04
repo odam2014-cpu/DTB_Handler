@@ -13,10 +13,11 @@ import CM.DTB_C_Auth
 import CM.DTB_C_Token
 import CM.DTB_C_MainMenu
 
-
 list_chat = {}
 
+
 class c_chat:
+    
     def __init__(self, _bot, _nm, _ch, _op):
         self.name       = _nm
         self.bot        = _bot
@@ -335,4 +336,22 @@ class c_chat:
 
         if sw != None:  
             self.delete_message(sw)        
+
+def chat_gate(
+                _bt,
+                _ms
+            ): 
+    
+
+    nm  = _ms["name"]
+    cID = _ms["chat"]
+    id = nm + str(cID)
+  
+    try:
+        ch = list_chat[id]
+    except:
+        ch =c_chat(_bt, nm, cID, _bt.options)
+        list_chat[id] = ch
+
+    ch.gate(_ms)
 

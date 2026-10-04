@@ -2,3 +2,7 @@
 HTTPSConnectionPool(host='lp.vk.com', port=443): Read timed out. (read timeout=35)
 LNGP
 
+2026-09-29 18:58:21
+('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+LNGP
+

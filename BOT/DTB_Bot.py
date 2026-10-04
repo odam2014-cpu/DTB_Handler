@@ -10,8 +10,9 @@ class c_Bot:
         self.name   = _param["Name"]
         self.token  = _param["Token"]
         self.options= _param["Options"]
-        
+                
     def gate(self, _nm, _cID, _mID, _comm, _text, _ph=""):
+
         txt = ""
         if _text != None:
             txt = _text.strip()
@@ -23,15 +24,8 @@ class c_Bot:
                 "phone" : _ph           
             }
 
-        id = _nm + str(_cID)
-        try:
-            ch = DTB_Chat.list_chat[id]
-        except:
-            ch = DTB_Chat.c_chat(self, _nm, _cID, self.options)
-            DTB_Chat.list_chat[id] = ch
-    
-        ch.gate(_ms)
-        
+        DTB_Chat.chat_gate(self, _ms)
+
     def build_message(  self,
                         _key,                   # ключ сообщения
                         _ins    = "",           # вставки в сообщение

@@ -70,12 +70,13 @@ def RecoveryStartHandler(_ch, _ms):
                 "RecoveryHeader"
                 )
 
-    _ch.send_message(
-                "RecoveryHeaderSendToken",
-                "",
-                None,
-                1
-            )
+#    _ch.send_message(
+#                "RecoveryHeaderSendToken",
+#                "",
+#                None,
+#                1
+#            )
+ 
     RecoveryBotHandler(_ch, _ms)
 
 def RecoveryBotHandler(_ch, _ms):
@@ -96,7 +97,9 @@ def RecoveryBotHandler(_ch, _ms):
 
     _ch.send_message(   "RecoveryToken",
                         "",
-                        [["Button.RecoveryBot"], ["Button.CancelCurrentOperation"]],
+                        [
+                            ["Button.CancelCurrentOperation"]
+                        ],
                         5
                 )
                       
