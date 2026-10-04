@@ -1,6 +1,6 @@
 # DTB_Handler — Архитектура (C4 Model)
 
-## Level 1: System Context
+## Level 1: System Context 
 
 Система в контексте внешних акторов и зависимостей.
 
