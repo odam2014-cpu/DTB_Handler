@@ -64,7 +64,7 @@ def run():
         target=start,   # функция, которая будет выполняться в потоке
             args=())    # args передаются как кортеж
     # стартуем
-    thread_server.start()
+    thread_server.start()      
     
 # стартуем http сервер
 def start(server_class=HTTPServer, handler_class=SimpleHTTPRequestHandler):

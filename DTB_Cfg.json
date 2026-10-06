@@ -4,7 +4,6 @@
                         {
                             "Type" : "MAX",
                             "Name" : "MAX_Main",
-                            "Token": "f9LHodD0cOKohL7lQquapFyV_lmJ38kH0_XwhyuQ7JFz0oyu4FYXsmD3NavHHk_rQ8RR62uLXYqB2_sh2Q1H",
                             "Options": {
                                         "Authentication"   : "INLINE",
                                         "UnifiedAccount"   : "YES"
@@ -13,7 +12,6 @@
                         {
                             "Type" : "MAX",
                             "Name" : "MAX_Second",
-                            "Token": "f9LHodD0cOJG0NIRtH3-dtVAXeFr1xocfEw241ZK4IESiFgmJrW891zDwLGXIwytwbAZPw5OQSjLMZMzCiw4",
                             "Options": {
                                         "Authentication"   : "INLINE",
                                         "UnifiedAccount"   : "YES"
@@ -22,7 +20,6 @@
                         {
                             "Type" : "TLG",
                             "Name" : "TLG_Main",
-                            "Token": "8491793641:AAG6md5NNzUlBY6oV0Ns0vg-ixQkMZ3JdYQ",
                             "Options": {
                                         "Authentication"   : "TEXT",
                                         "UnifiedAccount"   : "YES"
@@ -31,7 +28,6 @@
                         {
                             "Type" : "TLG",
                             "Name" : "TLG_Second",
-                            "Token": "8788527927:AAFlJDz31YaTPKPs0JDQdeovIeiSoYYSX44",
                             "Options": {
                                         "Authentication"   : "INLINE",
                                         "UnifiedAccount"   : "YES"
@@ -40,19 +36,16 @@
                         {
                             "Type" : "TLG_Recovery",
                             "Name" : "DTB_RECOVERY",
-                            "Token": "8030496606:AAHf8MYDx-rCEjMD0DgkphdnTejP35XoqWw",
                             "Options": ""
                         },
                         {
                             "Type" : "_MAX_Recovery",
                             "Name" : "DTB_RECOVERY",
-                            "Token": "f9LHodD0cOL2LiES0-XdPgvkwfuke8_xwyv0hxu6KncCiPRRLv719sFUy4E3AK3ZAoLsKqzD4o45d_Nu870g",
                             "Options": ""
                         },
                         {
                             "Type" : "VK",
                             "Name" : "VK_Main",
-                            "Token": "vk1.a.9SwfBpYry-ZyTGl4Rx7EUqHc31jc16tr_kVkowJANaPMOzgRKJBIhB56ShbqbTDyGYT0hKONQEmmPbIhIINfivhs3sKGdmrG-DUWK7d-2-6WzWJHea5T1CEW2nr7-J7by_Zpciov7wcewNCaXdhwQ2-cnubhWCzsQUY248AQADcI4QEY-hbJfgUj7KeLuX8fduSo-dFY6nocCcfEzwyJ9Q",
                             "Options": {
                                         "Authentication"   : "INLINE",
                                         "UnifiedAccount"   : "NO"
@@ -61,6 +54,7 @@
                     ],
         "MaxApiBaseUrl"         : "https://platform-api.max.ru/",   
         "DataBaseName"          : "DTB_DB.db",
+        "CheckPinCount"         : "5",    
         "TokenLenght"           : "6",
         "TokenLifeTime"         : "30",
         "ChatLifeTime"          : "180",

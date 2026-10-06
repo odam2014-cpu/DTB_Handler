@@ -1,6 +1,7 @@
 # класс и функции работы с конфикурацией
 
 import json
+from dotenv import load_dotenv
 
 # класс, описывающий конфигурации бота 
 class c_config: 
@@ -12,6 +13,9 @@ class c_config:
         # грузим конфигурации из файла
         with open('DTB_Cfg.json', 'r', encoding="UTF-8") as file:
             self.config = json.load(file)
+
+        # Загружаем переменные из .env в самом начале
+        load_dotenv()
 
     # получение параметра конфигурации как строку  
     def gs  (   self, 
