@@ -1,4 +1,0 @@
-2026-03-14 15:13:29
-HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
-Ошибка on_clearmess_timer/ Start.Main : TLG_Second991033097
-
