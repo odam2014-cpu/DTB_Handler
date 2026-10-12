@@ -27,7 +27,13 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
                 case "text":
                     self.gate(self.name, _ms.chat.id, _ms.id, "TEXT", _ms.text)
                 case "contact":
-                    self.gate(self.name, _ms.chat.id, _ms.id, "Contact", _ms.text, _ms.contact.phone_number)   
+                    # проверяем на совпадение id пользователя бота с id из контакта 
+                    if _ms.from_user.id == _ms.contact.user_id:
+                        pho = _ms.contact.phone_number
+                    # не совпало - отправляем вместо телефона NOCORRECT
+                    else:
+                        pho = "NOCORRECT"
+                    self.gate(self.name, _ms.chat.id, _ms.id, "Contact", _ms.text, pho)   
             # контекст - что-то другое
                 case _: 
                     self.gate(self.name, _ms.chat.id, _ms.id, "OTHER", _ms.text)

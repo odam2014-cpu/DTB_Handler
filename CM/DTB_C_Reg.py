@@ -26,24 +26,28 @@ def ContactHandler(_ch, _ms):
     
     if _ms["phone"] != "":
         _ch.phone = _ms["phone"]
-        if _ch.phone == "NONE":
-            _ch.send_message(
-                    "CreateSimpleUser",
-                    "",
-                    [
-                        ["Button.CreateSimpleUserYes"],
-                        ["Button.CreateSimpleUserNo"]
-                    ],
-                    5
-                )
-        else:
-            us = DTB_User.get_user(_ch.phone)
-            _ch.step = ""
-            if us != None:
-                _ch.set_user(us)
-                CM.DTB_C_Auth.AuthHandler(_ch, _ms)
-            else:
-                RecoveryBotInput(_ch, _ms)            
+        match _ch.phone:
+            case "NONE":
+                _ch.send_message(
+                        "CreateSimpleUser",
+                        "",
+                        [
+                            ["Button.CreateSimpleUserYes"],
+                            ["Button.CreateSimpleUserNo"]
+                        ],
+                        5
+                    )
+            # пришло NOCORRECT вместо номера, значит была попытка регистрации не под своим контактом
+            case "NOCORRECT":
+                CM.DTB_C_Start.Start(_ch, _ms, "NoCorrectRequiredRegistration")
+            case _:
+                us = DTB_User.get_user(_ch.phone)
+                _ch.step = ""
+                if us != None:
+                    _ch.set_user(us)
+                    CM.DTB_C_Auth.AuthHandler(_ch, _ms)
+                else:
+                    RecoveryBotInput(_ch, _ms)            
     else:
         if _ms["text"] == DTB_Res.get_text("Button.CancelRegistration"):
             CM.DTB_C_Start.Start(_ch, _ms)

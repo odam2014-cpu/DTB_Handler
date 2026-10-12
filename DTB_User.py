@@ -1,5 +1,7 @@
 import DTB_DB
 import DTB_Utils
+import datetime
+import DTB_Cfg
 
 list_user = {}
 class c_User:
@@ -9,22 +11,57 @@ class c_User:
         self.id         = _id
         if len(lm) > 0:
             self.password   = lm[0][1]
-            self.recovery   = lm[0][2] 
+            self.recovery   = lm[0][2]
+            self.block_dt   = int(lm[0][3])
+            self.block_cn   = int(lm[0][4])
+            self.block_at   = int(lm[0][5])
         else:    
             DTB_DB.DB.add_user(_id)
             self.password   = ""
             self.recovery   = "" 
+            self.block_dt   = 0
+            self.block_cn   = 0
+            self.block_at   = 0
+    
+    def check_block(self):
+        return int(datetime.datetime.now().timestamp()) < self.block_dt
+
+    def get_block_at(self):
+        return DTB_Cfg.cfg.gi("CheckPinCount") - self.block_at 
+
+    # сохраняем сколько попыток было сделано    
+    def block_at_user(self):
+        self.block_at += 1
+        DTB_DB.DB.block_at_user(self.id)
+        return self.get_block_at()
         
+    # блокировка пользователя    
+    def block_user(self):
+        _dt = int(datetime.datetime.now().timestamp()) + DTB_Cfg.cfg.gi("BlockInterval") * (2 ** self.block_cn)
+        DTB_DB.DB.block_user(self.id, _dt)
+        self.block_dt = _dt
+        self.block_cn += 1
+        self.block_at = 0
+        return _dt
+                    
     def set_user(self, _recovery, _password):
         if _recovery != "":
             self.recovery = _recovery            
-  
+
+        self.block_dt = 0
+        self.block_cn = 0
+        self.block_at = 0
+        
         self.password = DTB_Utils.get_hash(_password) 
         DTB_DB.DB.upd_user(self.id, self.recovery, self.password)    
 
     def check_password(self, _input):
         input_hash = DTB_Utils.get_hash(_input)
         if input_hash == self.password:
+            self.block_cn = 0
+            self.block_at = 0
+            self.block_dt = 0
+            DTB_DB.DB.unblock_user(self.id)
             return True
         else:
             return False        

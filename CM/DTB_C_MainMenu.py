@@ -4,16 +4,18 @@ import DTB_DB
 import BOT.DTB_Bot
 import DTB_Log
 import DTB_User
+import DTB_Cfg
 
 def MenuDelChatYesHandler(_ch, _ms):
     _ch.clear_mess(-100, True)
     DTB_DB.DB.del_chat(_ch.gid)
     DTB_Chat.list_chat.pop(_ch.gid)
+    DTB_Cfg.cfg.gs("Version")
         
 def MainAboutHandler(_ch, _ms):
     _ch.send_message(   
                         "MenuAbout",
-                        _ch.user.id,
+                        [DTB_Cfg.cfg.gs("Version"), _ch.user.id],
                         [["Button.MainMenu"], ["Button.GetNewToken"]]   
                     )
 

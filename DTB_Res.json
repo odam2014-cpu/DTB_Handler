@@ -11,7 +11,7 @@
     },
     {
         "Name":"Start.Main",
-        "Text":"Бот-генератор токенов доступа v.1.2."
+        "Text":"Бот-генератор токенов доступа %%%."
     },
 {
         "Name":"None.Text",
@@ -223,29 +223,25 @@
     },
     {
         "Name":"MenuAbout",
-        "Text":"Бот-генерации токенов доступа v.1.2. Идентификатор внешнего доступа: <b><code>%%%</code></b> "
+        "Text":"Бот-генерации токенов доступа %%%. Идентификатор внешнего доступа: <b><code>%%%</code></b> "
+    },
+    {
+        "Name":"AuthorizationUserBlock",
+        "Text":"Доступ заблокирован до <b>%%%</b>"
+    },
+    {
+        "Name":"AuthorizationProcess",
+        "Text":"Для входа укажите <b>ПИН-код</b>"
+    },
+    {
+        "Name":"AuthorizationAttemtion",
+        "Text":"Количество попыток: <b>%%%</b>"
+    },
+    {
+        "Name":"AuthorizationError",
+        "Text":"Пин-код указан неверно"
     },
 
-    {
-        "Name":"Button.PasswordRecoverSkipYes",
-        "Text":"Пропустить - Да",
-        "Command":"PasswordRecoverSkipYes"
-    },
-   {
-        "Name":"Button.PasswordRecoverSkipNo",
-        "Text":"Пропустить - Нет",
-        "Command":"PasswordRecoverSkipNo"
-    },
-    {
-        "Name":"Button.PasswordRecoverSkip",
-        "Text":"Пропустить шаг",
-        "Command":"PasswordRecoverSkip"
-    },
-    {
-        "Name":"Button.RecoverPassword",
-        "Text":"Восcтановить доступ",
-        "Command":"PasswordRecover"
-    },
     {
         "Name":"Button.ClearContact",
         "Text":"Удалить телефон",

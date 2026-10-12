@@ -12,6 +12,7 @@ import CM.DTB_C_Pass
 import CM.DTB_C_Auth
 import CM.DTB_C_Token
 import CM.DTB_C_MainMenu
+import DTB_Cfg
 
 list_chat = {}
 
@@ -35,7 +36,7 @@ class c_chat:
         self.kbrd       = None
         self.inpt       = ""
         self.pasw       = ""
-        self.phone      = ""
+        self.phone      = self.user.id
         self.recovery   = ""
         self.token      = ""
         self.restart    = True
@@ -268,71 +269,80 @@ class c_chat:
             _mess["text"] = text 
             sw = self.send_wait()
             self.delete_message(self.kbrd)
-                          
-        match comm:
-            case "MenuDeleteUser":
-                CM.DTB_C_MainMenu.MainDelUserHandler(self, _mess)
-            case "MenuDeleteChat":
-                CM.DTB_C_MainMenu.MainDelChatHandler(self, _mess)
-            case "MenuDelUserYes":
-                CM.DTB_C_MainMenu.MenuDelUserYesHandler(self, _mess)
-            case "MenuDelChatYes":
-                CM.DTB_C_MainMenu.MenuDelChatYesHandler(self, _mess)
-            case "Start" | "CancelRegistration" | "MenuDelChatNo" | "CreateSimpleUserNo" | "MenuDelUserNo" | "MenuExit":
-                CM.DTB_C_Start.Start(self, _mess)
-            case "CreateSimpleUserYes":
-                CM.DTB_C_Reg.CreateSimpleUserHandler(self, _mess)
-            case "MenuAbout":
-                CM.DTB_C_MainMenu.MainAboutHandler(self, _mess)
-            case "MenuAuth":
-                CM.DTB_C_MainMenu.MenuAuthHandler(self, _mess)
-            case "MainMenu":
-                CM.DTB_C_MainMenu.MainMenuHandler(self, _mess)
-            case "RecoveryAuthorization":
-                CM.DTB_C_Reg.RecoveryStartHandler(self, _mess)
-            case "GetNewToken":
-                CM.DTB_C_Token.NewTokenHandler(self, _mess)
-            case "Authorization":
-                CM.DTB_C_Auth.AuthHandler(self, _mess)       
-            case "Contact":
-                CM.DTB_C_Reg.ContactHandler(self, _mess)
-            case "Registration":
-                CM.DTB_C_Reg.Start(self, _mess)
-            case "CancelCurrentOperation":
-                CM.DTB_C_Start.Cancel(self, _mess)
-            case "RecoveryBot":
-                CM.DTB_C_Reg.RecoveryBotInput(self, _mess)            
-            
-            case "TEXT":
-                if text == "/start":
+      
+        # проверяем авторизацию
+        if not self.auth and comm in [  "MenuDelUserYes",
+                                        "MenuDelChatYes",
+                                        "MenuAbout",
+                                        "MenuAuth",
+                                        "MainMenu",
+                                        "GetNewToken"]:
+            CM.DTB_C_Start.Start(self, _mess)
+        else:
+            match comm:
+                case "MenuDeleteUser":
+                    CM.DTB_C_MainMenu.MainDelUserHandler(self, _mess)
+                case "MenuDeleteChat":
+                    CM.DTB_C_MainMenu.MainDelChatHandler(self, _mess)
+                case "MenuDelUserYes":
+                    CM.DTB_C_MainMenu.MenuDelUserYesHandler(self, _mess)
+                case "MenuDelChatYes":
+                    CM.DTB_C_MainMenu.MenuDelChatYesHandler(self, _mess)
+                case "Start" | "CancelRegistration" | "MenuDelChatNo" | "CreateSimpleUserNo" | "MenuDelUserNo" | "MenuExit":
                     CM.DTB_C_Start.Start(self, _mess)
-                else:
-                    match self.step:
+                case "CreateSimpleUserYes":
+                    CM.DTB_C_Reg.CreateSimpleUserHandler(self, _mess)
+                case "MenuAbout":
+                    CM.DTB_C_MainMenu.MainAboutHandler(self, _mess)
+                case "MenuAuth":
+                    CM.DTB_C_MainMenu.MenuAuthHandler(self, _mess)
+                case "MainMenu":
+                    CM.DTB_C_MainMenu.MainMenuHandler(self, _mess)
+                case "RecoveryAuthorization":
+                    CM.DTB_C_Reg.RecoveryStartHandler(self, _mess)
+                case "GetNewToken":
+                    CM.DTB_C_Token.NewTokenHandler(self, _mess)
+                case "Authorization":
+                    CM.DTB_C_Auth.AuthHandler(self, _mess)       
+                case "Contact":
+                    CM.DTB_C_Reg.ContactHandler(self, _mess)
+                case "Registration":
+                    CM.DTB_C_Reg.Start(self, _mess)
+                case "CancelCurrentOperation":
+                    CM.DTB_C_Start.Cancel(self, _mess)
+                case "RecoveryBot":
+                    CM.DTB_C_Reg.RecoveryBotInput(self, _mess)            
+                
+                case "TEXT":
+                    if text == "/start":
+                        CM.DTB_C_Start.Start(self, _mess)
+                    else:
+                        match self.step:
 
-                        case "Authorization":
-                            CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
-                        case "Password.First":
-                            CM.DTB_C_Pass.PasswordFirstHandler(self, _mess)
-                        case "Password.Second":
-                            CM.DTB_C_Pass .PasswordSecondHandler(self, _mess)
-                        case "Recovery.Bot":
-                            CM.DTB_C_Reg.RecoveryBotHandler(self, _mess)
-                        case "Recovery.Token":
-                            CM.DTB_C_Reg.RecoveryBotTokenHandler(self, _mess)
-                        case "Contact":
-                            CM.DTB_C_Reg.ContactHandler(self, _mess)
-                        case _:
-                            self.send_message(
-                                "None.Text",
-                                text,         
-                                _lvl = 1000
-                            )
+                            case "Authorization":
+                                CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
+                            case "Password.First":
+                                CM.DTB_C_Pass.PasswordFirstHandler(self, _mess)
+                            case "Password.Second":
+                                CM.DTB_C_Pass .PasswordSecondHandler(self, _mess)
+                            case "Recovery.Bot":
+                                CM.DTB_C_Reg.RecoveryBotHandler(self, _mess)
+                            case "Recovery.Token":
+                                CM.DTB_C_Reg.RecoveryBotTokenHandler(self, _mess)
+                            case "Contact":
+                                CM.DTB_C_Reg.ContactHandler(self, _mess)
+                            case _:
+                                self.send_message(
+                                    "None.Text",
+                                    text,         
+                                    _lvl = 1000
+                                )
 
-            case _:
-                self.send_message(
-                    "None.Type",
-                    _lvl = 1000
-                )       
+                case _:
+                    self.send_message(
+                        "None.Type",
+                        _lvl = 1000
+                    )       
 
         if sw != None:  
             self.delete_message(sw)        

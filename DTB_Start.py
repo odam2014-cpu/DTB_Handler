@@ -7,9 +7,12 @@ import BOT.DTB_Bot_Vk
 import BOT.DTB_Bot_Max_Chat
 import BOT.DTB_Bot_Max_Recovery
 import DTB_Api
+import os
 
 # стартуем
 def start(_bt):
+    # получаем токены из env и сохраняем в конфиг
+    _bt["Token"] = os.getenv(_bt["Name"])
     match _bt["Type"]:
         case "TLG":
             bot = BOT.DTB_Bot_Tlg_Chat.c_BotTelegramChat(_bt)

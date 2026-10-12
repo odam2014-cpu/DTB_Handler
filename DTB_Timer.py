@@ -16,10 +16,10 @@ def on_clearmess_timer():
         try:
             bot = BOT.DTB_Bot.list_bot[nm]
             ms= bot.send_message(
-                    id,                   # ид чата
-                    "Start.Main",         # ключ сообщения
-                    "",                   # вставки в сообщение
-                    ["Button.Start"]      # кнопки
+                    id,                         # ид чата
+                    "Start.Main",               # ключ сообщения
+                    DTB_Cfg.cfg.gs("Version"),  # вставки в сообщение
+                    ["Button.Start"]            # кнопки
                 )
             DTB_DB.DB.add_mess(gid, ms, 0)
         except Exception as e:
