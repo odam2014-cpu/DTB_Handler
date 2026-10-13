@@ -14,14 +14,19 @@ def Start(_ch, _ms):
     _ch.send_message(
                 "RegistrationHeader"
                 )
-
-    _ch.send_message(
-                "RegistrationPhone",
-                "",
-                ["CONTACT"],
-                5
-            )
-    
+    # если разрешено вводить номер телефона
+    if _ch.Opt_Unif == "YES":
+        _ch.send_message(
+                    "RegistrationPhone",
+                    "",
+                    ["CONTACT"],
+                    5
+                )
+    # если нет
+    else:
+        _ms["phone"] = "NONE"
+        ContactHandler(_ch, _ms)
+            
 def ContactHandler(_ch, _ms):
     
     if _ms["phone"] != "":

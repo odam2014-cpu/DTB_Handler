@@ -36,7 +36,10 @@ class c_chat:
         self.kbrd       = None
         self.inpt       = ""
         self.pasw       = ""
-        self.phone      = self.user.id
+        if self.user is not None:   
+            self.phone      = self.user.id
+        else:
+            self.phone      = ''    
         self.recovery   = ""
         self.token      = ""
         self.restart    = True

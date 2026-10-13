@@ -74,8 +74,8 @@
         "Command":"RecoveryBot"
     },
     {
-        "Name":"Password.First",
-        "Text":"Введите новый пароль доступа (минимальная длина - 4 символа)."
+        "Name":"PasswordFirst",
+        "Text":"Установите ПИН-код доступа(4 цифры)."
     },
     {
         "Name":"Token.IsUsed",
@@ -209,7 +209,7 @@
     },
     {
         "Name":"CreateSimpleUser",
-        "Text":"Не удалось получить Ваш контакт. Создать локального пользователя чата?"
+        "Text":"Для текущего канала невозможно использовать Ваш контакт. Создать локального пользователя чата?"
     },
     {
         "Name":"Button.CreateSimpleUserYes",
@@ -326,8 +326,8 @@
         "Text":"Введенные Вами пароли не совпадают."
     },
     {
-        "Name":"Password.Set.Second",
-        "Text":"Повторите введенный Вами пароль."
+        "Name":"PasswordSecond",
+        "Text":"Повторите введенный Вами ПИН-код."
     },
     {
         "Name":"Password.Recover.Set.Rec.Token.Error",
