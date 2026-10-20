@@ -17,4 +17,5 @@ CM/__pycache__/
 __pycache__/
 
 # Database files
-*.db
+DTB_DB.db
+
