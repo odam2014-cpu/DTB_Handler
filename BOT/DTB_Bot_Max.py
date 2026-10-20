@@ -38,8 +38,11 @@ class c_BotApiMax:
         req = requests.get(url = self.GET_url, params=self.GET_params, headers=self.header)
         upd = json.loads(req.text)  
         # Сохраняем маркер для продолжения чтения с того же места
-        self.GET_params["marker"] = upd["marker"]
-        return upd
+        if "updates" in upd:
+            self.GET_params["marker"] = upd["marker"]
+            return upd
+        else:
+            return None
         
     def DeleteMessage(self, _id, _ms):
         """Удаление сообщения бота.
@@ -171,6 +174,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                     upd = self.Bot.GetUpdates()
                 except Exception as e:
                     DTB_Log.log(e, "MAX_UPD_GET")
+                    
                 if upd != None:
                     for up in upd["updates"]:
                         match up["update_type"]:
@@ -197,7 +201,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                                         # не совпало - отправляем вместо телефона NOCORRECT
                                         else:
                                             pho = "NOCORRECT"
-                                DTB_Log.log(up, "txt", "_max")
+                                # DTB_Log.log(up, "txt", "_max")
                                 self.gate(  self.name, 
                                             up["message"]["sender"]["user_id"], 
                                             up["message"]["body"]["mid"], 
@@ -207,7 +211,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
 
                             case "message_callback":
                                 # Нажатие на callback-кнопку
-                                DTB_Log.log(up, "clb", "_max")
+                                # DTB_Log.log(up, "clb", "_max")
                                 self.gate(  self.name, 
                                             up["callback"]["user"]["user_id"], 
                                             None, 
@@ -225,7 +229,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
         """
         try:
             self.Bot.DeleteMessage(_id, _ms)
-            DTB_Log.log(_ms, "del", "_max")
+            # DTB_Log.log(_ms, "del", "_max")
 
         except Exception as e:  
             DTB_Log.log(e, "MAX_DEL_MES")
@@ -254,7 +258,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                         "html",          # признак, что формат HTML
                         btn              # клавиатура
                     )
-        DTB_Log.log(_ms, "edt", "_max")
+        # DTB_Log.log(_ms, "edt", "_max")
         return _ms
 
     def send_message(self, _id, _key, _ins, _btn=None):
@@ -281,7 +285,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                     )
         try:
             mid = req["message"]["body"]["mid"]
-            DTB_Log.log(mid, "snd", "_max")
+            # DTB_Log.log(mid, "snd", "_max")
         except Exception as e:
             mid = None       
             DTB_Log.log(e, "snd-err", "_max")
@@ -319,7 +323,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
         req = self.Bot.SendBody(_id, body)
         try:
             mid = json.loads(req.text)["message"]["body"]["mid"]
-            DTB_Log.log(mid, "snd", "_max")
+            # DTB_Log.log(mid, "snd", "_max")
         except Exception as e:          
             DTB_Log.log(e, "snd-err", "_max")
             mid = None

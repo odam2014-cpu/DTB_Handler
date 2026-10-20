@@ -1,4 +1,5 @@
 import DTB_Res
+import DTB_Log
 import CM.DTB_C_Start
 import DTB_User
 import BOT.DTB_Bot
@@ -91,16 +92,26 @@ def RecoveryStartHandler(_ch, _ms):
 def RecoveryBotHandler(_ch, _ms):
     _ch.recovery = _ms["text"]
     _ch.token    = DTB_Utils.get_token()
+    _mid = BOT.DTB_Bot.recovery_bot.send_message(
+                            _ch.recovery,
+                            "RecoverySendToken",
+                            _ch.phone
+                        )
+    if _mid is None:    
+        DTB_Log.log(_ch.recovery, "RecoveryBotHandler")
+        _ch.send_message(
+            "RecoveryError",
+            "",
+            None,
+            -2
+        )
+        return
+
     BOT.DTB_Bot.recovery_bot.send_message(
-                        _ch.recovery,
-                        "RecoverySendToken",
-                        _ch.phone
-                    )
-    BOT.DTB_Bot.recovery_bot.send_message(
-                        _ch.recovery,
-                        "",
-                        _ch.token 
-                    )
+                            _ch.recovery,
+                            "",
+                            _ch.token 
+                        )
     
     _ch.step = "Recovery.Token"
 

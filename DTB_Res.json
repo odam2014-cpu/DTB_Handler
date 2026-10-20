@@ -1,541 +1,367 @@
 [
     {
-        "Name":"Button.Authorization",
-        "Text":"Авторизоваться",
-        "Command":"Authorization"
+        "Name": "Button.Authorization",
+        "Text": "Авторизоваться",
+        "Command": "Authorization"
     },
     {
-        "Name":"Button.Start",
-        "Text":"Начать",
-        "Command":"Start"
+        "Name": "Button.Start",
+        "Text": "Начать",
+        "Command": "Start"
     },
     {
-        "Name":"Start.Main",
-        "Text":"Бот-генератор токенов доступа %%%."
+        "Name": "Start.Main",
+        "Text": "Бот-генератор токенов доступа %%%."
     },
-{
-        "Name":"None.Text",
-        "Text":"⁉️ Непонятная команда: <b>%%%</b>"
-    },
-    {
-        "Name":"None.Type",
-        "Text":"🚫 К сожалению, Бот Вас не понимает"
-    },
-    {
-        "Name":"Message.Timeout",
-        "Text":"Превышено разрешенное время бездействия <b>Бота</b>.",
-        "Image":"image\\disconnect.png"
-    },
-    {
-        "Name":"Button.Registration",
-        "Text":"Регистрация",
-        "Command":"Registration"
-    },  
-    {
-        "Name":"RegistrationPhone",
-        "Text":"Для регистрации необходимо передать боту Ваш контакт. В дальнейшем Вы сможете авторизоваться с помощью номера телефона. Бот не будет пользоваться Вашим номером телефона кроме как для авторизации запросов внешних респондентов"
-    },  
-    {
-        "Name":"Button.SendContact",
-        "Text":"Отправить контакт",
-        "Command":"SendContact"
-    },
-    {
-        "Name":"Button.CancelRegistration",
-        "Text":"Отменить регистрацию",
-        "Command":"CancelRegistration"
-    },
-    {
-        "Name":"Button.MainMenu",
-        "Text":"Главное меню",
-        "Command":"MainMenu"
-    },
-    {
-        "Name":"Button.GetNewToken",
-        "Text":"Новый токен",
-        "Command":"GetNewToken"
-    },
-    {
-        "Name":"Button.CancelCurrentOperation",
-        "Text":"Прервать операцию",
-        "Command":"CancelCurrentOperation"
-    },
-    {
-        "Name":"OperationCancel",
-        "Text":"Операция отменена. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
-    },
-    {
-        "Name":"MainMessage",
-        "Text":"Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
-    },
-    {
-        "Name":"Button.RecoveryBot",
-        "Text":"Указать другой ID чата восстановления",
-        "Command":"RecoveryBot"
-    },
-    {
-        "Name":"PasswordFirst",
-        "Text":"Установите ПИН-код доступа(4 цифры)."
-    },
-    {
-        "Name":"Token.IsUsed",
-        "Text":"Токен <s>%%%</s> использован для <b>%%%</b>."
-    },
-    {
-        "Name":"Token.IsDisabled",
-        "Text":"Истек срок действия токена <s>%%%</s>."
-    },
-    {
-        "Name":"Token.Get",
-        "Text":"Ваш новый токен :"
-    },
-    {
-        "Name":"Button.RecoveryAuthorization",
-        "Text":"Восстановление доступа",
-        "Command":"RecoveryAuthorization"
-    },
-
-    {
-        "Name":"Button.Menu.About",
-        "Text":"О сервисе",
-        "Command":"MenuAbout"
-    },
-
     {
-        "Name":"Button.Menu.Auth",
-        "Text":"Изменить доступ",
-        "Command":"MenuAuth"
+        "Name": "None.Text",
+        "Text": "⁉️ Непонятная команда: <b>%%%</b>"
     },
-
     {
-        "Name":"Button.Menu.DeleteChat",
-        "Text":"Удалить чат из сервиса",
-        "Command":"MenuDeleteChat"
+        "Name": "None.Type",
+        "Text": "🚫 К сожалению, Бот Вас не понимает"
     },
     {
-        "Name":"Button.Menu.DeleteUser",
-        "Text":"Отказаться от использования сервиса",
-        "Command":"MenuDeleteUser"
+        "Name": "Message.Timeout",
+        "Text": "Превышено разрешенное время бездействия <b>Бота</b>.",
+        "Image": "image\\disconnect.png"
     },
     {
-        "Name":"MainMenu",
-        "Text":"Выберите команду меню Бота или получите <b>Новый токен</b>."
+        "Name": "Button.Registration",
+        "Text": "Регистрация",
+        "Command": "Registration"
     },
     {
-        "Name":"Button.Menu.Exit",
-        "Text":"Выход из меню",
-        "Command":"MenuExit"
+        "Name": "RegistrationPhone",
+        "Text": "Для регистрации необходимо передать боту Ваш контакт. В дальнейшем Вы сможете авторизоваться с помощью номера телефона. Бот не будет пользоваться Вашим номером телефона кроме как для авторизации запросов внешних респондентов"
     },
     {
-        "Name":"Button.Menu.DelChat.Yes",
-        "Text":"ДА - удалить текущий чат",
-        "Command":"MenuDelChatYes"
+        "Name": "Button.SendContact",
+        "Text": "Отправить контакт",
+        "Command": "SendContact"
     },
     {
-        "Name":"Button.Menu.DelChat.No",
-        "Text":"НЕТ - отказаться от удаления",
-        "Command":"MenuDelChatNo"
+        "Name": "Button.CancelRegistration",
+        "Text": "Отменить регистрацию",
+        "Command": "CancelRegistration"
     },
     {
-        "Name":"Button.Menu.DelUser.Yes",
-        "Text":"ДА - отказаться от сервиса",
-        "Command":"MenuDelUserYes"
+        "Name": "Button.MainMenu",
+        "Text": "Главное меню",
+        "Command": "MainMenu"
     },
     {
-        "Name":"Button.Menu.DelUser.No",
-        "Text":"НЕТ - остаться в сервисе",
-        "Command":"MenuDelUserNo"
+        "Name": "Button.GetNewToken",
+        "Text": "Новый токен",
+        "Command": "GetNewToken"
     },
-
     {
-        "Name":"KeyboardInline",
-        "Text":"Введите код доступа: <b>%%%</b>"
+        "Name": "Button.CancelCurrentOperation",
+        "Text": "Прервать операцию",
+        "Command": "CancelCurrentOperation"
     },
-
     {
-        "Name":"Button.KBRD.0",
-        "Text":"0",
-        "Command":"KBRD.0"
+        "Name": "OperationCancel",
+        "Text": "Операция отменена. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
     },
     {
-        "Name":"Button.KBRD.1",
-        "Text":"1",
-        "Command":"KBRD.1"
+        "Name": "MainMessage",
+        "Text": "Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
     },
     {
-        "Name":"Button.KBRD.2",
-        "Text":"2",
-        "Command":"KBRD.2"
+        "Name": "Button.RecoveryBot",
+        "Text": "Указать другой ID чата восстановления",
+        "Command": "RecoveryBot"
     },
     {
-        "Name":"Button.KBRD.3",
-        "Text":"3",
-        "Command":"KBRD.3"
+        "Name": "PasswordFirst",
+        "Text": "Установите ПИН-код доступа (4 цифры)."
     },
     {
-        "Name":"Button.KBRD.4",
-        "Text":"4",
-        "Command":"KBRD.4"
+        "Name": "Token.IsUsed",
+        "Text": "Токен <s>%%%</s> использован для <b>%%%</b>."
     },
     {
-        "Name":"Button.KBRD.5",
-        "Text":"5",
-        "Command":"KBRD.5"
+        "Name": "Token.IsDisabled",
+        "Text": "Истек срок действия токена <s>%%%</s>."
     },
-    {
-        "Name":"Button.KBRD.6",
-        "Text":"6",
-        "Command":"KBRD.6"
-    },
-    {
-        "Name":"Button.KBRD.7",
-        "Text":"7",
-        "Command":"KBRD.7"
-    },
-    {
-        "Name":"Button.KBRD.8",
-        "Text":"8",
-        "Command":"KBRD.8"
-    },
-    {
-        "Name":"Button.KBRD.9",
-        "Text":"9",
-        "Command":"KBRD.9"
-    },
-    {
-        "Name":"Button.KBRD.Cancel",
-        "Text":"Сброс",
-        "Command":"KBRD.Cancel"
-    },
-    {
-        "Name":"CreateSimpleUser",
-        "Text":"Для текущего канала невозможно использовать Ваш контакт. Создать локального пользователя чата?"
-    },
-    {
-        "Name":"Button.CreateSimpleUserYes",
-        "Text":"ДА - создать",
-        "Command":"CreateSimpleUserYes"
-    },
-    {
-        "Name":"Button.CreateSimpleUserNo",
-        "Text":"НЕТ - не нужно",
-        "Command":"CreateSimpleUserNo"
-    },
-    {
-        "Name":"MenuAbout",
-        "Text":"Бот-генерации токенов доступа %%%. Идентификатор внешнего доступа: <b><code>%%%</code></b> "
-    },
-    {
-        "Name":"AuthorizationUserBlock",
-        "Text":"Доступ заблокирован до <b>%%%</b>"
-    },
-    {
-        "Name":"AuthorizationProcess",
-        "Text":"Для входа укажите <b>ПИН-код</b>"
-    },
-    {
-        "Name":"AuthorizationAttemtion",
-        "Text":"Количество попыток: <b>%%%</b>"
-    },
-    {
-        "Name":"AuthorizationError",
-        "Text":"Пин-код указан неверно"
-    },
-
-    {
-        "Name":"Button.ClearContact",
-        "Text":"Удалить телефон",
-        "Text_EN": "Delete phone",
-        "Command":"ContactClear"
-    },    
-    {
-        "Name":"Button.Main.GetID",
-        "Text":"Ваш ID",
-        "Command":"Main.GetID"
-    },
-    {
-        "Name":"Button.Main.Return",
-        "Text":"Вернуться",
-        "Command":"Main.Return"
-    },
-    {
-        "Name":"Button.Main.SetPhone",
-        "Text":"Доп.ID",
-        "Command":"Main.SetPhone"
-    },
-    {
-        "Name":"Button.Main.Password",
-        "Text":"Защита",
-        "Command":"Main.Password"
-    },
-    {
-        "Name":"Button.Main.Help",
-        "Text":"Помоги мне",
-        "Command":"Main.Help"
-    },    
     {
-        "Name":"Button.ChoicePasswordReplace",
-        "Text":"Изменить пароль",
-        "Command":"PasswordChange"
+        "Name": "Token.IsDeactive",
+        "Text": "Токен <s>%%%</s> деактивирован."
     },
     {
-        "Name":"Button.ChoicePasswordClear",
-        "Text":"Отменить защиту",
-        "Command":"PasswordClear"
+        "Name": "Token.Get",
+        "Text": "Ваш новый токен :"
     },
-    
     {
-        "Name":"Password.Choice",
-        "Text":"Выберите команду для изменения защиты Бота."
+        "Name": "Button.RecoveryAuthorization",
+        "Text": "Восстановление доступа",
+        "Command": "RecoveryAuthorization"
     },
     {
-        "Name":"Password.Recover.Set",
-        "Text":"Укажите ИД чата, куда будет приходить токен для восстановления доступа."
+        "Name": "Button.Menu.About",
+        "Text": "О сервисе",
+        "Command": "MenuAbout"
     },
     {
-        "Name":"Password.Set",
-        "Text":"Устнавка пароля для доступа к Боту."
+        "Name": "Button.Menu.Auth",
+        "Text": "Изменить доступ",
+        "Command": "MenuAuth"
     },
     {
-        "Name":"Password.Recover.Skip.Ok",
-        "Text":"Пропуск шага настройки восстановления доступа. Обратите внимание, что в случаи устновки защиты на Бот и потери пароля Вы уже не сможете восстановить доступ."
+        "Name": "Button.Menu.DeleteChat",
+        "Text": "Удалить чат из сервиса",
+        "Command": "MenuDeleteChat"
     },
     {
-        "Name":"Password.Clear.Final",
-        "Text":"Дополнительня защита доступа к Боту снята успешно."
+        "Name": "Button.Menu.DeleteUser",
+        "Text": "Отказаться от использования сервиса",
+        "Command": "MenuDeleteUser"
     },
     {
-        "Name":"Password.Replace",
-        "Text":"Изменение пароля доступа к Боту."
+        "Name": "MainMenu",
+        "Text": "Выберите команду меню Бота или получите <b>Новый токен</b>."
     },
     {
-        "Name":"Operation.Cancel",
-        "Text":"Операция отменена. Для продолжения перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+        "Name": "Button.Menu.Exit",
+        "Text": "Выход из меню",
+        "Command": "MenuExit"
     },
     {
-        "Name":"Menu.Use.Key",
-        "Text":"Перейдите в <b>Главное меню</b> Бота или получите <b>Новый токен</b>."
+        "Name": "Button.Menu.DelChat.Yes",
+        "Text": "ДА - удалить текущий чат",
+        "Command": "MenuDelChatYes"
     },
-
     {
-        "Name":"Password.Set.Final",
-        "Text":"Пароль для доступа к Боту установлен успешно."
+        "Name": "Button.Menu.DelChat.No",
+        "Text": "НЕТ - отказаться от удаления",
+        "Command": "MenuDelChatNo"
     },
     {
-        "Name":"Password.Set.Second.Error",
-        "Text":"Введенные Вами пароли не совпадают."
+        "Name": "Button.Menu.DelUser.Yes",
+        "Text": "ДА - отказаться от сервиса",
+        "Command": "MenuDelUserYes"
     },
     {
-        "Name":"PasswordSecond",
-        "Text":"Повторите введенный Вами ПИН-код."
+        "Name": "Button.Menu.DelUser.No",
+        "Text": "НЕТ - остаться в сервисе",
+        "Command": "MenuDelUserNo"
     },
     {
-        "Name":"Password.Recover.Set.Rec.Token.Error",
-        "Text":"Указанный Вами токен не совпадает с отправленным в чат для восстановления доступа."
+        "Name": "KeyboardInline",
+        "Text": "Введите ПИН-код доступа: <b>%%%</b>"
     },
     {
-        "Name":"Password.Recover.Set.Ok",
-        "Text":"Чат для восстановления доступа к текущему Боту устновлен успешно."
+        "Name": "Button.KBRD.0",
+        "Text": "0",
+        "Command": "KBRD.0"
     },
     {
-        "Name":"Password.Recover.Token.Error",
-        "Text":"Невозможно найти бот по указанному Вами идентификатору."
+        "Name": "Button.KBRD.1",
+        "Text": "1",
+        "Command": "KBRD.1"
     },
     {
-        "Name":"Password.Recover.Ok",
-        "Text":"Доступ восстановлен. Для установки пароля на чат необходимо пройти процедуру установки доп.защиты повторно."
+        "Name": "Button.KBRD.2",
+        "Text": "2",
+        "Command": "KBRD.2"
     },
     {
-        "Name":"Password.Recover.Error",
-        "Text":"Невозможно восстановить доступ. Чат для восстановления не найден."
+        "Name": "Button.KBRD.3",
+        "Text": "3",
+        "Command": "KBRD.3"
     },
     {
-        "Name":"Password.Recover.Token",
-        "Text":"Введите токен восстановления доступа."
+        "Name": "Button.KBRD.4",
+        "Text": "4",
+        "Command": "KBRD.4"
     },
-    
     {
-        "Name":"Password.Recover.Set.Rec.Error",
-        "Text":"Введите токен, который был отправлен в указанный Вами чат."
+        "Name": "Button.KBRD.5",
+        "Text": "5",
+        "Command": "KBRD.5"
     },
     {
-        "Name":"Password.Recover.Set.Rec.Token",
-        "Text":"Введите токен, который был отправлен в указанный Вами чат."
+        "Name": "Button.KBRD.6",
+        "Text": "6",
+        "Command": "KBRD.6"
     },
     {
-        "Name":"Send.Recover.Token",
-        "Text":"Токен восстановления доступа <s>%%%</s> для пользователя <b>%%%</b>."
+        "Name": "Button.KBRD.7",
+        "Text": "7",
+        "Command": "KBRD.7"
     },
     {
-        "Name":"Password.Check.Final",
-        "Text":"Доступ <b>Разрешен</b>. Для продолжения перейдите в <b>Главное меню</b> "
+        "Name": "Button.KBRD.8",
+        "Text": "8",
+        "Command": "KBRD.8"
     },
     {
-        "Name":"Password.Check.Error",
-        "Text":"Доступ <b>запрещен</b>. Пароль введен неверено."
+        "Name": "Button.KBRD.9",
+        "Text": "9",
+        "Command": "KBRD.9"
     },
     {
-        "Name":"Password.Check",
-        "Text":"Доступ к <b>Боту</b> защищен Вами дополнительным паролем. Пожалуйста, введите пароль.",
-        "Image":"image\\connect.png"
+        "Name": "Button.KBRD.Cancel",
+        "Text": "Сброс",
+        "Command": "KBRD.Cancel"
     },
     {
-        "Name":"Contact.Warring",
-        "Text":"Передав боту контакт Вы сможете авторизоваться с помощью номера телефона. Бот не будет пользоваться Вашим номером телефона кроме как для авторизации запросов внешних респондентов"
+        "Name": "CreateSimpleUser",
+        "Text": "Для текущего канала невозможно использовать Ваш контакт. Создать локального пользователя чата?"
     },
     {
-        "Name":"Help.Main",
-        "Text":"Здесь будет информация о помощи"
+        "Name": "Button.CreateSimpleUserYes",
+        "Text": "ДА - создать",
+        "Command": "CreateSimpleUserYes"
     },
     {
-        "Name":"YourID.Main",
-        "Text":"Ваш ID :"
+        "Name": "Button.CreateSimpleUserNo",
+        "Text": "НЕТ - не нужно",
+        "Command": "CreateSimpleUserNo"
     },
     {
-        "Name":"Contact.Result.Good",
-        "Text":"Спасибо за предоставленный контакт. Теперь Вы сможете авторизоваться под своим номером телефона"
+        "Name": "MenuAbout",
+        "Text": "Бот-генерации токенов доступа %%%. Идентификатор внешнего доступа: <b><code>%%%</code></b> "
     },
     {
-        "Name":"Contact.Result.Bad",
-        "Text":"К сожалению, Бот не смог получить Ваш контакт. Давайте поробуем еще раз."
+        "Name": "AuthorizationUserBlock",
+        "Text": "Доступ заблокирован до <b>%%%</b>"
     },
     {
-        "Name":"adm_change_cfg",
-        "Text":"change_cfg",
-        "Command":"change_cfg"
+        "Name": "AuthorizationProcess",
+        "Text": "Для входа укажите <b>ПИН-код</b>."
     },
     {
-        "Name":"adm_monitoring",
-        "Text":"monitoring",
-        "Command":"monitoring"
+        "Name": "AuthorizationAttemtion",
+        "Text": "Количество попыток: <b>%%%</b>."
     },
     {
-        "Name":"adm_logfile",
-        "Text":"logfile",
-        "Command":"logfile"
+        "Name": "AuthorizationError",
+        "Text": "ПИН-код указан неверно"
     },
     {
-        "Name":"adm_update_res",
-        "Text":"update_res",
-        "Command":"update_res"
+        "Name": "RegistrationHeader",
+        "Text": "Регистрация нового пользователя"
     },
     {
-        "Name":"adm_exit",
-        "Text":"exit",
-        "Command":"exit"
+        "Name": "Recovery.Bot",
+        "Text": "Укажите ИД бота, в котором Вы будете получать токен для восстановления доступа. Найдите в MAX бота <b>DTB_RECOVERY_BOT</b>, отправьте ему любое сообщение, в ответ он вернет свой ИД. Обязательно выбираейте бот восстановления на другом устройстве.",
+        "Command": "Main.GetID"
     },
     {
-        "Name":"adm_log_exit",
-        "Text":"LOG_exit",
-        "Command":"LOG_exit"
-    },    {
-        "Name":"adm_cfg_exit",
-        "Text":"CFG_exit",
-        "Command":"CFG_exit"
+        "Name": "RecoveryHeader",
+        "Text": "Восстановление доступа"
     },
     {
-        "Name":"Admin.Monitoring",
-        "Text":"Активных чатов: %%%\nАктивных сообщений: %%%\nВсего чатов: %%%\nВсего сообщений: %%%"
+        "Name": "RecoveryToken",
+        "Text": "Введите токен, который был отправлен Вам в чат бота восстановления доступа, который Вы указали при регистрации."
     },
     {
-        "Name":"Password.Recover",
-        "Text":"Введите токен востановления доступа, который был отправлен в чат <b>%%%</b>"
+        "Name": "RecoveryTokenError",
+        "Text": "Токен восстановления указан неврено"
     },
     {
-        "Name":"Admin.Begin",
-        "Text":"Включен режим Администратора"
+        "Name": "RecoveryError",
+        "Text": "Ошибка отправки токена в бот восстановлениея"
     },
     {
-        "Name":"Admin.Cfg.Begin",
-        "Text":"Выберите конфигурацию для активации"
+        "Name": "RequiredRegistration",
+        "Text": "Для начала работы с сервисов необходимо зарегистрироваться."
     },
     {
-        "Name":"Admin.Log.Begin",
-        "Text":"Выберите файл лога"
+        "Name": "NoCorrectRequiredRegistration",
+        "Text": "Был передан контакт, который Вам не принадлежит. Повторите процедуру регистраци."
     },
     {
-        "Name":"Update.Res.Ok",
-        "Text":"Ресурсы обновлены"
+        "Name": "ChangeAuthHeader",
+        "Text": "Изменение доступа."
     },
     {
-        "Name":"Admin.Bye",
-        "Text":"Режим Администратора выключен"
+        "Name": "PasswordFirstError",
+        "Text": "ПИН-код не соответсвует требованиям"
     },
     {
-        "Name":"Admin.Error",
-        "Text":"Неверная команда администратора"
+        "Name": "PasswordSecondError",
+        "Text": "Введенные Вами ПИН-коды не совпадают."
     },
     {
-        "Name":"Config.Change.Ok",
-        "Text":"Конфигурация изменена успешно"
+        "Name": "PasswordSecond",
+        "Text": "Повторите введенный Вами ПИН-код."
     },
     {
-        "Name":"Config.Change.Error",
-        "Text":"Ошибка изменения конфигурации"
+        "Name": "RecoverySendToken",
+        "Text": "Токен восстановления доступа <s>%%%</s> для пользователя <b>%%%</b>."
     },
     {
-        "Name":"Phone.Clear.Final",
-        "Text":"Номер телфона успешно удален"
+        "Name": "MenuDelChatQuestion",
+        "Text": "Вы уверены, что хотите удалить текущий чат из сервиса?"
     },
     {
-        "Name":"Contact.Already",
-        "Text":"Телефон уже установлен в качестве дополнительного ИД"
+        "Name": "MenuDelUserQuestion",
+        "Text": "Вы уверены, что хотите отказаться от использования сервиса?"
     },
     {
-        "Name":"Echo.Test",
-        "Text":"Эхо тест: %%%"
+        "Name": "RequiredAuthorization",
+        "Text": "Требуется авторизация."
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_change_cfg",
+        "Text": "change_cfg",
+        "Command": "change_cfg"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_monitoring",
+        "Text": "monitoring",
+        "Command": "monitoring"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_logfile",
+        "Text": "logfile",
+        "Command": "logfile"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_update_res",
+        "Text": "update_res",
+        "Command": "update_res"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_exit",
+        "Text": "exit",
+        "Command": "exit"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_log_exit",
+        "Text": "LOG_exit",
+        "Command": "LOG_exit"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "adm_cfg_exit",
+        "Text": "CFG_exit",
+        "Command": "CFG_exit"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "Admin.Monitoring",
+        "Text": "Активных чатов: %%%\nАктивных сообщений: %%%\nВсего чатов: %%%\nВсего сообщений: %%%"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "Admin.Begin",
+        "Text": "Включен режим Администратора"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "Admin.Cfg.Begin",
+        "Text": "Выберите конфигурацию для активации"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "Admin.Log.Begin",
+        "Text": "Выберите файл лога"
     },
     {
-        "Name":"",
-        "Text":""
+        "Name": "Admin.Bye",
+        "Text": "Режим Администратора выключен"
     },
     {
-        "Name":"",
-        "Text":""
-    }  
+        "Name": "Admin.Error",
+        "Text": "Неверная команда администратора"
+    }
 ]
-

@@ -1,12 +1,12 @@
 import DTB_Cfg
-import random
+import secrets
+import string
 import hashlib
 
 def get_token():
     _ln = DTB_Cfg.cfg.gi("TokenLenght")
-    tk = ""
-    while len(tk) < _ln:
-        tk = tk + str(random.randint(0, 9))
+    characters = string.digits
+    tk = ''.join(secrets.choice(characters) for _ in range(_ln))
     return tk
 
 def get_hash(_input):

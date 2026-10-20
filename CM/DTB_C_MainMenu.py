@@ -50,12 +50,6 @@ def MenuAuthHandler(_ch, _ms):
                         "ChangeAuthHeader",
                         ""
                     )
-    _ch.send_message(   
-                        "ChangeAuthHeaderWait",
-                        "",
-                        None,
-                        1
-                    )
     CM.DTB_C_Reg.RecoveryBotInput (_ch, _ms)
 
 def MenuDelUserYesHandler(_ch, _ms):
