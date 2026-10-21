@@ -1,5 +1,6 @@
 import threading
 import sqlite3
+import os
 import DTB_Log
 import DTB_Cfg
 import time
@@ -10,19 +11,35 @@ class c_DB:
     def __init__(   self, 
                     _db_name    # имя базы
                 ):
-        # накладываем блокировку 
-        with threading.Lock():
-            # создаем коннект           
-            self.conn = sqlite3.connect(    _db_name,                   # имя БД
-                                            check_same_thread = False   # - можно в разных потоков
-                                        )            
+
+        # создаем коннект           
+        self.conn = sqlite3.connect(    _db_name,                   # имя БД
+                                        check_same_thread = False   # - можно в разных потоков
+                                    )    
+
+        self.lock = threading.Lock()  # Один lock на весь экземпляр
+
+        # создаем таблицы, если их нет
+        self._create_tables()
+
+    def _create_tables(self):
+        sql_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "DTB_DB.sql")
+        try:
+            with open(sql_path, "r", encoding="UTF-8") as f:
+                sql_script = f.read()
+            self.conn.executescript(sql_script)
+        except Exception as e:
+            DTB_Log.log(e, "CREATE TABLES")
+        
+
     # выполнение sql запроса    
     def exec(   self, 
                 _sql_text,   # текст sql запроса
                 _params=None # параметры для параметрического запроса
             ):
+        
         # накладываем блокировку 
-        with threading.Lock():
+        with self.lock:
             try:
                 # получаем курсор    
                 cur = self.conn.cursor()
@@ -35,11 +52,10 @@ class c_DB:
                 lst = cur.fetchall()
                 # закрываем курсор
                 self.conn.commit()
-            except Exception as e:   
-                lst = []    
+                return lst    
+            except Exception as e:      
                 DTB_Log.log(e, "EXEC " + _sql_text)          
-                
-        return lst    
+                return []                  
 
     def get_chat(self, _nm, _ch):
         rs = self.exec("SELECT ID, USER_ID FROM CHAT WHERE ID = ? AND NAME = ?", (_ch, _nm))
