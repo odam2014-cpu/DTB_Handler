@@ -10,52 +10,60 @@ import json
 # определяем класс обработчика HTTP запросов 
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
-    # проверка запроса
-    def check ( self, 
-                url     # url запроса
-            ):
-        # парсим параметры из запроса 
-        query_components = parse_qs(url.query)
-        # пользователь
-        user = query_components.get("user", ["0000"])[0]
-        # токен
-        token = query_components.get("token", ["0000"])[0]
-        # респондент
-        resp = query_components.get("respondent", ["Неизвестно"])[0]
-        
-        # проверяем токен пользователя
-        if DTB_User.token_check(user, token, resp):
-            res = 200
-        else:
-            res = 201    
-        # формируем ответ на запрос
-        return res             
-            
-    # реализация метода GET HTTP запроса
-    def do_GET(self):
+    # реализация метода POST HTTP запроса
+    def do_POST(self):
         # парсим путь запроса
         url = urlparse(self.path)
         # устанавливаем код ответа
         resp = 200
+        result = "none"
         # получаем имя сервиса  
         match url.path:
-            # сервис проверки токена : <base url>:9000/check?user=<логин/ид чата>&token=<токен>&respondent=<кто запрашивает>
+            # сервис проверки токена : <base url>:9000/check_token (POST)
             case "/check_token":
+                # читаем тело запроса
+                content_length = int(self.headers.get('Content-Length', 0))
+                post_data = self.rfile.read(content_length).decode('utf-8') if content_length > 0 else ""
+                # парсим параметры из тела запроса (JSON или form-encoded)
+                user = ""
+                token = ""
+                resp_param = "Неизвестно"
+                try:
+                    if post_data:
+                        data = json.loads(post_data)
+                        user = data.get("user", "0000")
+                        token = data.get("token", "0000")
+                        resp_param = data.get("respondent", "Неизвестно")
+                except json.JSONDecodeError:
+                    # пробуем распарсить как form-encoded
+                    query_params = parse_qs(post_data)
+                    user = query_params.get("user", ["0000"])[0]
+                    token = query_params.get("token", ["0000"])[0]
+                    resp_param = query_params.get("respondent", ["Неизвестно"])[0]
                 # вызов проверки
-                resp = self.check(url)
+                if DTB_User.token_check(user, token, resp_param):
+                    resp = 200
+                    result = "ok"
+                else:
+                    resp = 400
+                    result = "fail"
             # неизвестный сервис
             case _:
                 #код ответа - все плохо
                 resp = 404
-                txt = "[{{'result': 'none'}}]"    
+                result = "none"
                 
+        # формируем тело ответа
+        response_body = json.dumps({"result": result}, ensure_ascii=False).encode('utf-8')
+        
         # устанавливаем код ответа        
         self.send_response(resp)  
         # устанавливаем заголовок - данные приложения      
         self.send_header('Content-type', 'application/json')
+        self.send_header('Content-Length', len(response_body))
         self.end_headers()
         # отправляем ответ на запрос
-        self.wfile.write("OK".encode())
+        self.wfile.write(response_body)
 
 # запускаем параллельный поток
 def run():
