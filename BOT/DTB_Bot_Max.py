@@ -132,7 +132,55 @@ class c_BotApiMax:
         if _reply_markup != None:
              body["attachments"] = _reply_markup
 
-        requests.put(url = self.MES_url, params=params, headers=self.header, json=body)        
+        requests.put(url = self.MES_url, params=params, headers=self.header, json=body)
+
+    def UploadImage(self, _file_path):
+        """Загрузка изображения на сервер Max API через POST /uploads.
+
+        Этап 1: POST /uploads?type=image — получение URL загрузки.
+        Этап 2: POST по URL — загрузка файла.
+        Возвращает токен из ответа для использования в attachments.
+
+        Args:
+            _file_path: Путь к файлу изображения на диске.
+
+        Returns:
+            str: Токен загруженного изображения для attachments.payload.token,
+                  либо None при ошибке.
+        """
+        UPLOAD_URL = self.base_url + "uploads?type=image"
+
+        try:
+            # Этап 1: получаем URL загрузки
+            req = requests.post(url=UPLOAD_URL, headers=self.header)
+            resp = json.loads(req.text)
+
+            if "url" not in resp:
+                DTB_Log.log(resp, "IMG_UPLOAD_NO_URL")
+                return None
+
+            upload_url = resp["url"]
+
+            # Этап 2: загружаем файл по полученному URL
+            with open(_file_path, "rb") as img_file:
+                files = {"data": img_file}
+                req = requests.post(url=upload_url, headers=self.header, files=files)
+
+            if req.status_code != 200:
+                DTB_Log.log(req.text, "IMG_UPLOAD_FAIL")
+                return None
+
+            # Токен возвращается в ответе после загрузки файла
+            upload_resp = json.loads(req.text)
+            if "photos" in upload_resp and len(upload_resp["photos"]) > 0:
+                return upload_resp["photos"]["0"]["token"]
+
+            DTB_Log.log(upload_resp, "IMG_UPLOAD_NO_TOKEN")
+            return None
+
+        except Exception as e:
+            DTB_Log.log(e, "IMG_UPLOAD")
+            return None
 
 class c_BotMax(BOT.DTB_Bot.c_Bot):
     """Основной класс бота для работы с платформой Max."""
@@ -250,13 +298,30 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
         txt = self.build_message(_key, _ins)
         btn = BOT.DTB_Btn_Max.create(_btn)
         img = DTB_Res.get_image(_key)
-            
+
+        attachments = []
+
+        # Загрузка изображения из DTB_Res
+        if img != None:
+            img_token = self.Bot.UploadImage(img)
+            if img_token != None:
+                attachments.append({
+                    "type": "image",
+                    "payload": {"token": img_token}
+                })
+
+        # Добавление клавиатуры
+        if btn != None:
+            attachments.extend(btn)
+
+        _reply_markup = attachments if len(attachments) > 0 else None
+
         req = self.Bot.EditMessage(
                         _id,             # ид чата
                         _ms,             # ид сообщения
                         txt,             # текст сообщения
                         "html",          # признак, что формат HTML
-                        btn              # клавиатура
+                        _reply_markup    # клавиатура/вложения
                     )
         # DTB_Log.log(_ms, "edt", "_max")
         return _ms
@@ -276,12 +341,29 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
         txt = self.build_message(_key, _ins)
         btn = BOT.DTB_Btn_Max.create(_btn)
         img = DTB_Res.get_image(_key)
-        
+
+        attachments = []
+
+        # Загрузка изображения из DTB_Res
+        if img != None:
+            img_token = self.Bot.UploadImage(img)
+            if img_token != None:
+                attachments.append({
+                    "type": "image",
+                    "payload": {"token": img_token}
+                })
+
+        # Добавление клавиатуры
+        if btn != None:
+            attachments.extend(btn)
+
+        _reply_markup = attachments if len(attachments) > 0 else None
+
         req = self.Bot.SendMessage(
                         _id,             # ид чата
                         txt,             # текст сообщения
                         "html",          # признак, что формат HTML
-                        btn              # клавиатура
+                        _reply_markup    # клавиатура/вложения
                     )
         try:
             mid = req["message"]["body"]["mid"]
