@@ -283,6 +283,8 @@ class c_chat:
             CM.DTB_C_Start.Start(self, _mess)
         else:
             match comm:
+                case "AttachToPhone":
+                    CM.DTB_C_Reg.AttachToPhoneHandler(self, _mess)
                 case "MenuDeleteUser":
                     CM.DTB_C_MainMenu.MainDelUserHandler(self, _mess)
                 case "MenuDeleteChat":
@@ -321,7 +323,10 @@ class c_chat:
                         CM.DTB_C_Start.Start(self, _mess)
                     else:
                         match self.step:
-
+                            case "Attach.Token":
+                                CM.DTB_C_Reg.AttachInputTokenHandler(self, _mess)
+                            case "Attach.Phone":
+                                CM.DTB_C_Reg.AttachInputPhoneHandler(self, _mess)
                             case "Authorization":
                                 CM.DTB_C_Auth.AuthorizationProcessHandler(self, _mess)
                             case "Password.First":

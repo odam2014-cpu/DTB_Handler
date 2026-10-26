@@ -7,7 +7,7 @@ import CM.DTB_C_Pass
 import CM.DTB_C_Auth
 import DTB_Utils
 import time
-
+import DTB_DB
 
 def Start(_ch, _ms):
     _ch.step = "Contact"
@@ -39,7 +39,8 @@ def ContactHandler(_ch, _ms):
                         "",
                         [
                             ["Button.CreateSimpleUserYes"],
-                            ["Button.CreateSimpleUserNo"]
+                            ["Button.CreateSimpleUserNo"],
+                            ["Button.AttachToPhone"]
                         ],
                         5
                     )
@@ -64,14 +65,73 @@ def ContactHandler(_ch, _ms):
                     _lvl = 1000
                 )
 
-def RecoveryBotInput(_ch, _ms):
-            _ch.step = "Recovery.Bot"
-            _ch.send_message(
-                        "Recovery.Bot",
-                        "",
-                        ["Button.CancelCurrentOperation"],
-                        5
+def AttachInputTokenHandler(_ch, _ms):
+    if _ch.recovery != "" and _ch.token == _ms["text"]:
+        us = DTB_User.get_user(_ch.phone)
+        _ch.step = ""
+        if us != None:
+            _ch.set_user(us)
+            CM.DTB_C_Auth.AuthHandler(_ch, _ms)
+        else:
+            _ch.send_message("AttachUserError",
+                                "",
+                                None,
+                                -2
+                        )
+    else:
+        _ch.send_message("AttachTokenError",
+                            "",
+                            None,
+                            -2
                     )
+                
+def AttachInputPhoneHandler(_ch, _ms):
+    _ch.step = "Attach.Token"
+    
+    _ch.phone = _ms["text"]
+    _ch.recovery = ""
+    lm = DTB_DB.DB.get_user(_ch.phone)
+    if len(lm) > 0:
+        _ch.recovery = lm[0][2]
+    
+    if _ch.recovery != "":
+        _ch.token    = DTB_Utils.get_token()
+        BOT.DTB_Bot.recovery_bot.send_message(
+                                _ch.recovery,
+                                "RecoverySendToken",
+                                _ch.phone
+                            )
+        
+        BOT.DTB_Bot.recovery_bot.send_message(
+                                _ch.recovery,
+                                "",
+                                _ch.token 
+                            )
+    
+    _ch.send_message(   "AttachToken",
+                        "",
+                        "Button.CancelCurrentOperation",
+                        5
+                )
+
+def AttachToPhoneHandler(_ch, _ms):
+    _ch.step = "Attach.Phone"
+    _ch.send_message(
+                "AttachPhone",
+                "",
+                ["Button.CancelCurrentOperation"],
+                5
+            )
+
+
+def RecoveryBotInput(_ch, _ms):
+    _ch.step = "Recovery.Bot"
+    _ch.send_message(
+                "Recovery.Bot",
+                "",
+                ["Button.CancelCurrentOperation"],
+                5
+            )
 
 def RecoveryStartHandler(_ch, _ms):
     _ms["text"] = _ch.user.recovery
