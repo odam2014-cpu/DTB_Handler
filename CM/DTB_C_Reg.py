@@ -115,7 +115,7 @@ def AttachInputPhoneHandler(_ch, _ms):
     
     _ch.send_message(   "AttachToken",
                         "",
-                        "Button.CancelCurrentOperation",
+                        ["Button.CancelCurrentOperation"],
                         5
                 )
 
@@ -124,7 +124,7 @@ def AttachToPhoneHandler(_ch, _ms):
     _ch.send_message(
                 "AttachPhone",
                 "",
-                "Button.CancelCurrentOperation",
+                ["Button.CancelCurrentOperation"],
                 5
             )
 
@@ -217,7 +217,7 @@ def RecoveryBotHandler(_ch, _ms):
 
     _ch.send_message(   "RecoveryToken",
                         "",
-                        "Button.CancelCurrentOperation",
+                        ["Button.CancelCurrentOperation"],
                         5
                 )
                       

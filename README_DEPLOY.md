@@ -18,10 +18,15 @@ DTB_Handler — мультиплатформенный бот-фреймворк
 
 ### Python-зависимости
 
-- `python-dotenv` — загрузка переменных окружения из `.env`
-- `pyTelegramBotAPI` (telebot) — работа с Telegram Bot API
-- `vk_api` — работа с ВКонтакте
-- `requests` — HTTP-клиент для MAX Platform API
+| Пакет | Назначение |
+|-------|------------|
+| `python-dotenv` | Загрузка переменных окружения из `.env` |
+| `pyTelegramBotAPI` (telebot) | Работа с Telegram Bot API |
+| `vk_api` | Работа с ВКонтакте API |
+| `requests` | HTTP-клиент для MAX Platform API |
+| `beautifulsoup4` | Парсинг HTML (VK-бот) |
+| `vobject` | Парсинг vCard (MAX-бот, контакты) |
+| `pysocks` | SOCKS5-прокси для Telegram Bot API |
 
 ---
 

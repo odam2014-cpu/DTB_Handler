@@ -2,3 +2,6 @@ python-dotenv
 pyTelegramBotAPI
 vk_api
 requests
+beautifulsoup4
+vobject
+pysocks

@@ -2,16 +2,17 @@ import BOT.DTB_Bot
 import BOT.DTB_Btn_Tlg
 import DTB_Log
 import DTB_Res
+import DTB_Cfg
 from telebot import apihelper, TeleBot
 
 class c_BotTelegram(BOT.DTB_Bot.c_Bot):
     def __init__(self, _param):
         super().__init__(_param)  
         
-        
-        
-        apihelper.proxy = {'https':'socks5h://bumz9h:dokHSW@161.115.226.216:9423'}
-        #apihelper.proxy = {'https':'socks5h://sJ6wMR:Fs8Evk@45.153.20.235:11307'}
+        # Загружаем прокси из конфига
+        proxy_url = DTB_Cfg.cfg.gs("TelegramProxy")
+        if proxy_url:
+            apihelper.proxy = {'https': proxy_url}
         
         self.Bot  = TeleBot(self.token)    # регистрим бота
         DTB_Log.log(f"Бот {self.name} подключен")
