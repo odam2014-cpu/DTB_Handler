@@ -19,3 +19,6 @@ __pycache__/
 # Database files
 DTB_DB.db
 
+# GigaCode plans
+.gigacode_vsc/plans/
+

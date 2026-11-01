@@ -35,8 +35,8 @@ class c_token:
         self.lock.release()
         
     def check(self, _tk = None, _rs = None):
-        ret = False
         self.lock.acquire()                         # блокируем доступ к токену
+        ret = False
         if self.enable:
             if _tk != None:
                 if self.token == _tk:

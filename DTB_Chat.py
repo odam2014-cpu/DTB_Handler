@@ -38,9 +38,14 @@ class c_chat:
         self.pasw       = ""
         if self.user is not None:   
             self.phone      = self.user.id
+            # Парсим recovery из пользователя (формат: MESSENGER:CHAT_ID)
+            parts = self.user.recovery.split(":", 1)
+            self.recovery_messenger = parts[0].upper()
+            self.recovery   = parts[1]
         else:
             self.phone      = ''    
-        self.recovery   = ""
+            self.recovery   = ""
+            self.recovery_messenger = ""
         self.token      = ""
         self.restart    = True
         self.current_token = None
@@ -127,7 +132,7 @@ class c_chat:
                             _ins,
                             _btn
                          )
-               
+                
     def send_message(   self,
                         _key,
                         _ins = "",
@@ -221,14 +226,15 @@ class c_chat:
         return pl
     
     def set_password(self):
-        us = DTB_User.set_user(self.phone, self.recovery, self.pasw)
+        # Формируем recovery с префиксом мессенджера перед сохранением
+        us = DTB_User.set_user(self.phone, f"{self.recovery_messenger}:{self.recovery}", self.pasw)
         if self.user == None:
             self.set_user(us)
             
         self.auth = True    
 
 #########################################################################################################################################    
-                
+    
     def gate(self, _mess):
 
         comm = _mess["comm"]
@@ -317,6 +323,10 @@ class c_chat:
                     CM.DTB_C_Start.Cancel(self, _mess)
                 case "RecoveryBot":
                     CM.DTB_C_Reg.RecoveryBotInput(self, _mess)            
+                # Beg_10/26
+                case "RecoveryMessengerMax" | "RecoveryMessengerTlg":
+                    CM.DTB_C_Reg.RecoveryMessengerHandler(self, _mess)
+                # End_10/26
                 
                 case "TEXT":
                     if text == "/start":
@@ -339,6 +349,10 @@ class c_chat:
                                 CM.DTB_C_Reg.RecoveryBotTokenHandler(self, _mess)
                             case "Contact":
                                 CM.DTB_C_Reg.ContactHandler(self, _mess)
+                            # Beg_10/26
+                            case "Recovery.Messenger":
+                                CM.DTB_C_Reg.RecoveryMessengerHandler(self, _mess)
+                            # End_10/26
                             case _:
                                 self.send_message(
                                     "None.Text",
@@ -372,4 +386,3 @@ def chat_gate(
         list_chat[id] = ch
 
     ch.gate(_ms)
-

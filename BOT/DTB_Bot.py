@@ -2,7 +2,10 @@
 import DTB_Res
 import DTB_Chat
 
-recovery_bot = None
+# Beg_10/26
+recovery_bot = None          # legacy, для обратной совместимости
+recovery_bots = {}           # новый: {"TLG": bot, "MAX": bot}
+# End_10/26
 list_bot = {}
 
 class c_Bot: 

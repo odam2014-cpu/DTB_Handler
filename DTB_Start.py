@@ -28,11 +28,12 @@ def start(_bt):
             bot.start()
         case "TLG_Recovery":
             bot = BOT.DTB_Bot_Tlg_Recovery.c_BotTelegramRecovery(_bt)
-            BOT.DTB_Bot.recovery_bot = bot
+            BOT.DTB_Bot.recovery_bot = bot             # legacy — для обратной совместимости
+            BOT.DTB_Bot.recovery_bots["TLG"] = bot     # новый словарь
             bot.start()
         case "MAX_Recovery":
             bot = BOT.DTB_Bot_Max_Recovery.c_BotMaxRecovery(_bt)
-            BOT.DTB_Bot.recovery_bot = bot
+            BOT.DTB_Bot.recovery_bots["MAX"] = bot     # новый словарь
             bot.start()
         
 for bt in DTB_Cfg.cfg.config["BotList"]:

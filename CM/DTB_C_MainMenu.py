@@ -50,7 +50,9 @@ def MenuAuthHandler(_ch, _ms):
                         "ChangeAuthHeader",
                         ""
                     )
-    CM.DTB_C_Reg.RecoveryBotInput (_ch, _ms)
+    # Beg_10/26
+    CM.DTB_C_Reg.RecoveryMessengerSelect(_ch, _ms)
+    # End_10/26
 
 def MenuDelUserYesHandler(_ch, _ms):
    prev_ch = 0

@@ -54,7 +54,7 @@ def ContactHandler(_ch, _ms):
                     _ch.set_user(us)
                     CM.DTB_C_Auth.AuthHandler(_ch, _ms)
                 else:
-                    RecoveryBotInput(_ch, _ms)            
+                    RecoveryMessengerSelect(_ch, _ms)            
     else:
         if _ms["text"] == DTB_Res.get_text("Button.CancelRegistration"):
             CM.DTB_C_Start.Start(_ch, _ms)
@@ -90,19 +90,24 @@ def AttachInputPhoneHandler(_ch, _ms):
     
     _ch.phone = _ms["text"]
     _ch.recovery = ""
+    _ch.recovery_messenger = ""
     lm = DTB_DB.DB.get_user(_ch.phone)
     if len(lm) > 0:
-        _ch.recovery = lm[0][2]
-    
+        recovery_str = lm[0][2]
+        parts = recovery_str.split(":", 1)
+        _ch.recovery_messenger = parts[0].upper()
+        _ch.recovery = parts[1]
+
     if _ch.recovery != "":
         _ch.token    = DTB_Utils.get_token()
-        BOT.DTB_Bot.recovery_bot.send_message(
+        bot = BOT.DTB_Bot.recovery_bots.get(_ch.recovery_messenger)
+        bot.send_message(
                                 _ch.recovery,
                                 "RecoverySendToken",
                                 _ch.phone
                             )
         
-        BOT.DTB_Bot.recovery_bot.send_message(
+        bot.send_message(
                                 _ch.recovery,
                                 "",
                                 _ch.token 
@@ -119,15 +124,49 @@ def AttachToPhoneHandler(_ch, _ms):
     _ch.send_message(
                 "AttachPhone",
                 "",
-                ["Button.CancelCurrentOperation"],
+                "Button.CancelCurrentOperation",
                 5
             )
 
 
+def RecoveryMessengerSelect(_ch, _ms):
+    _ch.step = "Recovery.Messenger"
+    _ch.send_message(
+                "Recovery.Messenger.Select",
+                "",
+                [
+                    ["Button.RecoveryMessengerMax", "Button.RecoveryMessengerTlg"],
+                    ["Button.CancelCurrentOperation"]
+                ],
+                5
+            )
+
+def RecoveryMessengerHandler(_ch, _ms):
+    match _ms["comm"]:
+        case "RecoveryMessengerMax":
+            _ch.recovery_messenger = "MAX"
+        case "RecoveryMessengerTlg":
+            _ch.recovery_messenger = "TLG"
+        case _:
+            _ch.send_message(
+                "Recovery.Messenger.Required",
+                "",
+                None,
+                -2
+            )
+            return
+    _ch.step = "Recovery.Bot"
+    _ch.send_message(
+                "Recovery.Bot." + _ch.recovery_messenger,
+                "",
+                ["Button.CancelCurrentOperation"],
+                5
+            )
+
 def RecoveryBotInput(_ch, _ms):
     _ch.step = "Recovery.Bot"
     _ch.send_message(
-                "Recovery.Bot",
+                "Recovery.Bot." + _ch.recovery_messenger,
                 "",
                 ["Button.CancelCurrentOperation"],
                 5
@@ -152,7 +191,8 @@ def RecoveryStartHandler(_ch, _ms):
 def RecoveryBotHandler(_ch, _ms):
     _ch.recovery = _ms["text"]
     _ch.token    = DTB_Utils.get_token()
-    _mid = BOT.DTB_Bot.recovery_bot.send_message(
+    bot = BOT.DTB_Bot.recovery_bots.get(_ch.recovery_messenger)
+    _mid = bot.send_message(
                             _ch.recovery,
                             "RecoverySendToken",
                             _ch.phone
@@ -167,7 +207,7 @@ def RecoveryBotHandler(_ch, _ms):
         )
         return
 
-    BOT.DTB_Bot.recovery_bot.send_message(
+    bot.send_message(
                             _ch.recovery,
                             "",
                             _ch.token 
@@ -177,9 +217,7 @@ def RecoveryBotHandler(_ch, _ms):
 
     _ch.send_message(   "RecoveryToken",
                         "",
-                        [
-                            ["Button.CancelCurrentOperation"]
-                        ],
+                        "Button.CancelCurrentOperation",
                         5
                 )
                       

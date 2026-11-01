@@ -34,13 +34,13 @@
                                         }
                         },
                         {
-                            "Type" : "_TLG_Recovery",
-                            "Name" : "DTB_RECOVERY",
+                            "Type" : "TLG_Recovery",
+                            "Name" : "DTB_RECOVERY_TLG",
                             "Options": ""
                         },
                         {
                             "Type" : "MAX_Recovery",
-                            "Name" : "DTB_RECOVERY",
+                            "Name" : "DTB_RECOVERY_MAX",
                             "Options": ""
                         },
                         {
@@ -62,5 +62,5 @@
         "ChatLifeTimeInterval"  : "11",
         "ClearLifeTime"         : "36000",
         "ClearLifeTimeInterval" : "61",
-        "Version"               : "v.2.04"
+        "Version"               : "v.2.05"
     }    
