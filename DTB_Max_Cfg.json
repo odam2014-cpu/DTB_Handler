@@ -1,0 +1,9 @@
+{
+    "ApiBaseUrl": "https://platform-api2.max.ru/",
+    "LongPollingTimeout": 30,
+    "UpdatesLimit": 100,
+    "HttpConnectTimeout": 5,
+    "HttpReadTimeout": 45,
+    "RetryInitialDelay": 2,
+    "RetryMaxDelay": 60
+}
