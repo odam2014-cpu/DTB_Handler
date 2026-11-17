@@ -104,11 +104,10 @@ cp .env.example .env
 
 ### DTB_Cfg.json
 
-Определяет список ботов и параметры системы:
+Определяет список ботов и общие параметры системы:
 
 | Параметр | Описание | Значение по умолчанию |
 |----------|----------|----------------------|
-| `MaxApiBaseUrl` | URL API MAX Platform | `https://platform-api.max.ru/` |
 | `DataBaseName` | Имя SQLite-базы | `DTB_DB.db` |
 | `CheckPinCount` | Количество попыток PIN | `5` |
 | `TokenLenght` | Длина токена | `6` |
@@ -116,6 +115,20 @@ cp .env.example .env
 | `ChatLifeTime` | Время жизни чата (сек) | `180` |
 | `ClearLifeTime` | Время очистки (сек) | `36000` |
 | `Version` | Версия конфигурации | `v.2.05` |
+
+### DTB_Max_Cfg.json
+
+Содержит отдельные параметры MAX Platform и Long Polling:
+
+| Параметр | Назначение | Значение по умолчанию |
+|----------|------------|----------------------|
+| `ApiBaseUrl` | Базовый URL MAX API | `https://platform-api2.max.ru/` |
+| `LongPollingTimeout` | Тайм-аут Long Polling на стороне MAX (сек) | `30` |
+| `UpdatesLimit` | Максимум обновлений в одном ответе | `100` |
+| `HttpConnectTimeout` | Тайм-аут установки HTTP-соединения (сек) | `5` |
+| `HttpReadTimeout` | Тайм-аут ожидания HTTP-ответа (сек) | `45` |
+| `RetryInitialDelay` | Начальная задержка перед повтором (сек) | `2` |
+| `RetryMaxDelay` | Максимальная задержка перед повтором (сек) | `60` |
 
 ### DTB_Api.cfg
 
@@ -158,7 +171,7 @@ python DTB_Main.py
 ```
 
 При запуске:
-1. Загружается конфигурация из `DTB_Cfg.json`
+1. Загружаются общая конфигурация из `DTB_Cfg.json` и настройки MAX из `DTB_Max_Cfg.json`
 2. Переменные окружения читаются из `.env`
 3. Создаётся SQLite-база `DTB_DB.db` (таблицы `CHAT`, `MESSAGE`, `USER`)
 4. Запускаются потоки для каждого бота из `BotList`
@@ -201,7 +214,9 @@ DTB_Handler/
 ├── DTB_Main.py          # Точка входа
 ├── DTB_Start.py         # Инициализация ботов
 ├── DTB_Cfg.py           # Загрузка конфигурации
-├── DTB_Cfg.json         # Конфигурация ботов
+├── DTB_Cfg.json         # Общая конфигурация ботов
+├── DTB_Max_Cfg.py       # Загрузчик настроек MAX
+├── DTB_Max_Cfg.json     # Настройки MAX API и Long Polling
 ├── DTB_Api.py           # HTTP API для проверки токенов
 ├── DTB_Api.cfg          # Настройки HTTP-сервера
 ├── DTB_DB.py            # SQLite ORM

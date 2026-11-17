@@ -1,11 +1,22 @@
 import requests
 import json
+import time
+import random
 import vobject
 import BOT.DTB_Bot
 import DTB_Log
 import DTB_Res
-import DTB_Cfg
+import DTB_Max_Cfg
 import BOT.DTB_Btn_Max
+
+class MaxApiError(Exception):
+    """HTTP-ошибка MAX API с кодом ответа и рекомендуемой задержкой повтора."""
+
+    def __init__(self, status_code, message="", retry_after=None):
+        self.status_code = status_code
+        self.retry_after = retry_after
+        super().__init__(f"MAX API HTTP {status_code}: {message}")
+
 
 class c_BotApiMax:
     """Обёртка над Max API для отправки и управления сообщениями бота."""
@@ -16,15 +27,25 @@ class c_BotApiMax:
         Args:
             _token: Токен авторизации для Max API.
         """
-        self.header      = {'Authorization': _token}
-        self.base_url    = DTB_Cfg.cfg.gs("MaxApiBaseUrl") 
-        
-        # URL и параметры для получения обновлений (long polling)
+        self.header = {'Authorization': _token}
+        self.config = DTB_Max_Cfg.cfg.config
+        self.base_url = self.config["ApiBaseUrl"]
+
+        # Отдельная HTTP-сессия создаётся для каждого бота, поэтому сбои одного
+        # экземпляра MAX не влияют на соединения остальных ботов.
+        self.session = requests.Session()
+        self.connect_timeout = self.config["HttpConnectTimeout"]
+        self.read_timeout = self.config["HttpReadTimeout"]
+
+        # Параметры длительного опроса MAX. Marker пока работает по прежней схеме;
+        # его надёжное сохранение и подтверждение относятся ко второму этапу.
         self.GET_url = self.base_url + "updates"
         self.GET_params = {
-                            "timeout"   : "10", 
-                            "types"     : "bot_started,message_created,message_callback"
-                        }
+            "timeout": self.config["LongPollingTimeout"],
+            "limit": self.config["UpdatesLimit"],
+            "types": "bot_started,message_created,message_callback"
+        }
+
         # URL для операций с сообщениями
         self.MES_url = self.base_url + "messages"
         
@@ -35,14 +56,38 @@ class c_BotApiMax:
         Returns:
             dict: Ответ API с массивом обновлений и маркером для следующей итерации.
         """
-        req = requests.get(url = self.GET_url, params=self.GET_params, headers=self.header)
-        upd = json.loads(req.text)  
-        # Сохраняем маркер для продолжения чтения с того же места
-        if "updates" in upd:
+        # Тайм-аут чтения больше тайм-аута Long Polling на стороне MAX:
+        # это позволяет серверу штатно завершить длительный запрос.
+        req = self.session.get(
+            url=self.GET_url,
+            params=self.GET_params,
+            headers=self.header,
+            timeout=(self.connect_timeout, self.read_timeout)
+        )
+
+        if req.status_code != 200:
+            retry_after = req.headers.get("Retry-After")
+            try:
+                retry_after = float(retry_after) if retry_after is not None else None
+            except (TypeError, ValueError):
+                retry_after = None
+            raise MaxApiError(req.status_code, req.text, retry_after)
+
+        try:
+            upd = req.json()
+        except ValueError as exc:
+            raise ValueError("MAX вернул ответ, который не является корректным JSON") from exc
+
+        # Проверяем форму ответа до обращения к его полям.
+        if not isinstance(upd, dict) or not isinstance(upd.get("updates"), list):
+            raise ValueError("Некорректная структура ответа MAX: отсутствует список updates")
+
+        # Сохраняем marker по прежней логике. Перенос его подтверждения на этап
+        # успешной обработки событий будет выполнен отдельно, на втором этапе.
+        if "marker" in upd:
             self.GET_params["marker"] = upd["marker"]
-            return upd
-        else:
-            return None
+
+        return upd
         
     def DeleteMessage(self, _id, _ms):
         """Удаление сообщения бота.
@@ -57,7 +102,7 @@ class c_BotApiMax:
         params = {
             "message_id": _ms
         }
-        req = requests.delete(url = self.MES_url, params=params, headers=self.header)
+        req = self.session.delete(url=self.MES_url, params=params, headers=self.header, timeout=(self.connect_timeout, self.read_timeout))
         return json.loads(req.text)
         
         
@@ -75,7 +120,7 @@ class c_BotApiMax:
                     "user_id"               : _id,
                     "disable_link_preview"  : "False"
                 }
-        req = requests.post(url = self.MES_url, params=params, headers=self.header, json=_body)
+        req = self.session.post(url=self.MES_url, params=params, headers=self.header, json=_body, timeout=(self.connect_timeout, self.read_timeout))
         return req
     
     def SendMessage(self, _id, _txt, _parse_mode="html", _reply_markup=None):        
@@ -132,7 +177,7 @@ class c_BotApiMax:
         if _reply_markup != None:
              body["attachments"] = _reply_markup
 
-        requests.put(url = self.MES_url, params=params, headers=self.header, json=body)
+        self.session.put(url=self.MES_url, params=params, headers=self.header, json=body, timeout=(self.connect_timeout, self.read_timeout))
 
     def UploadImage(self, _file_path):
         """Загрузка изображения на сервер Max API через POST /uploads.
@@ -152,7 +197,7 @@ class c_BotApiMax:
 
         try:
             # Этап 1: получаем URL загрузки
-            req = requests.post(url=UPLOAD_URL, headers=self.header)
+            req = self.session.post(url=UPLOAD_URL, headers=self.header, timeout=(self.connect_timeout, self.read_timeout))
             resp = json.loads(req.text)
 
             if "url" not in resp:
@@ -164,7 +209,7 @@ class c_BotApiMax:
             # Этап 2: загружаем файл по полученному URL
             with open(_file_path, "rb") as img_file:
                 files = {"data": img_file}
-                req = requests.post(url=upload_url, headers=self.header, files=files)
+                req = self.session.post(url=upload_url, headers=self.header, files=files, timeout=(self.connect_timeout, self.read_timeout))
 
             if req.status_code != 200:
                 DTB_Log.log(req.text, "IMG_UPLOAD_FAIL")
@@ -209,64 +254,155 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
             DTB_Log.log(e, "DEL_MES_BTN") 
 
 
+    def _wait_before_retry(self, delay):
+        """Ожидание перед повторным запросом с небольшим случайным разбросом."""
+        # Небольшой jitter не даёт нескольким ботам одновременно повторять запросы.
+        delay = min(
+            self.Bot.config["RetryMaxDelay"],
+            max(0, random.uniform(delay * 0.8, delay * 1.2))
+        )
+        time.sleep(delay)
+
+    def process_update(self, up):
+        """Проверяет структуру и передаёт одно событие в общий шлюз обработки."""
+        if not isinstance(up, dict):
+            raise ValueError("Событие MAX имеет неверный формат")
+
+        update_type = up.get("update_type")
+
+        if update_type == "bot_started":
+            user = up.get("user") or {}
+            user_id = user.get("user_id")
+            if user_id is None:
+                raise ValueError("В событии bot_started отсутствует user.user_id")
+
+            self.gate(self.name, user_id, None, "Start", "")
+            return
+
+        if update_type == "message_created":
+            message = up.get("message") or {}
+            sender = message.get("sender") or {}
+            body = message.get("body") or {}
+            user_id = sender.get("user_id")
+            if user_id is None:
+                raise ValueError("В событии message_created отсутствует sender.user_id")
+
+            # Текст может отсутствовать, например, если пользователь отправил только вложение.
+            message_text = body.get("text") or ""
+            message_id = body.get("mid")
+            message_type = "TEXT"
+            phone = ""
+
+            attachments = body.get("attachments") or []
+            if not isinstance(attachments, list):
+                raise ValueError("Поле message.body.attachments должно быть списком")
+
+            # Не предполагаем, что первое вложение обязательно является контактом.
+            for attachment in attachments:
+                if not isinstance(attachment, dict) or attachment.get("type") != "contact":
+                    continue
+
+                message_type = "Contact"
+                payload = attachment.get("payload") or {}
+                vcf = payload.get("vcf_info")
+                max_info = payload.get("max_info") or {}
+
+                if vcf:
+                    try:
+                        vobj = vobject.readOne(stream=vcf, allowQP=True)
+                        tel = getattr(vobj, "tel", None)
+                        if tel is not None and getattr(tel, "value", None):
+                            # Номер принимается только при совпадении ID отправителя
+                            # с ID владельца профиля MAX, переданного вместе с контактом.
+                            if user_id == max_info.get("user_id"):
+                                phone = tel.value
+                            elif max_info.get("user_id") is not None:
+                                phone = "NOCORRECT"
+                    except Exception as exc:
+                        # Ошибка разбора карточки не должна блокировать само сообщение.
+                        DTB_Log.log(exc, "MAX_CONTACT_PARSE", "_max")
+                break
+
+            self.gate(
+                self.name,
+                user_id,
+                message_id,
+                message_type,
+                message_text,
+                phone
+            )
+            return
+
+        if update_type == "message_callback":
+            callback = up.get("callback") or {}
+            user = callback.get("user") or {}
+            user_id = user.get("user_id")
+            if user_id is None:
+                raise ValueError("В событии message_callback отсутствует callback.user.user_id")
+
+            self.gate(self.name, user_id, None, callback.get("payload") or "", "")
+            return
+
+        # Неизвестные типы не прерывают обработку остальных событий в пакете.
+        DTB_Log.log(f"Неизвестный тип события MAX: {update_type}", "MAX_UPD_UNKNOWN", "_max")
+
     def start(self):
-        """Запуск цикла обработки обновлений (long polling).
-        
-        Метод постоянно опрашивает API Max на наличие новых событий и передаёт их
-        в шлюз обработки (gate) для дальнейшей маршрутизации.
-        """
+        """Запускает непрерывный Long Polling с восстановлением после ошибок."""
+        retry_delay = self.Bot.config["RetryInitialDelay"]
+        max_retry_delay = self.Bot.config["RetryMaxDelay"]
+
         while True:
             try:
-                upd = None
-                try:
-                    upd = self.Bot.GetUpdates()
-                except Exception as e:
-                    DTB_Log.log(e, "MAX_UPD_GET")
-                    
-                if upd != None:
-                    for up in upd["updates"]:
-                        match up["update_type"]:
-                            case "bot_started":
-                                # Пользователь запустил бота
-                                self.gate(  self.name, 
-                                            up["user"]["user_id"], 
-                                            None, 
-                                            "Start", 
-                                            "")
+                upd = self.Bot.GetUpdates()
 
-                            case "message_created":
-                                # Новое сообщение от пользователя
-                                typ = "TEXT"
-                                pho = ""
-                                if "attachments" in up["message"]["body"]:
-                                    if up["message"]["body"]["attachments"][0]["type"] == "contact":
-                                        typ = "Contact"
-                                        vcf = up["message"]["body"]["attachments"][0]["payload"]["vcf_info"]
-                                        vobj = vobject.readOne(stream=vcf, allowQP=True)
-                                        # проверяем на совпадение id пользователя бота с id из контакта 
-                                        if up["message"]["sender"]["user_id"] == up["message"]["body"]["attachments"][0]["payload"]["max_info"]["user_id"]:
-                                            pho = vobj.tel.value
-                                        # не совпало - отправляем вместо телефона NOCORRECT
-                                        else:
-                                            pho = "NOCORRECT"
-                                # DTB_Log.log(up, "txt", "_max")
-                                self.gate(  self.name, 
-                                            up["message"]["sender"]["user_id"], 
-                                            up["message"]["body"]["mid"], 
-                                            typ,
-                                            up["message"]["body"]["text"], 
-                                            pho)
+                # Успешный ответ, в том числе пустой, сбрасывает накопленную задержку.
+                retry_delay = self.Bot.config["RetryInitialDelay"]
 
-                            case "message_callback":
-                                # Нажатие на callback-кнопку
-                                # DTB_Log.log(up, "clb", "_max")
-                                self.gate(  self.name, 
-                                            up["callback"]["user"]["user_id"], 
-                                            None, 
-                                            up["callback"]["payload"], 
-                                            "")
-            except Exception as e:
-                DTB_Log.log(e, "MAX_UPD_RUN")
+                for up in upd["updates"]:
+                    try:
+                        self.process_update(up)
+                    except Exception as exc:
+                        # Ошибка одного события не должна останавливать обработку пакета.
+                        DTB_Log.log(exc, "MAX_UPDATE_PROCESS", "_max")
+
+            except MaxApiError as exc:
+                status = exc.status_code
+                DTB_Log.log(exc, "MAX_POLL_HTTP", "_max")
+
+                if status == 429 and exc.retry_after is not None:
+                    # Если MAX сообщил Retry-After, соблюдаем указанную паузу.
+                    delay = max(0, exc.retry_after)
+                    time.sleep(delay)
+                else:
+                    # 401/405 требуют исправления конфигурации или метода.
+                    # Повторяем редко, чтобы поток не завершался и не создавал нагрузку.
+                    if status in (401, 405) or 400 <= status < 500:
+                        delay = max_retry_delay
+                    else:
+                        # Для серверных ошибок используем экспоненциальную задержку.
+                        delay = retry_delay
+                        retry_delay = min(retry_delay * 2, max_retry_delay)
+                    self._wait_before_retry(delay)
+
+            except (requests.Timeout, requests.ConnectionError) as exc:
+                DTB_Log.log(exc, "MAX_POLL_NETWORK", "_max")
+                self._wait_before_retry(retry_delay)
+                retry_delay = min(retry_delay * 2, max_retry_delay)
+
+            except requests.RequestException as exc:
+                DTB_Log.log(exc, "MAX_POLL_REQUEST", "_max")
+                self._wait_before_retry(retry_delay)
+                retry_delay = min(retry_delay * 2, max_retry_delay)
+
+            except (ValueError, json.JSONDecodeError) as exc:
+                DTB_Log.log(exc, "MAX_POLL_RESPONSE", "_max")
+                self._wait_before_retry(retry_delay)
+                retry_delay = min(retry_delay * 2, max_retry_delay)
+
+            except Exception as exc:
+                DTB_Log.log(exc, "MAX_POLL_RUN", "_max")
+                self._wait_before_retry(retry_delay)
+                retry_delay = min(retry_delay * 2, max_retry_delay)
 
     def delete_message(self, _id, _ms):
         """Удаление отправленного сообщения бота.
