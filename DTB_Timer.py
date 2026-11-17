@@ -28,7 +28,7 @@ def on_clearmess_timer():
                 DTB_DB.DB.add_mess(gid, ms, 0)
             except Exception as e:
                 DTB_Log.log(e, f"Ошибка on_clearmess_timer/ Start.Main : {gid}") 
-                DTB_DB.DB.del_chat(gid)
+            #    DTB_DB.DB.del_chat(gid)
                 
         for ms2 in list_ms:
             nm = ms2[0]

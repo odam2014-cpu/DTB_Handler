@@ -40,9 +40,7 @@ class c_BotApiMax:
         # Сохраняем маркер для продолжения чтения с того же места
         if "updates" in upd:
             self.GET_params["marker"] = upd["marker"]
-            return upd
-        else:
-            return None
+        return upd
         
     def DeleteMessage(self, _id, _ms):
         """Удаление сообщения бота.
@@ -223,7 +221,7 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                 except Exception as e:
                     DTB_Log.log(e, "MAX_UPD_GET")
                     
-                if upd != None:
+                if "updates" in upd:
                     for up in upd["updates"]:
                         match up["update_type"]:
                             case "bot_started":
@@ -265,6 +263,8 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                                             None, 
                                             up["callback"]["payload"], 
                                             "")
+                else:
+                    DTB_Log.log(json.dump(upd), "MAX_UPD_UPD")                                        
             except Exception as e:
                 DTB_Log.log(e, "MAX_UPD_RUN")
 

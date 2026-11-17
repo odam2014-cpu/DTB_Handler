@@ -75,8 +75,8 @@ class c_DB:
             self.exec("DELETE FROM MESSAGE WHERE CHAT_ID = ? AND MESS_ID = ?", (_ch, _ms))
         
     def delete_old_mess(self):
-            tm = time.time()
-            lifetime = DTB_Cfg.cfg.gs("ClearLifeTime")
+            tm = int(time.time())
+            lifetime = DTB_Cfg.cfg.gi("ClearLifeTime")
             lm = self.exec(
                 "SELECT CH.NAME, CH.ID, MS.MESS_ID, CH.GID FROM MESSAGE AS MS "
                 "INNER JOIN CHAT AS CH ON CH.GID = MS.CHAT_ID "
