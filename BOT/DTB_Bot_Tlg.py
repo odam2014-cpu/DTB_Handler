@@ -1,3 +1,4 @@
+import os
 import BOT.DTB_Bot
 import BOT.DTB_Btn_Tlg
 import DTB_Log
@@ -9,8 +10,8 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
     def __init__(self, _param):
         super().__init__(_param)  
         
-        # Загружаем прокси из конфига
-        proxy_url = DTB_Cfg.cfg.gs("TelegramProxy")
+        # Загружаем прокси из .env
+        proxy_url = os.getenv("TelegramProxy")
         if proxy_url:
             apihelper.proxy = {'https': proxy_url}
         

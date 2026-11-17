@@ -1,5 +1,5 @@
 {
-    "ApiBaseUrl": "https://platform-api2.max.ru/",
+    "ApiBaseUrl": "https://platform-api.max.ru/",
     "LongPollingTimeout": 30,
     "UpdatesLimit": 100,
     "HttpConnectTimeout": 5,

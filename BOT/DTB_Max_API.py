@@ -3,7 +3,6 @@
 import requests
 import json
 import DTB_Log
-import DTB_Max_Cfg
 
 class MaxApiError(Exception):
     """HTTP-ошибка MAX API с кодом ответа и рекомендуемой задержкой повтора."""
@@ -17,14 +16,17 @@ class MaxApiError(Exception):
 class c_BotApiMax:
     """Обёртка над Max API для отправки и управления сообщениями бота."""
     
-    def __init__(self, _token):
-        """Инициализация API-обёртки с токеном авторизации.
-        
-        Args:
-            _token: Токен авторизации для Max API.
-        """
+    # Инициализация API-обёртки с токеном авторизации
+    def __init__(   self, 
+                    _token  #Токен авторизации для Max API
+                ):
+  
+        # Файл содержит только параметры MAX API и Long Polling.
+        with open("BOT/DTB_Max_Cfg.json", "r", encoding="UTF-8") as file:
+            self.config = json.load(file)
+
+
         self.header = {'Authorization': _token}
-        self.config = DTB_Max_Cfg.cfg.config
         self.base_url = self.config["ApiBaseUrl"]
 
         # Отдельная HTTP-сессия создаётся для каждого бота, поэтому сбои одного

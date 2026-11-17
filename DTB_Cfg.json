@@ -51,8 +51,7 @@
                                         "UnifiedAccount"   : "NO"
                                         }
                         }
-                    ],
-        "TelegramProxy"         : "socks5h://bumz9h:dokHSW@161.115.226.216:9423",
+                                         ],
         "DataBaseName"          : "DTB_DB.db",
         "CheckPinCount"         : "5", 
         "BlockInterval"         : "60",

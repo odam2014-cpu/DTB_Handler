@@ -7,183 +7,7 @@ import BOT.DTB_Bot
 import DTB_Log
 import DTB_Res
 import BOT.DTB_Btn_Max
-<<<<<<< HEAD
-
-class c_BotApiMax:
-    """Обёртка над Max API для отправки и управления сообщениями бота."""
-    
-    def __init__(self, _token):
-        """Инициализация API-обёртки с токеном авторизации.
-        
-        Args:
-            _token: Токен авторизации для Max API.
-        """
-        self.header      = {'Authorization': _token}
-        self.base_url    = DTB_Cfg.cfg.gs("MaxApiBaseUrl") 
-        
-        # URL и параметры для получения обновлений (long polling)
-        self.GET_url = self.base_url + "updates"
-        self.GET_params = {
-                            "timeout"   : "10", 
-                            "types"     : "bot_started,message_created,message_callback"
-                        }
-        # URL для операций с сообщениями
-        self.MES_url = self.base_url + "messages"
-        
-        
-    def GetUpdates(self):
-        """Получение списка обновлений через long polling.
-        
-        Returns:
-            dict: Ответ API с массивом обновлений и маркером для следующей итерации.
-        """
-        req = requests.get(url = self.GET_url, params=self.GET_params, headers=self.header)
-        upd = json.loads(req.text)  
-        # Сохраняем маркер для продолжения чтения с того же места
-        if "updates" in upd:
-            self.GET_params["marker"] = upd["marker"]
-        return upd
-        
-    def DeleteMessage(self, _id, _ms):
-        """Удаление сообщения бота.
-        
-        Args:
-            _id: ID пользователя/чата.
-            _ms: ID сообщения для удаления.
-            
-        Returns:
-            dict: Ответ API после удаления.
-        """
-        params = {
-            "message_id": _ms
-        }
-        req = requests.delete(url = self.MES_url, params=params, headers=self.header)
-        return json.loads(req.text)
-        
-        
-    def SendBody(self, _id, _body):
-        """Отправка сырого тела сообщения (без парсинга ответа).
-        
-        Args:
-            _id: ID пользователя/чата.
-            _body: Словарь с телом сообщения (text, attachments и т.д.).
-            
-        Returns:
-            requests.Response: Объект ответа HTTP.
-        """
-        params = {
-                    "user_id"               : _id,
-                    "disable_link_preview"  : "False"
-                }
-        req = requests.post(url = self.MES_url, params=params, headers=self.header, json=_body)
-        return req
-    
-    def SendMessage(self, _id, _txt, _parse_mode="html", _reply_markup=None):        
-        """Отправка текстового сообщения пользователю.
-        
-        Args:
-            _id: ID пользователя/чата.
-            _txt: Текст сообщения.
-            _parse_mode: Формат парсинга текста (html по умолчанию).
-            _reply_markup: Клавиатура/вложения (опционально).
-            
-        Returns:
-            dict: Ответ API с данными отправленного сообщения.
-        """        
-        params = {
-                    "user_id"               : _id,
-                    "disable_link_preview"  : "False"
-                    }
-
-        body = {
-                "text"      : _txt,
-                "format"    : _parse_mode
-        }
-        if _reply_markup != None:
-             body["attachments"] = _reply_markup
-
-        req = self.SendBody(_id, body)
-
-        return json.loads(req.text)
-        
-    def EditMessage(self, _ms, _id=None, _txt=None, _parse_mode="html", _reply_markup=None):
-        """Редактирование существующего сообщения бота.
-        
-        Args:
-            _ms: ID редактируемого сообщения.
-            _id: ID пользователя/чата (опционально).
-            _txt: Новый текст сообщения.
-            _parse_mode: Формат парсинга текста (html по умолчанию).
-            _reply_markup: Новая клавиатура/вложения (опционально).
-        """
-                
-        params = {
-            "message_id": _ms
-        }
-
-        body = {}
-        
-        if _txt != None:
-           body = {
-                  "text"      : _txt,
-                   "format"    : _parse_mode
-               }
-          
-        if _reply_markup != None:
-             body["attachments"] = _reply_markup
-
-        requests.put(url = self.MES_url, params=params, headers=self.header, json=body)
-
-    def UploadImage(self, _file_path):
-        """Загрузка изображения на сервер Max API через POST /uploads.
-
-        Этап 1: POST /uploads?type=image — получение URL загрузки.
-        Этап 2: POST по URL — загрузка файла.
-        Возвращает токен из ответа для использования в attachments.
-
-        Args:
-            _file_path: Путь к файлу изображения на диске.
-
-        Returns:
-            str: Токен загруженного изображения для attachments.payload.token,
-                  либо None при ошибке.
-        """
-        UPLOAD_URL = self.base_url + "uploads?type=image"
-
-        try:
-            # Этап 1: получаем URL загрузки
-            req = requests.post(url=UPLOAD_URL, headers=self.header)
-            resp = json.loads(req.text)
-
-            if "url" not in resp:
-                DTB_Log.log(resp, "IMG_UPLOAD_NO_URL")
-                return None
-
-            upload_url = resp["url"]
-
-            # Этап 2: загружаем файл по полученному URL
-            with open(_file_path, "rb") as img_file:
-                files = {"data": img_file}
-                req = requests.post(url=upload_url, headers=self.header, files=files)
-
-            if req.status_code != 200:
-                DTB_Log.log(req.text, "IMG_UPLOAD_FAIL")
-                return None
-
-            # Токен возвращается в ответе после загрузки файла
-            upload_resp = json.loads(req.text)
-            if "photos" in upload_resp and len(upload_resp["photos"]) > 0:
-                return upload_resp["photos"]["0"]["token"]
-
-            DTB_Log.log(upload_resp, "IMG_UPLOAD_NO_TOKEN")
-            return None
-
-        except Exception as e:
-            DTB_Log.log(e, "IMG_UPLOAD")
-            return None
-=======
 from BOT.DTB_Max_API import c_BotApiMax, MaxApiError
->>>>>>> 8adb083531bae8466b1b6921d790183b7d606976
 
 class c_BotMax(BOT.DTB_Bot.c_Bot):
     """Основной класс бота для работы с платформой Max."""
@@ -311,44 +135,11 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
 
         while True:
             try:
-<<<<<<< HEAD
-                upd = None
-                try:
-                    upd = self.Bot.GetUpdates()
-                except Exception as e:
-                    DTB_Log.log(e, "MAX_UPD_GET")
-                    
-                if "updates" in upd:
-                    for up in upd["updates"]:
-                        match up["update_type"]:
-                            case "bot_started":
-                                # Пользователь запустил бота
-                                self.gate(  self.name, 
-                                            up["user"]["user_id"], 
-                                            None, 
-                                            "Start", 
-                                            "")
-=======
                 upd = self.Bot.GetUpdates()
->>>>>>> 8adb083531bae8466b1b6921d790183b7d606976
 
                 # Успешный ответ, в том числе пустой, сбрасывает накопленную задержку.
                 retry_delay = self.Bot.config["RetryInitialDelay"]
 
-<<<<<<< HEAD
-                            case "message_callback":
-                                # Нажатие на callback-кнопку
-                                # DTB_Log.log(up, "clb", "_max")
-                                self.gate(  self.name, 
-                                            up["callback"]["user"]["user_id"], 
-                                            None, 
-                                            up["callback"]["payload"], 
-                                            "")
-                else:
-                    DTB_Log.log(json.dump(upd), "MAX_UPD_UPD")                                        
-            except Exception as e:
-                DTB_Log.log(e, "MAX_UPD_RUN")
-=======
                 for up in upd["updates"]:
                     try:
                         self.process_update(up)
@@ -394,7 +185,6 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
                 DTB_Log.log(exc, "MAX_POLL_RUN", "_max")
                 self._wait_before_retry(retry_delay)
                 retry_delay = min(retry_delay * 2, max_retry_delay)
->>>>>>> 8adb083531bae8466b1b6921d790183b7d606976
 
     def delete_message(self, _id, _ms):
         """Удаление отправленного сообщения бота.
