@@ -119,10 +119,15 @@ class c_BotMax(BOT.DTB_Bot.c_Bot):
             callback = up.get("callback") or {}
             user = callback.get("user") or {}
             user_id = user.get("user_id")
+            message = up.get("message") or {}
+            body = message.get("body") or {}
+            message_id = body.get("mid")
+
+
             if user_id is None:
                 raise ValueError("В событии message_callback отсутствует callback.user.user_id")
 
-            self.gate(self.name, user_id, None, callback.get("payload") or "", "")
+            self.gate(self.name, user_id, message_id, callback.get("payload") or "", "")
             return
 
         # Неизвестные типы не прерывают обработку остальных событий в пакете.

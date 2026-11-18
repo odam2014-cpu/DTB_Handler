@@ -44,7 +44,7 @@ class c_BotVk(BOT.DTB_Bot.c_Bot):
                     match event.type:
                         case VkBotEventType.MESSAGE_NEW:
                             txt = event.message["text"] 
-                            if txt == "Нвчать":
+                            if txt == "Начать":
                                 txt = "/Start"
                             self.gate(self.name, event.message["from_id"], None, "TEXT", txt)
                         case VkBotEventType.MESSAGE_EVENT:       

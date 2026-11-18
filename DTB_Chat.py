@@ -104,7 +104,7 @@ class c_chat:
     def delete_message( self,
                         _ms = None,
                     ):
-        # удаление сообщения из ТГ
+        # удаление сообщения из чата
         self.bot.delete_message  (  self.id,    # ид чата  
                                     _ms         # ид сообщения
                             )

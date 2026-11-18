@@ -173,7 +173,7 @@ def RecoveryBotInput(_ch, _ms):
             )
 
 def RecoveryStartHandler(_ch, _ms):
-    _ms["text"] = _ch.user.recovery
+    _ms["text"] = _ch.recovery
     
     _ch.send_message(
                 "RecoveryHeader"

@@ -45,7 +45,7 @@ class c_BotTelegram(BOT.DTB_Bot.c_Bot):
         @self.Bot.callback_query_handler()
         def handler_call(_cb):
             # вызов шлюза
-            self.gate(self.name, _cb.message.chat.id, None, _cb.data, "")
+            self.gate(self.name, _cb.message.chat.id, _cb.message.id, _cb.data, "")
     
     def clear_button(   self,
                         _id,
